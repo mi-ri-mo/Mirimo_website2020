@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/Nav.scss'
+import '../styles/NavMain.scss'
 
 const Nav = () => {
     return(
         <div>
-            <div className="nav">
+            <div className="nav-main">
                 <div className="container">
                     <div className="wrap-nav">
                         <div>

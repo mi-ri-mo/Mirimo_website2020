@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import './App.css';
+import './App.scss';
 
 import About from './components/About';
 import Contact from './components/Contact';
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={About}/>
+          <Route exact={true} path="/" component={About}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/Project" component={Project}/>
           <Route component={NoMatch}/>
