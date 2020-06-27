@@ -3,10 +3,7 @@
     height: 60px;
     background: #0A112D;
 
-    .nav-wrap{
-        width: 70%;
-        height: 100%;
-        margin: 0 auto;
+    .wrap-nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,7 +11,6 @@
         .nav-logo{
             width: 80px;
             height: 60px;
-            background-color: blue;
             background-image: url('../resource/img/mirimo-logo.jpg');
             background-size: cover;
             background-position: center;
@@ -24,7 +20,7 @@
         .nav-menu{
             a, a:hover, a:visited, a:active{
                 color: white;
-                margin-left: 20px;
+                margin-left: 28px;
                 text-decoration: none;
             }
         }
