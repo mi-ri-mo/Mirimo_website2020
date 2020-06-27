@@ -28,10 +28,37 @@
         }
         .about-team{
             margin-top: 8%;
+
+            .wrap-member{
+                margin-top: 24px;
+                display: flex;
+                justify-content: flex-end;
+
+                .wrap-member-title{
+                    .member-title-border{
+                        width: 24px;
+                        height: 2px;
+                        background: #0A112D;
+                    }
+                    .member-title{
+                        margin-right: 30px;
+                        font-size: 1.2em;
+                        font-weight: 500;
+                    }
+                }
+
+                .wrap-member-items{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
         }
 
         div{
-            .about-title{}
+            .about-title{
+                font-size: 1.4em;
+                font-weight: 700;
+            }
             .about-subtitle{}
         }
     }
@@ -43,6 +70,7 @@
     }
 }
 
+// Identity Item
 .identity-item{
     width: 360px;
     margin-bottom: 8%;
@@ -58,5 +86,23 @@
     }
     .identity-intro{
         margin-top: 20px;
+    }
+}
+
+// Member Item
+.member-item{
+    margin: 0 0 60px 20px;
+    .member-profile{
+        width: 160px;
+        height: 200px;
+        background: #eee;
+    }
+    .member-name{
+        margin-top: 4px;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    .member-position{
+        font-size: 0.9em;
     }
 }
