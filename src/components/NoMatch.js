@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/NoMatch.scss';
 
 const NoMatch = () => {
     return(
         <div>
-            <div>404</div>
+            <div className="nomatch">404</div>
         </div>
     )
 }
