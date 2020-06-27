@@ -1,14 +1,11 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 
-import Nav from './components/Nav';
 import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import NoMatch from './components/NoMatch';
-import Footer from './components/Footer';
 
 function App() {
   return (

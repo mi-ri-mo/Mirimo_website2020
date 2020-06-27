@@ -5,9 +5,9 @@ import '../styles/Nav.scss';
 const Nav = () => {
     return(
         <div>
-            <div className="nav">
+            <div className="nav container">
                 <div>
-                    <NavLink exact to="/">로고</NavLink>
+                    <NavLink exact to="/">mirimo</NavLink>
                 </div>
                 <div>
                     <NavLink exact to="/">About</NavLink>
