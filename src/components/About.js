@@ -33,7 +33,7 @@ class About extends Component {
                 },
             ],
 
-            developerSoftMemberData: [
+            softwareDeveloperMemberData: [
                 {
                     name: 'Dayoung Hwang',
                     position: 'Chief Financial Officer',
@@ -56,7 +56,7 @@ class About extends Component {
                 },
             ],
 
-            developerWebMemberData: [
+            webSolutionDeveloperMemberData: [
                 {
                     name: 'Yealyn Won',
                     position: 'Chief Operating Officer',
@@ -85,10 +85,12 @@ class About extends Component {
     render(){
         return(
             <div>
-                <Nav style={{background: '#d4dd4d'}}/>
+                <Nav/>
                 <div className="about">
                     <div className="banner">
-                        We are with your dream
+                        <div className="container">
+                            We are with your dream
+                        </div>
                     </div>
                     <div className="container">
                         
@@ -129,6 +131,43 @@ class About extends Component {
                         <div className="about-project">
                             <div className="about-title">PROJECTS</div>
                             <div className="about-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                            <div className="group-project">
+                                <div className="wrap-project">
+                                    <div className="project-item">
+                                        <div className="project-number">01</div>
+                                        <div className="project-name">RAJA</div>
+                                        <div className="project-intro">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </div>
+                                        <div className="project-more">View More</div>
+                                    </div>
+                                    <div className="project-item">
+                                        <div className="project-number">02</div>
+                                        <div className="project-name">JHsustain</div>
+                                        <div className="project-intro">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </div>
+                                        <div className="project-more">View More</div>
+                                    </div>
+                                    <div className="project-item">
+                                        <div className="project-number">03</div>
+                                        <div className="project-name">8gram</div>
+                                        <div className="project-intro">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </div>
+                                        <div className="project-more">View More</div>
+                                    </div>
+                                </div>
+                                <div className="wrap-project">
+                                <div className="project-item only">
+                                        <div className="project-number">04</div>
+                                        <div className="project-name">Mirim Media Lab</div>
+                                        <div className="project-intro">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
     
                         {/* OUR PEOPLE */}
@@ -160,7 +199,7 @@ class About extends Component {
                                 <div>
                                     <div className="wrap-member-items">
                                         {
-                                        this.state.developerSoftMemberData.map((member, i) => {
+                                        this.state.softwareDeveloperMemberData.map((member, i) => {
                                             return (<MemberItem
                                                             name={member.name}
                                                             position={member.position}
@@ -172,7 +211,7 @@ class About extends Component {
                                     </div>
                                     <div className="wrap-member-items">
                                         {
-                                        this.state.developerWebMemberData.map((member, i) => {
+                                        this.state.webSolutionDeveloperMemberData.map((member, i) => {
                                             return (<MemberItem
                                                             name={member.name}
                                                             position={member.position}
