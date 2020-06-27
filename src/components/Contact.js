@@ -1,9 +1,16 @@
 import React from 'react';
 
+import Nav from './Nav';
+import Footer from './Footer';
+
 const Contact = () => {
     return(
         <div>
-            <div>contact</div>
+            <Nav/>
+            <div className="contact">
+                <div>contact</div>
+            </div>
+            <Footer/>
         </div>
     )
 }
