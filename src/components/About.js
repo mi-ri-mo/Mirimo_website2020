@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/About.scss';
 
-import Nav from './Nav';
+import Nav from './NavMain';
 import Footer from './Footer';
 import MemberItem from './MemberItem';
 
@@ -85,7 +85,7 @@ class About extends Component {
     render(){
         return(
             <div>
-                <Nav/>
+                <Nav style={{background: '#d4dd4d'}}/>
                 <div className="about">
                     <div className="banner">
                         We are with your dream
