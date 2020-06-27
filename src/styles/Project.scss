@@ -1,3 +1,44 @@
+$main_color: #4abbbd;
+
 .project{
-    
+    .container{
+        .about-content{
+            .content-title{
+                margin-top: 6%;
+                font-size: 1.6em;
+                font-weight: 700;
+            }
+        }
+
+        .wrap-project{
+            margin: 7% 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+// Project Item & Image
+.project-item{
+    width: 45%;
+    position: relative;
+    .project-title{
+        margin-top: 8px;
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+    .project-intro{
+        margin-top: 20px;
+    }
+    .project-detail{
+        color: $main_color;
+        bottom: 0;
+        position: absolute;
+    }
+}
+.project-image{
+    width: 53%;
+    height: 280px;
+    background: #ccc;
 }
