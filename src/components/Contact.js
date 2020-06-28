@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Contact.scss';
-import MirimoMap from './GoogleMap';
+import MapContainer from './GoogleMap';
 
 import Nav from './Nav';
 import Footer from './Footer';
@@ -32,7 +32,9 @@ const Contact = () => {
           <div className="content">
             546, Hoam-ro, Gwanak-gu, Seoul, Republic of Korea
           </div>
-          <MirimoMap class="map"></MirimoMap>
+          <div style={{ height: '70vh', width: '100%', position: 'relative' }}>
+            <MapContainer />
+          </div>
         </div>
 
         <div className="contact">
