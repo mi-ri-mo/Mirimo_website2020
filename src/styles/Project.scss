@@ -21,7 +21,7 @@ $main_color: #4abbbd;
 
 // Project Item & Image
 .project-item{
-    width: 45%;
+    width: 44%;
     position: relative;
     .project-title{
         margin-top: 8px;
@@ -29,16 +29,18 @@ $main_color: #4abbbd;
         font-weight: 500;
     }
     .project-intro{
-        margin-top: 20px;
+        margin: 20px 0;
     }
     .project-detail{
-        color: $main_color;
         bottom: 0;
         position: absolute;
+        a{
+            color: $main_color;
+        }
     }
 }
 .project-image{
-    width: 53%;
+    width: 54%;
     height: 280px;
     background: #ccc;
 }

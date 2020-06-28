@@ -4,8 +4,8 @@ class MemberItem extends Component{
     render(){
         return(
             <div className="member-item">
-                
-                <img className="member-profile" src={this.props.img}></img>
+
+                <img className="member-profile" src={this.props.img}></img>{/* alt="profile" */}
                 <div className="member-name">{this.props.name}</div>
                 <div className="member-position">{this.props.position}</div>
                 

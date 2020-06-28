@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+}
+
+@mixin sub-title{
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.raja{
+    .header{
+        .banner{
+            width: 100%;
+            background: #ccc;
+            color: #000;
+            font-weight: 700;
+            font-size: 2em;
+            padding: 12% 0;
+        }
+        .overview-wrap{
+            width: 100%;
+            background: #aaa;
+            color: #000;
+            padding: 6% 0;
+            .ov-title{
+                @include sub-title;
+                line-height: 4em;
+            }
+            .ov-sub{
+                width: 60%;
+                float: left;
+            }
+            .ov-img{
+                width: 40%;
+                padding: 0 8%;
+            }
+        }
+        .info-wrap{
+            width: 100%;
+            background: #ccc;
+            color: #000;
+            padding: 5% 0;
+            .container{
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .content{
+                    line-height: 3em;
+                    margin-right: auto;
+                    .content-title{
+                        @include sub-title;
+                    }
+                }
+            }
+        }
+    }
+    .body{
+        .interview-wrap{
+            width: 100%;
+            color: #000;
+            padding: 4% 0;
+            .container{
+                padding-bottom: 3em;
+                .interview-title{
+                    @include sub-title;
+                    line-height: 3em;
+                }
+                div{
+                    width: 50%;
+                }
+            }
+            .interview-img{
+                background: url(../../resource/img/interview_8gram.png) 0 0 no-repeat;
+                background-size: 100%;
+                width: 60%;
+                height: 500px;
+                float: left;
+            }
+            .interview-info{
+                line-height: 3em;
+                width: 36%;
+                height: 300px;
+                float: right;
+            }
+        }
+        .keyword-wrap{
+            width: 100%;
+            color: #fff;
+            padding-top: 3%;
+            margin-bottom: 3%;
+            background: #666;
+            clear: both;
+            z-index: -2;
+            position: relative;
+            .container{
+                .keyword-title{
+                    @include sub-title;
+                    line-height: 3em;
+                }
+                .keyword-sub{
+                    width: 32%;
+                }
+                .circle-list{
+                    z-index: 1;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    margin: 5% 0 3% 0;
+                    .circle{
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 200px;
+                        background: #aaa;
+                        padding-top: 40%;
+                        font-size: 1.6em;
+                        .circle-sub{
+                            font-size: 0.5em;
+                        }
+                    }
+                }
+            }
+            .circle-line{
+                position: relative;
+                top: -150px;
+                z-index: -1;
+                height: 0.1px;
+                border: solid rgb(110, 110, 110) 0.1px;
+            }
+        }
+        .design-wrap{
+            width: 100%;
+            color: #000;
+            padding: 3% 0;
+            background: #fff;
+            clear: both;
+            .container{
+                .design-title{
+                    @include sub-title;
+                    line-height: 3em;
+                }
+                .design-sub{
+                    width: 50%;
+                }
+                .design-colors{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .color{
+                        margin: 6% 0;
+                        width: 49%;
+                        height: 200px;
+                        background: #aaa;
+                        color: #fff;
+                        display: table;
+                        padding: 1%;
+                        .color-name{
+                            font-size: 1.2em;
+                            display: table-cell;
+                            vertical-align: bottom;
+                            .color-code{
+                                font-size: 1em;
+                            }
+                        }
+                        &:nth-child(1){
+                            background: #333;
+                        }
+                    }
+                }
+                .font-name{
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 2.6em;
+                }
+                .design-fonts{
+                    .font{
+                        margin: 6% 0;
+                        @for $i from 1 to 5{
+                            .font-weight#{$i}{
+                                font-family: 'Noto Sans KR', sans-serif;
+                                font-size: 3em;
+                                font-weight: 1000 - ($i * 200);
+                                margin-right: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ui{
+            width: 100%;
+            color: #000;
+            padding: 3% 0;
+            background: #eee;
+            clear: both;
+            .container{
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .top{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    width: 54%;
+                    .top-title{
+                        font-weight: 500;
+                        font-size: 1.6em;
+                        line-height: 3em;
+                    }
+                }
+                .top-box{
+                    margin-left: auto;
+                    width: 18%;
+                    height: 400px;
+                    background: #333;
+                }
+            }
+            .view{
+                .container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    clear: both;
+                    @for $i from 1 to 4{
+                        .view-img#{$i}{
+                            margin-right: auto;
+                            margin-top: $i * 140px;
+                            background: #666;
+                            width: 18%;
+                            height: 800px;
+                            @if $i == 1{
+                                margin-left: 4%;
+                            }
+                            @else if $i == 3{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .web{
+            width: 100%;
+            color: #000;
+            padding: 3% 0;
+            clear: both;
+            .container{
+                .top{
+                    .top-title{
+                        font-weight: 500;
+                        font-size: 1.6em;
+                        line-height: 3em;
+                    }
+                }
+            }
+            .view{
+                padding: 3% 0;
+                .container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    clear: both;
+                    padding-left: 4%;
+                    vertical-align: middle;
+                    .view-title{
+                        margin: auto 0;
+                        font-weight: 500;
+                        font-size: 1.2em;
+                    }
+                    .view-sub{
+                        margin: auto;
+                        margin-right: 0;
+                        width: 50%;
+                        margin-left: auto;
+                    }
+                    .view-box{
+                        margin: 3% 0;
+                        width: 100%;
+                        height: 800px;
+                        background: #333;
+                    }
+                }
+            }
+        }
+    }
+}
