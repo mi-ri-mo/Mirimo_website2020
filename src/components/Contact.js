@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/Contact.scss';
 import MapContainer from './GoogleMap';
 

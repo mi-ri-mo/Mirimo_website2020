@@ -1,4 +1,6 @@
+
 import React, { Component } from 'react';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 
@@ -6,6 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import NoMatch from './components/NoMatch';
+import Raja from './components/projects/Raja';
 
 class App extends Component {
   componentDidMount() {
@@ -29,6 +32,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;
