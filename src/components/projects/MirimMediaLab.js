@@ -4,7 +4,7 @@ import '../../styles/projects/projects.scss';
 import Nav from '../Nav';
 import Footer from '../Footer';
 
-class Raja extends Component {
+class MirimMediaLab extends Component {
 
     render(){
         return(
@@ -156,4 +156,4 @@ class Raja extends Component {
 
 
 
-export default Raja;
+export default MirimMediaLab;

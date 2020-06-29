@@ -7,6 +7,9 @@ import Contact from './components/Contact';
 import Project from './components/Project';
 import NoMatch from './components/NoMatch';
 import Raja from './components/projects/Raja';
+import JHsustain from './components/projects/JHsustain';
+import eightGram from './components/projects/8gram';
+import MirimMediaLab from './components/projects/MirimMediaLab';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/Contact" component={Contact}/>
           <Route path="/Project" component={Project}/>
           <Route path="/Raja" component={Raja}/>
+          <Route path="/JHsustain" component={JHsustain}/>
+          <Route path="/8gram" component={eightGram}/>
+          <Route path="/MirimMediaLab" component={MirimMediaLab}/>
           <Route component={NoMatch}/>
         </Switch>
       </Router>
