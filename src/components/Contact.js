@@ -16,7 +16,7 @@ const Contact = () => {
             Office
             <div>+82-2-888-8350</div>
           </div>
-          <div class="content">
+          <div className="content">
             Fax
             <div>+82-2-888-8350</div>
           </div>
@@ -40,36 +40,38 @@ const Contact = () => {
         <div className="contact">
           <div className="title">CONTACT US</div>
           <div className="content">
-            <div className="email">
-              Email
-              <input
-                size="85"
-                type="text"
-                name="email"
-                placeholder="example@gmail.com"
-              ></input>
-            </div>
-            <hr></hr>
-            <div className="subject">
-              Subject
-              <input
-                size="85"
-                type="text"
-                name="subject"
-                placeholder="Please write the title"
-              ></input>
-            </div>
-            <hr></hr>
-            <div className="message">
-              Message
-              <input
-                size="85"
-                type="text"
-                name="message"
-                placeholder="Detailed information on project content, schedule, etc"
-              ></input>
-            </div>
-            <input className="send" type="submit" value="SEND"></input>
+            <form method="post" action="">
+              <div className="email">
+                Email
+                <input
+                  size="85"
+                  type="text"
+                  name="email"
+                  placeholder="example@gmail.com"
+                ></input>
+              </div>
+              <hr></hr>
+              <div className="subject">
+                Subject
+                <input
+                  size="85"
+                  type="text"
+                  name="subject"
+                  placeholder="Please write the title"
+                ></input>
+              </div>
+              <hr></hr>
+              <div className="message">
+                Message
+                <input
+                  size="85"
+                  type="text"
+                  name="message"
+                  placeholder="Detailed information on project content, schedule, etc"
+                ></input>
+              </div>
+              <input className="send" type="submit" value="SEND"></input>
+            </form>
           </div>
         </div>
       </div>
