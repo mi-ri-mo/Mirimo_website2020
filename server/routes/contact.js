@@ -3,12 +3,13 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  console.log({ id: 'get' });
-  res.send({ id: 'get' });
+  console.log('connect');
+  res.send({ id: 'connect' });
 });
 
 router.post('/', (req, res) => {
-  let email = req.body.email || req.query.email;
+  console.log(req.body);
+  let email = req.query.email || req.body.email;
   let subject = req.body.subject || req.query.subject;
   let message = req.body.message || req.query.message;
 
@@ -20,22 +21,25 @@ router.post('/', (req, res) => {
       user: 'mirimo01212@gmail.com',
       pass: 'mirimo2020',
     },
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
   var mailOption = {
-    from: 'ghddnjf2901@gmail.com',
+    from: 'mirimo01212@gmail.com',
     to: 'mirimo01212@gmail.com',
-    subject: 'nodemailer test',
-    text: 'Hello',
+    subject: 'mirimo contact "' + subject + '" from ' + email,
+    text: 'message',
   };
 
   transporter.sendMail(mailOption, function (err, info) {
     if (err) {
       console.error('Send Mail error : ', err);
-      res.redirect('/');
+      res.redirect('/contact');
     } else {
       console.log('Message sent : ', info);
-      res.redirect('/');
+      res.redirect('/contact');
     }
   });
 });
