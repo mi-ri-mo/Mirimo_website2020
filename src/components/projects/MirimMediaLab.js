@@ -14,9 +14,9 @@ class MirimMediaLab extends Component {
                     <div className="header">
                         <div className="banner">
                             <div className="container">
-                                RAJA<br/>
+                                Mirim Media Lab<br/>
                                 Responsive web<br/>
-                                <a href="http://www.raja.co.kr/">http://www.raja.co.kr/</a>
+                                <a href="http://www.mirimmedialab.co.kr/">http://www.mirimmedialab.co.kr/</a>
                             </div>
                         </div>
                         <div className="overview-wrap">
@@ -34,7 +34,7 @@ class MirimMediaLab extends Component {
                                 </div>
                                 <div className="content">
                                     <span className="content-title">Goal</span>
-                                    <div className="content-sub">아마존, 알리바바 등의 해외 플랫폼에 라자가구 제품을 판매한다.</div>
+                                    <div className="content-sub">아마존, 알리바바 등의 해외 플랫폼에 미림미디어랩 제품을 판매한다.</div>
                                 </div>
                                 <div className="content">
                                     <span className="content-title">Concept</span>
@@ -47,7 +47,7 @@ class MirimMediaLab extends Component {
                         <div className="interview-wrap">
                             <div className="container">
                                 <div className="interview-title">Client Interview</div>
-                                <div className="intetview-sub">라자가구 클라이언트와 만나 라자가구가 추구하는 가치와 현 웹사이트의 문제점을 파악했습니다.</div>
+                                <div className="intetview-sub">미림미디어랩 클라이언트와 만나 미림미디어랩이 추구하는 가치와 현 웹사이트의 문제점을 파악했습니다.</div>
                             </div>
                             <div className="interview-img"></div>
                             <div className="interview-info">
@@ -61,7 +61,7 @@ class MirimMediaLab extends Component {
                         <div className="keyword-wrap">
                             <div className="container">
                                 <div className="keyword-title">Design Keyword</div>
-                                <div className="keyword-sub">라자가구 클라이언트와의 인터뷰를 통해 단어 키워드를 도출하여 라자가구가 전달하고자 하는 이미지 방향의 키워드를 친환경/합리적/고품질 3가지로 정의하였습니다.</div>
+                                <div className="keyword-sub">미림미디어랩 클라이언트와의 인터뷰를 통해 단어 키워드를 도출하여 미림미디어랩이 전달하고자 하는 이미지 방향의 키워드를 친환경/합리적/고품질 3가지로 정의하였습니다.</div>
                                 <div className="circle-list">
                                     <div className="circle-content">
                                         <div className="circle">
@@ -119,7 +119,7 @@ class MirimMediaLab extends Component {
                         <div className="ui">
                             <div className="container">
                                 <div className="top">
-                                    <div className="top-title">RAJA UI</div>
+                                    <div className="top-title">Mirim Media Lab UI</div>
                                     <div className="top-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                                 </div>
                                 <div className="top-box"></div>
@@ -135,7 +135,7 @@ class MirimMediaLab extends Component {
                         <div className="web">
                             <div className="container">
                                 <div className="top">
-                                    <div className="top-title">RAJA WEB</div>
+                                    <div className="top-title">Mirim Media Lab WEB</div>
                                 </div>
                             </div>
                             <div className="view">

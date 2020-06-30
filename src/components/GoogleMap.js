@@ -1,31 +1,29 @@
 import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+export class MapContainer extends Component {
+  constructor(props) {
+    super(props);
 
-class MirimoMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 37.466456,
-      lng: 126.932867,
-    },
-    zoom: 18,
-  };
+    this.state = {
+      venues: [{ lat: 37.466456, lng: 126.932867 }],
+    };
+  }
 
   render() {
     return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '70vh', width: '100%' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyBESvoc-EjU61HG_lLXVxv6fmNjjl3x9WI' }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent lat={37.466456} lng={126.932867} text="MIRIMO" />
-        </GoogleMapReact>
-      </div>
+      <Map
+        google={this.props.google}
+        zoom={18}
+        style={{ height: '70vh', width: '100%' }}
+        initialCenter={{ lat: 37.466456, lng: 126.932867 }}
+      >
+        <Marker position={{ lat: 37.466456, lng: 126.932867 }} />
+      </Map>
     );
   }
 }
 
-export default MirimoMap;
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyBESvoc-EjU61HG_lLXVxv6fmNjjl3x9WI',
+})(MapContainer);
