@@ -2,8 +2,12 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const router = express.Router();
 
-router.post('/', (req, res) => {
-  console.log(req.body);
+router.get('/', (req, res) => {
+  console.log('contact : get');
+  res.send({ connect: true });
+});
+
+router.post('/send', (req, res, next) => {
   let email = req.query.email || req.body.email;
   let subject = req.body.subject || req.query.subject;
   let message = req.body.message || req.query.message;
@@ -31,10 +35,20 @@ router.post('/', (req, res) => {
   transporter.sendMail(mailOption, function (err, info) {
     if (err) {
       console.error('Send Mail error : ', err);
-      res.redirect('/contact');
+      //res.json({ status: false });
+      //res.redirect('/contact');
+      res.send(
+        '<script>alert("Contact Email Send Failed"); location.href="/contact"; </script>'
+      );
+      next();
     } else {
       console.log('Message sent : ', info);
-      res.redirect('/contact');
+      //res.json({ status: true });
+      //res.redirect('/contact');
+      res.send(
+        '<script>alert("Contact Email Send Success"); location.href="/contact"; </script>'
+      );
+      next();
     }
   });
 });

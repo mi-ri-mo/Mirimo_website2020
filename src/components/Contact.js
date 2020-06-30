@@ -15,16 +15,16 @@ class Contact extends Component {
     };
   }
 
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
+  };
+
   callAPI() {
     fetch('http://localhost:3002/contact')
       .then((res) => res.text())
-      .then((res) =>
-        this.setState({
-          email: res.email,
-          subject: res.subject,
-          message: res.message,
-        })
-      );
+      .then((res) => this.setState({ email: '', subject: '', message: '' }));
   }
 
   componentWillMount() {
@@ -68,15 +68,17 @@ class Contact extends Component {
           <div className="contact">
             <div className="title">CONTACT US</div>
             <div className="content">
-              <form method="post" action="/contact">
+              <form method="post" action="/contact/send">
                 <div className="email">
                   Email
                   <input
                     type="email"
                     id="email"
                     name="email"
+                    onChange={this.handleChange}
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     placeholder="example@gmail.com"
+                    required
                   ></input>
                 </div>
                 <hr></hr>
@@ -86,7 +88,9 @@ class Contact extends Component {
                     type="text"
                     id="subject"
                     name="subject"
+                    onChange={this.handleChange}
                     placeholder="Please write the title"
+                    required
                   ></input>
                 </div>
                 <hr></hr>
@@ -95,7 +99,9 @@ class Contact extends Component {
                   <textarea
                     id="message"
                     name="message"
+                    onChange={this.handleChange}
                     placeholder="Detailed information on project content, schedule, etc"
+                    required
                   ></textarea>
                 </div>
                 <input className="send" type="submit" value="SEND"></input>
