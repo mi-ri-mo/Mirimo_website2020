@@ -2,11 +2,6 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  console.log('connect');
-  res.send({ id: 'connect' });
-});
-
 router.post('/', (req, res) => {
   console.log(req.body);
   let email = req.query.email || req.body.email;
@@ -29,8 +24,8 @@ router.post('/', (req, res) => {
   var mailOption = {
     from: 'mirimo01212@gmail.com',
     to: 'mirimo01212@gmail.com',
-    subject: 'mirimo contact "' + subject + '" from ' + email,
-    text: 'message',
+    subject: 'mirimo contact "' + subject + '"',
+    text: 'From ' + email + '\n\n' + message,
   };
 
   transporter.sendMail(mailOption, function (err, info) {

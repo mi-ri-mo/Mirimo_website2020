@@ -39,7 +39,6 @@
       resize: none;
       font-weight: 400;
     }
-
     .send {
       padding: 17px;
       margin-top: 20px;
@@ -49,6 +48,15 @@
       background-color: #3bbbbc;
       color: #ffffff;
     }
+
+    .send:hover {
+      background-color: #299798;
+    }
+
+    .send:active {
+      background-color: #299798;
+    }
+
     font-weight: 700;
     width: 60%;
     margin: auto;

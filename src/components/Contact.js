@@ -6,10 +6,25 @@ import Nav from './Nav';
 import Footer from './Footer';
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      subject: '',
+      message: '',
+    };
+  }
+
   callAPI() {
     fetch('http://localhost:3002/contact')
       .then((res) => res.text())
-      .then((res) => this.setState({ apiResponse: res }));
+      .then((res) =>
+        this.setState({
+          email: res.email,
+          subject: res.subject,
+          message: res.message,
+        })
+      );
   }
 
   componentWillMount() {
@@ -19,7 +34,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <Nav />
+        <Nav className="contact_nav" />
         <div className="container">
           <div className="info">
             <div className="title">GET IN TOUCH</div>
@@ -57,9 +72,10 @@ class Contact extends Component {
                 <div className="email">
                   Email
                   <input
-                    type="text"
+                    type="email"
                     id="email"
                     name="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     placeholder="example@gmail.com"
                   ></input>
                 </div>
