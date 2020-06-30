@@ -2,6 +2,8 @@
   width: 100%;
   height: 60px;
   background: #0a112d;
+  position: fixed;
+  z-index: 1;
 
   .wrap-nav {
     display: flex;

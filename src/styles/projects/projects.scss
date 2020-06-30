@@ -8,7 +8,7 @@
     font-size: 1.6em;
 }
 
-.raja{
+.project{
     .header{
         .banner{
             width: 100%;
@@ -17,6 +17,12 @@
             font-weight: 700;
             font-size: 2em;
             padding: 12% 0;
+            a{
+                font-size: 0.5em;
+                text-decoration: none;
+                font-weight: 500;
+                color: #aaa;
+            }
         }
         .overview-wrap{
             width: 100%;

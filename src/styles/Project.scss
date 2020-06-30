@@ -36,6 +36,19 @@ $main_color: #4abbbd;
         position: absolute;
         a{
             color: $main_color;
+            &:hover{
+                text-decoration: none;
+                &::after{
+                    transform: scaleX(1);
+                }
+            }
+            &::after{
+                display: block;
+                content: '';
+                border-bottom: solid 1px $main_color;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
+            }
         }
     }
 }
