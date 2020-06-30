@@ -1,28 +1,33 @@
-.nav-main{
-    width: 100%;
-    height: 60px;
-    background: #0A112D;
+.nav-main {
+  width: 100%;
+  height: 60px;
+  background: #0a112d;
 
-    .wrap-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .wrap-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        .nav-logo{
-            width: 80px;
-            height: 60px;
-            background-image: url('../resource/img/mirimo-logo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .nav-menu{
-            a, a:hover, a:visited, a:active{
-                color: #ffffff;
-                margin-left: 28px;
-                text-decoration: none;
-            }
-        }
+    .nav-logo {
+      width: 80px;
+      height: 60px;
+      background-image: url('../resource/img/mirimo-logo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
+
+    .nav-menu {
+      a {
+        color: #ffffff;
+        margin-left: 28px;
+        text-decoration: none;
+      }
+      a:hover,
+      a:active,
+      .active {
+        color: #4abbbd;
+      }
+    }
+  }
 }
