@@ -104,17 +104,17 @@ class About extends Component {
                             </div>
                             <div className="wrap-identity">
                                 <div className="identity-item">
-                                    <div className="identity-icon"></div>
+                                    <div className="identity-icon icon-1"></div>
                                     <div className="identity-title">Give back to<br/>Society</div>
                                     <div className="identity-intro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
                                 </div>
                                 <div className="identity-item">
-                                    <div className="identity-icon"></div>
+                                    <div className="identity-icon icon-2"></div>
                                     <div className="identity-title">Growth<br/>Potential</div>
                                     <div className="identity-intro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
                                 </div>
                                 <div className="identity-item">
-                                    <div className="identity-icon"></div>
+                                    <div className="identity-icon icon-3"></div>
                                     <div className="identity-title">Cooperative<br/>Development</div>
                                     <div className="identity-intro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
                                 </div>

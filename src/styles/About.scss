@@ -13,11 +13,14 @@
                 margin-top: 150px;
                 font-size: 60px;
                 font-weight: 700;
+                line-height: 1.61;
             }
             .content-sub{
                 width: 60%;
                 margin-top: 16px;
                 font-size: 18px;
+                font-weight: 400;
+                line-height: 1.67;
             }
             .wrap-identity{
                 margin-top: 200px;
@@ -26,6 +29,8 @@
                 flex-wrap: wrap;
             }
         }
+
+        // PROJECT
         .about-project{
             margin-top: 150px;
             .group-project{
@@ -45,23 +50,29 @@
                         }
     
                         .project-number{
-                            font-size: 1.2em;
-                            font-weight: 500;
-                            color: #76B9BA;
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: #3bbbbc;
+                            line-height: 1.67;
                         }
                         .project-name{
-                            margin-top: 1%;
-                            font-size: 1.2em;
+                            margin-top: 16PX;
+                            font-size: 24PX;
                             font-weight: 700;
-                            color: #888;
+                            line-height: 1.25;
+                            color: #8F8F8F;
                         }
                         .project-intro{
-                            margin-top: 10px;
+                            margin-top: 23px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 1.6;
                         }
                         .project-more{
                             width: 100%;
                             margin-top: 20%;
                             text-align: right;
+                            line-height: 1.88;
                         }
                     }
     
@@ -75,7 +86,7 @@
             }
         }
         .about-team{
-            margin-top: 8%;
+            margin: 160px 0 150px 0;
 
             .wrap-member{
                 margin-top: 80px;
@@ -110,6 +121,8 @@
             .about-subtitle{
                 margin-top: 9px;
                 font-size: 18px;
+                font-weight: 400;
+                line-height: 1.67;
             }
         }
     }
@@ -128,33 +141,44 @@
     .identity-icon{
         width: 30px;
         height: 30px;
-        background: #eee;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
+
+    .icon-1{ background-image: url(../resource/img/identity-1.png); }
+    .icon-2{ background-image: url(../resource/img/identity-2.png); }
+    .icon-3{ background-image: url(../resource/img/identity-3.png); }
     .identity-title{
         margin-top: 8px;
         font-size: 30px;
         font-weight: 700;
+        line-height: 1.2;
     }
     .identity-intro{
         margin-top: 20px;
         font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
     }
 }
 
 // Member Item
 .member-item{
-    margin: 0 0 60px 20px;
+    margin: 0 0 90px 40px;
     .member-profile{
         width: 180px;
         height: 220px;
         background: #eee;
     }
     .member-name{
-        margin-top: 4px;
+        margin-top: 15px;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
+        line-height: 1.88;
     }
     .member-position{
         font-size: 13px;
+        font-weight: 400;
+        line-height: 2.31;
     }
 }
