@@ -1,7 +1,7 @@
 .about{
     .banner{
         width: 100%;
-        height: 300px;
+        height: 500px;
         background: #0A112D;
         line-height: 200px;
         color: #ffffff;
@@ -10,23 +10,24 @@
     .container{
         .about-content{
             .content-title{
-                margin-top: 8%;
-                font-size: 3em;
+                margin-top: 150px;
+                font-size: 60px;
                 font-weight: 700;
             }
             .content-sub{
                 width: 60%;
-                margin-top: 0.8%;
+                margin-top: 16px;
+                font-size: 18px;
             }
             .wrap-identity{
-                margin-top: 12%;
+                margin-top: 200px;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
             }
         }
         .about-project{
-            margin-top: 8%;
+            margin-top: 150px;
             .group-project{
                 margin-top: 5%;
                 .wrap-project{
@@ -77,20 +78,20 @@
             margin-top: 8%;
 
             .wrap-member{
-                margin-top: 24px;
+                margin-top: 80px;
                 display: flex;
                 justify-content: flex-end;
 
                 .wrap-member-title{
                     .member-title-border{
-                        width: 24px;
+                        width: 27px;
                         height: 2px;
                         background: #0A112D;
                     }
                     .member-title{
                         margin-right: 30px;
-                        font-size: 1.2em;
-                        font-weight: 500;
+                        font-size: 24px;
+                        font-weight: 600;
                     }
                 }
 
@@ -103,8 +104,12 @@
 
         div{
             .about-title{
-                font-size: 1.4em;
+                font-size: 30px;
                 font-weight: 700;
+            }
+            .about-subtitle{
+                margin-top: 9px;
+                font-size: 18px;
             }
         }
     }
@@ -127,11 +132,12 @@
     }
     .identity-title{
         margin-top: 8px;
-        font-size: 1.1em;
+        font-size: 30px;
         font-weight: 700;
     }
     .identity-intro{
         margin-top: 20px;
+        font-size: 16px;
     }
 }
 
@@ -139,16 +145,16 @@
 .member-item{
     margin: 0 0 60px 20px;
     .member-profile{
-        width: 160px;
-        height: 200px;
+        width: 180px;
+        height: 220px;
         background: #eee;
     }
     .member-name{
         margin-top: 4px;
-        font-size: 1.1em;
+        font-size: 16px;
         font-weight: 500;
     }
     .member-position{
-        font-size: 0.9em;
+        font-size: 13px;
     }
 }
