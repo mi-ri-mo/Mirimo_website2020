@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/About.scss';
 
 import Nav from './NavMain';
@@ -133,39 +134,47 @@ class About extends Component {
                             <div className="about-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
                             <div className="group-project">
                                 <div className="wrap-project">
-                                    <div className="project-item">
-                                        <div className="project-number">01</div>
-                                        <div className="project-name">RAJA</div>
-                                        <div className="project-intro">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                    <NavLink to="/Raja">
+                                        <div className="project-item">
+                                            <div className="project-number">01</div>
+                                            <div className="project-name">RAJA</div>
+                                            <div className="project-intro">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                            </div>
+                                            <div className="project-more">View More</div>
                                         </div>
-                                        <div className="project-more">View More</div>
-                                    </div>
-                                    <div className="project-item">
-                                        <div className="project-number">02</div>
-                                        <div className="project-name">JHsustain</div>
-                                        <div className="project-intro">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                    </NavLink>
+                                    <NavLink to="/">
+                                        <div className="project-item">
+                                            <div className="project-number">02</div>
+                                            <div className="project-name">JHsustain</div>
+                                            <div className="project-intro">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                            </div>
+                                            <div className="project-more">View More</div>
                                         </div>
-                                        <div className="project-more">View More</div>
-                                    </div>
-                                    <div className="project-item">
-                                        <div className="project-number">03</div>
-                                        <div className="project-name">8gram</div>
-                                        <div className="project-intro">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                    </NavLink>
+                                    <NavLink to="/">
+                                        <div className="project-item">
+                                            <div className="project-number">03</div>
+                                            <div className="project-name">8gram</div>
+                                            <div className="project-intro">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                            </div>
+                                            <div className="project-more">View More</div>
                                         </div>
-                                        <div className="project-more">View More</div>
-                                    </div>
+                                    </NavLink>
                                 </div>
                                 <div className="wrap-project">
-                                <div className="project-item only">
+                                <NavLink to="/MirimMediaLab">
+                                    <div className="project-item only">
                                         <div className="project-number">04</div>
                                         <div className="project-name">Mirim Media Lab</div>
                                         <div className="project-intro">
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                                         </div>
                                     </div>
+                                </NavLink>
                                 </div>
                             </div>
                         </div>

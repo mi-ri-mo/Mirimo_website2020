@@ -34,54 +34,62 @@
         .about-project{
             margin-top: 150px;
             .group-project{
-                margin-top: 5%;
+                margin-top: 40px;
                 .wrap-project{
                     width: 100%;
                     margin-top: 2%;
                     display: flex;
                     justify-content: space-between;
-                    .project-item{
-                        margin-right: 2%;
-                        padding: 6% 3%;
-                        background: #ccc;
-                        &:hover{
-                            color: #ffffff;
-                            .project-name{ color: #ffffff; }
-                        }
-    
-                        .project-number{
-                            font-size: 18px;
-                            font-weight: 400;
-                            color: #3bbbbc;
-                            line-height: 1.67;
-                        }
-                        .project-name{
-                            margin-top: 16PX;
-                            font-size: 24PX;
-                            font-weight: 700;
-                            line-height: 1.25;
-                            color: #8F8F8F;
-                        }
-                        .project-intro{
-                            margin-top: 23px;
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 1.6;
-                        }
-                        .project-more{
-                            width: 100%;
-                            margin-top: 20%;
-                            text-align: right;
-                            line-height: 1.88;
-                        }
-                    }
-    
-                    .only{
+                    a{
                         width: 100%;
-                        .project-intro{
-                            width: 30%;
+                        text-decoration: none;
+
+                        .project-item{
+                            width: 94%;
+                            padding: 6% 3%;
+                            background: #ccc;
+                            &:hover{
+                                color: #ffffff;
+                                .project-name{ color: #ffffff; }
+                                .project-intro{ color: #ffffff; }
+                                .project-more{ color: #ffffff; }
+                            }
+        
+                            .project-number{
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #3bbbbc;
+                                line-height: 1.67;
+                            }
+                            .project-name{
+                                margin-top: 16PX;
+                                font-size: 24PX;
+                                font-weight: 700;
+                                line-height: 1.25;
+                                color: #8F8F8F;
+                            }
+                            .project-intro{
+                                margin-top: 23px;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 1.6;
+                                color: #000000;
+                            }
+                            .project-more{
+                                width: 100%;
+                                margin-top: 20%;
+                                text-align: right;
+                                line-height: 1.88;
+                                color: #000000;
+                            }
+
+                            
                         }
-                    }
+
+                        .only{
+                            width: 98%;
+                        }
+                    }                    
                 }
             }
         }

@@ -20,15 +20,17 @@
 
     .nav-menu {
       a {
-        color: #0a112d;
-        margin-left: 28px;
+        color: #000000;
+        margin-left: 40px;
         text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
       }
 
       a:hover,
       a:active,
       .active {
-        color: #4abbbd;
+        color: #3bbbbc;
       }
     }
   }
