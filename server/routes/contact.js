@@ -35,16 +35,12 @@ router.post('/send', (req, res, next) => {
   transporter.sendMail(mailOption, function (err, info) {
     if (err) {
       console.error('Send Mail error : ', err);
-      //res.json({ status: false });
-      //res.redirect('/contact');
       res.send(
         '<script>alert("Contact Email Send Failed"); location.href="/contact"; </script>'
       );
       next();
     } else {
       console.log('Message sent : ', info);
-      //res.json({ status: true });
-      //res.redirect('/contact');
       res.send(
         '<script>alert("Contact Email Send Success"); location.href="/contact"; </script>'
       );

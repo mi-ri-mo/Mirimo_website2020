@@ -1,6 +1,87 @@
-.footer{
-    width: 100%;
-    height: 200px;
-    background: #555;
-    clear: both;
+.footer {
+  width: 100%;
+  height: 360px;
+  background: #555;
+  clear: both;
+  padding: 40px 0px 46px 15%;
+
+  div > div {
+    margin-top: 1%;
+  }
+
+  .logo {
+    background-size: cover;
+    width: 130px;
+    height: 35px;
+    background-image: url(../resource/img/mirimo_mirimo_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .ceo {
+    width: 134px;
+    height: 22px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fffefe;
+    margin-top: 52px;
+  }
+
+  .number {
+    width: 358px;
+    height: 22px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fefefe;
+  }
+
+  .address {
+    width: 508px;
+    height: 24px;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .policy {
+    margin-top: 70px;
+  }
+
+  .policy > a {
+    width: 99px;
+    height: 22px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fefefe;
+
+    margin-right: 32px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
 }
