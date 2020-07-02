@@ -1,87 +1,200 @@
-.footer {
-  width: 100%;
-  height: 360px;
-  background: #555;
-  clear: both;
-  padding: 40px 0px 46px 15%;
+@media only screen {
+  .footer {
+    width: 100%;
+    height: 360px;
+    background: #555;
+    clear: both;
+    padding: 40px 0px 46px 13%;
 
-  div > div {
-    margin-top: 1%;
+    div > div {
+      margin-top: 1%;
+    }
+
+    .info {
+      margin-top: 50px;
+      div {
+        vertical-align: top;
+      }
+
+      .co_info {
+        width: 525px;
+        margin-right: 0;
+      }
+
+      .co_info,
+      .social {
+        display: inline-block;
+      }
+
+      .ceo {
+        width: 134px;
+        height: 22px;
+        font-family: OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fffefe;
+      }
+
+      .number {
+        width: 358px;
+        height: 22px;
+        font-family: OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fefefe;
+        margin-bottom: 10px;
+      }
+
+      .address {
+        width: 525px;
+        height: 24px;
+        font-family: OpenSans;
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        display: inline;
+      }
+
+      .social {
+        margin-top: 10px;
+        margin-right: 20%;
+        width: 120px;
+        height: 50%;
+        float: right;
+
+        div {
+          display: inline-block;
+        }
+
+        .fb {
+          background-size: cover;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../resource/img/footer_facebook_logo.png);
+          width: 42px;
+          height: 42px;
+        }
+
+        .insta {
+          background-size: cover;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../resource/img/footer_instagram_logo.png);
+          width: 42px;
+          height: 42px;
+          margin-left: 30%;
+        }
+      }
+    }
+    .logo {
+      background-size: cover;
+      width: 130px;
+      height: 35px;
+      background-image: url(../resource/img/mirimo_mirimo_logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .policy {
+      margin-top: 50px;
+    }
+
+    .policy > a {
+      width: 99px;
+      height: 22px;
+      font-family: OpenSans;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fefefe;
+
+      margin-right: 32px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
   }
+}
 
-  .logo {
-    background-size: cover;
-    width: 130px;
-    height: 35px;
-    background-image: url(../resource/img/mirimo_mirimo_logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+@media only screen and (max-device-width: 813px) {
+  .footer {
+    padding: 40px 0px 46px 6%;
 
-  .ceo {
-    width: 134px;
-    height: 22px;
-    font-family: OpenSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fffefe;
-    margin-top: 52px;
-  }
+    .info {
+      height: 200px;
+      margin-top: -30px;
+      .ceo {
+        font-size: 14px;
+        margin-top: 0px;
+      }
 
-  .number {
-    width: 358px;
-    height: 22px;
-    font-family: OpenSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fefefe;
-  }
+      .address {
+        width: 450px;
+        height: 24px;
+        font-size: 14px;
+        display: block;
+      }
 
-  .address {
-    width: 508px;
-    height: 24px;
-    font-family: OpenSans;
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-  }
+      .social {
+        margin-top: 0px;
+        margin-right: 5%;
+        width: 40px;
+        height: 40%;
+        float: right;
 
-  .policy {
-    margin-top: 70px;
-  }
+        div {
+          display: block;
+        }
 
-  .policy > a {
-    width: 99px;
-    height: 22px;
-    font-family: OpenSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fefefe;
+        .fb {
+          margin: 0;
+          width: 100%;
+          height: 35px;
+        }
 
-    margin-right: 32px;
-  }
+        .insta {
+          margin: 13px 0 0 0;
 
-  a:hover {
-    text-decoration: none;
+          width: 100%;
+          height: 35px;
+        }
+      }
+    }
+
+    .policy > a {
+      width: 99px;
+      height: 22px;
+      font-family: OpenSans;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fefefe;
+
+      margin-right: 32px;
+    }
   }
 }

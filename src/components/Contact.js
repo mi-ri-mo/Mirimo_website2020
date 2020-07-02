@@ -58,9 +58,7 @@ class Contact extends Component {
             <div className="content">
               546, Hoam-ro, Gwanak-gu, Seoul, Republic of Korea
             </div>
-            <div
-              style={{ height: '70vh', width: '100%', position: 'relative' }}
-            >
+            <div class="map">
               <MapContainer />
             </div>
           </div>
