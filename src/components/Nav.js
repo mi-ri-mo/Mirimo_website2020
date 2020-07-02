@@ -12,6 +12,7 @@ const Nav = () => {
               <div className="nav-logo"></div>
             </NavLink>
           </div>
+
           <div className="nav-menu">
             <NavLink exact to="/">
               About
