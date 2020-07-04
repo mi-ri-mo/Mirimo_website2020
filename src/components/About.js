@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/About.scss';
 
+
 import Nav from './NavMain';
 import Footer from './Footer';
 import MemberItem from './MemberItem';
@@ -15,7 +16,7 @@ class About extends Component {
                 {
                     name: 'Joohah Yoon',
                     position: 'Chief Executive Officer',
-                    profileImage: '',
+                    profileImage: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
                 },
                 {
                     name: 'Sunwoo Joo',
@@ -88,153 +89,199 @@ class About extends Component {
             <div>
                 <Nav/>
                 <div className="about">
-                    <div className="banner">
-                        <div className="container">
-                            We are with your dream
-                        </div>
-                    </div>
-                    <div className="container">
-                        
-                        {/* MIRIMO */}
-                        <div className="about-content">
-                            <div className="content-title">MIRIMO</div>
-                            <div className="content-sub">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </div>
-                            <div className="wrap-identity">
-                                <div className="identity-item">
-                                    <div className="identity-icon icon-1"></div>
-                                    <div className="identity-title">Give back to<br/>Society</div>
-                                    <div className="identity-intro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-                                </div>
-                                <div className="identity-item">
-                                    <div className="identity-icon icon-2"></div>
-                                    <div className="identity-title">Growth<br/>Potential</div>
-                                    <div className="identity-intro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-                                </div>
-                                <div className="identity-item">
-                                    <div className="identity-icon icon-3"></div>
-                                    <div className="identity-title">Cooperative<br/>Development</div>
-                                    <div className="identity-intro">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* TEMP */}
-                    <div className="about-temp">
-                        temp
-                    </div>
-                    <div className="container">
-                        
-                        {/* PROJECT */}
-                        <div className="about-project">
-                            <div className="about-title">PROJECTS</div>
-                            <div className="about-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                            <div className="group-project">
-                                <div className="wrap-project">
-                                    <NavLink to="/Raja">
-                                        <div className="project-item">
-                                            <div className="project-number">01</div>
-                                            <div className="project-name">RAJA</div>
-                                            <div className="project-intro">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                            </div>
-                                            <div className="project-more">View More</div>
-                                        </div>
-                                    </NavLink>
-                                    <NavLink to="/">
-                                        <div className="project-item">
-                                            <div className="project-number">02</div>
-                                            <div className="project-name">JHsustain</div>
-                                            <div className="project-intro">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                            </div>
-                                            <div className="project-more">View More</div>
-                                        </div>
-                                    </NavLink>
-                                    <NavLink to="/">
-                                        <div className="project-item">
-                                            <div className="project-number">03</div>
-                                            <div className="project-name">8gram</div>
-                                            <div className="project-intro">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                            </div>
-                                            <div className="project-more">View More</div>
-                                        </div>
-                                    </NavLink>
-                                </div>
-                                <div className="wrap-project">
-                                <NavLink to="/MirimMediaLab">
-                                    <div className="project-item only">
-                                        <div className="project-number">04</div>
-                                        <div className="project-name">Mirim Media Lab</div>
-                                        <div className="project-intro">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                        </div>
+                       <div className="about-banner">
+                            
+                       </div>
+                       <div className="about-content">
+                            <div className="container">
+                                {/* 회사소개 */}
+                                <div className="company">
+                                    <div className="company-title">MIRIMO</div>
+                                    <div className="company-intro">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                     </div>
-                                </NavLink>
                                 </div>
-                            </div>
-                        </div>
-    
-                        {/* OUR PEOPLE */}
-                        <div className="about-team">
-                            <div className="about-title">OUR PEOPLE</div>
-                            <div className="wrap-member">
-                                <div className="wrap-member-title">
-                                    <div className="member-title-border"></div>
-                                    <div className="member-title">Designers</div>
-                                </div>
-                                <div className="wrap-member-items">
-                                    {
-                                    this.state.designerMemberData.map((member, i) => {
-                                        return (<MemberItem
-                                                        name={member.name}
-                                                        position={member.position}
-                                                        profileImage={member.profileImage}
-                                                        key={i} 
-                                            />);
-                                        })
-                                    }
-                                </div>
-                            </div>
-                            <div className="wrap-member">
-                                <div className="wrap-member-title">
-                                    <div className="member-title-border"></div>
-                                    <div className="member-title">Developers</div>
-                                </div>
-                                <div>
-                                    <div className="wrap-member-items">
-                                        {
-                                        this.state.softwareDeveloperMemberData.map((member, i) => {
-                                            return (<MemberItem
-                                                            name={member.name}
-                                                            position={member.position}
-                                                            profileImage={member.profileImage}
-                                                            key={i} 
-                                                />);
-                                            })
-                                        }
-                                    </div>
-                                    <div className="wrap-member-items">
-                                        {
-                                        this.state.webSolutionDeveloperMemberData.map((member, i) => {
-                                            return (<MemberItem
-                                                            name={member.name}
-                                                            position={member.position}
-                                                            profileImage={member.profileImage}
-                                                            key={i} 
-                                                />);
-                                            })
-                                        }
+
+                                {/* 아이덴티티 */}
+                                <div className="identity">
+                                    <div className="wrap-identity">
+                                        <div className="identity-item">
+                                            <div className="identity-icon icon1"></div>
+                                            <div className="identity-title">Give back to<br/>Society</div>
+                                            <div className="identity-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                            </div>
+                                        </div>
+
+                                        <div className="identity-item">
+                                            <div className="identity-icon icon2"></div>
+                                            <div className="identity-title">Give back to<br/>Society</div>
+                                            <div className="identity-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                            </div>
+                                        </div>
+
+                                        <div className="identity-item">
+                                            <div className="identity-icon icon3"></div>
+                                            <div className="identity-title">Give back to<br/>Society</div>
+                                            <div className="identity-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                       </div>
+
+                       {/* 사진 */}
+                       <div className="about-temp">
+
+                       </div>
+
+                       {/* 프로젝트 */}
+                       <div className="about-projects">
+                           <div className="container">
+                                <div className="about-content-title">PROJECTS</div>
+                                <div className="about-content-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+
+                                <div className="projects-desktop">
+                                    <div className="wrap-project">
+                                        <div className="project-item">
+                                            <div className="project-item-number">01</div>
+                                            <div className="project-item-title">RAJA</div>
+                                            <div className="project-item-intro">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            </div>
+                                            <div className="project-item-viewmore">View more</div>
+                                        </div>
+
+                                        <div className="project-item">
+                                            <div className="project-item-number">02</div>
+                                            <div className="project-item-title">JSsustain</div>
+                                            <div className="project-item-intro">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            </div>
+                                            <div className="project-item-viewmore">View more</div>
+                                        </div>
+
+                                        <div className="project-item">
+                                            <div className="project-item-number">03</div>
+                                            <div className="project-item-title">8gram</div>
+                                            <div className="project-item-intro">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            </div>
+                                            <div className="project-item-viewmore">View more</div>
+                                        </div>
+                                    </div>
+                                    <div className="wrap-project">
+                                    <div className="project-item">
+                                            <div className="project-item-number">04</div>
+                                            <div className="project-item-title">MirimMediaLab</div>
+                                            <div className="project-item-intro">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            </div>
+                                            <div className="project-item-viewmore">View more</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="projects-mobile">
+                                    <div className="project-item">
+                                        <div className="project-item-number">03</div>
+                                        <div className="project-item-title">8gram</div>
+                                        <div className="project-item-intro">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                        <div className="project-item-viewmore">View more</div>
+                                    </div>
+
+                                    <div className="project-item">
+                                        <div className="project-item-number">03</div>
+                                        <div className="project-item-title">8gram</div>
+                                        <div className="project-item-intro">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                        <div className="project-item-viewmore">View more</div>
+                                    </div>
+
+                                    <div className="project-item">
+                                        <div className="project-item-number">03</div>
+                                        <div className="project-item-title">8gram</div>
+                                        <div className="project-item-intro">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                        <div className="project-item-viewmore">View more</div>
+                                    </div>
+
+                                    <div className="project-item">
+                                        <div className="project-item-number">04</div>
+                                        <div className="project-item-title">MirimMediaLab</div>
+                                        <div className="project-item-intro">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                        <div className="project-item-viewmore">View more</div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+
+                       {/* 팀원 소개 */}
+                        <div className="about-people">
+                            <div className="container">
+                                <div className="about-content-title">OUR PEOPLE</div>
+                                <div className="wrap-people">
+                                    <div className="wrap-major">
+                                        <div className="wrap-major-title">
+                                            <div className="major-border"></div>
+                                            <div className="major-title">Designer</div>
+                                        </div>
+                                        <div className="wrap-member">
+                                            {
+                                                this.state.designerMemberData.map((member, i) => {
+                                                    return (<MemberItem
+                                                                    name={member.name}
+                                                                    position={member.position}
+                                                                    profileImage={member.profileImage}
+                                                                    key={i} 
+                                                        />);
+                                                    })
+                                            }
+                                        </div>
+                                    </div>
+                                    <div className="wrap-major">
+                                        <div className="wrap-major-title">
+                                            <div className="major-border"></div>
+                                            <div className="major-title">Developer</div>
+                                        </div>
+                                        <div className="wrap-member">
+                                            {
+                                                this.state.softwareDeveloperMemberData.map((member, i) => {
+                                                    return (<MemberItem
+                                                                    name={member.name}
+                                                                    position={member.position}
+                                                                    profileImage={member.profileImage}
+                                                                    key={i} 
+                                                        />);
+                                                    })
+                                            }
+                                        </div>
+                                        <div className="wrap-member">
+                                            {
+                                                this.state.webSolutionDeveloperMemberData.map((member, i) => {
+                                                    return (<MemberItem
+                                                                    name={member.name}
+                                                                    position={member.position}
+                                                                    profileImage={member.profileImage}
+                                                                    key={i} 
+                                                        />);
+                                                    })
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>   
-                </div>
+                    </div>
                 <Footer/>
             </div>
         )
