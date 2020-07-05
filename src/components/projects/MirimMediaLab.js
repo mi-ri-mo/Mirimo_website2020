@@ -10,7 +10,7 @@ class MirimMediaLab extends Component {
         return(
             <div>
                 <Nav/>
-                <div className="project">
+                <div className="mml">
                     <div className="header">
                         <div className="banner">
                             <div className="container">
