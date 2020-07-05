@@ -1,192 +1,394 @@
 .about{
-    .banner{
-        width: 100%;
-        height: 500px;
-        background: #0A112D;
-        line-height: 200px;
-        color: #ffffff;
+    .wrap-banner{
+        position: relative;
+
+        @keyframes slidy {
+            0% { left: 0%; }
+            10% { left: 0%; }
+            50%{ left: -100%; }
+            60%{ left: -100%; }
+            90%{ left: -200%; }
+            100%{ left: -200%; }
+        }
+            
+        div#slider { overflow: hidden; }
+        div#slider figure .banner-item { 
+            width: 100vw; 
+            height: 560px; 
+            background: #0a112d;
+            margin-top: 60px;
+            float: left;
+            color: #ffffff;
+            .wrap-subtitle{
+                .subtitle-border{
+                    width: 46px;
+                    height: 2px;
+                    background: #ffffff;
+                }
+                .subtitle-text{
+                    margin-top: 9px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        div#slider figure { 
+            position: relative;
+            width: 300vw;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 15s slidy infinite; 
+        }
+
+        .banner-index{
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            color: #ffffff;
+        }
     }
 
-    .container{
-        .about-content{
-            .content-title{
-                margin-top: 150px;
+    .about-content{
+        // TODO: MIRIMO background-image
+
+        // COMPANY
+        .company{
+            .company-title{
                 font-size: 60px;
                 font-weight: 700;
                 line-height: 1.61;
             }
-            .content-sub{
-                width: 60%;
-                margin-top: 16px;
+            .company-intro{
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 1.67;
             }
+        }
+
+        // IDENTITY
+        .identity{
             .wrap-identity{
-                margin-top: 200px;
                 display: flex;
-                justify-content: space-between;
                 flex-wrap: wrap;
-            }
-        }
-
-        // PROJECT
-        .about-project{
-            margin-top: 150px;
-            .group-project{
-                margin-top: 40px;
-                .wrap-project{
-                    width: 100%;
-                    margin-top: 2%;
+                justify-content: space-between;
+                .identity-item{
                     display: flex;
-                    justify-content: space-between;
-                    a{
-                        width: 100%;
-                        text-decoration: none;
+                    flex-direction: column;
+                    .identity-icon{
+                        width: 52px;
+                        height: 52px;
+                    }
+                    .identity-title{
+                        margin-top: 20px;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                    .identity-content{
+                        margin-top: 20px;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
 
-                        .project-item{
-                            width: 94%;
-                            padding: 6% 3%;
-                            background: #ccc;
-                            &:hover{
-                                color: #ffffff;
-                                .project-name{ color: #ffffff; }
-                                .project-intro{ color: #ffffff; }
-                                .project-more{ color: #ffffff; }
-                            }
-        
-                            .project-number{
-                                font-size: 18px;
-                                font-weight: 400;
-                                color: #3bbbbc;
-                                line-height: 1.67;
-                            }
-                            .project-name{
-                                margin-top: 16PX;
-                                font-size: 24PX;
-                                font-weight: 700;
-                                line-height: 1.25;
-                                color: #8F8F8F;
-                            }
-                            .project-intro{
-                                margin-top: 23px;
-                                font-size: 16px;
-                                font-weight: 400;
-                                line-height: 1.6;
-                                color: #000000;
-                            }
-                            .project-more{
-                                width: 100%;
-                                margin-top: 20%;
-                                text-align: right;
-                                line-height: 1.88;
-                                color: #000000;
-                            }
-
-                            
-                        }
-
-                        .only{
-                            width: 98%;
-                        }
-                    }                    
+                    // IDENTITY-ICON 이미지 설정
+                    .icon1{
+                        background-image: url(../resource/img/identity-1.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    .icon2{
+                        background-image: url(../resource/img/identity-2.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    .icon3{
+                        background-image: url(../resource/img/identity-3.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
                 }
             }
         }
-        .about-team{
-            margin: 160px 0 150px 0;
 
-            .wrap-member{
-                margin-top: 80px;
+    }
+
+    // TEMP
+    .about-temp{
+        width: 100%;
+        height: 810px;
+        margin-top: 70px;
+        background: #e1e1e1;
+    }
+
+    // PROJECTS
+    .about-projects{
+        .projects-desktop{
+            .wrap-project{
                 display: flex;
-                justify-content: flex-end;
-
-                .wrap-member-title{
-                    .member-title-border{
-                        width: 27px;
-                        height: 2px;
-                        background: #0A112D;
-                    }
-                    .member-title{
-                        margin-right: 30px;
-                        font-size: 24px;
-                        font-weight: 600;
+                &:last-child{
+                    .project-item{
+                        margin-top: 20px;
+                        width: 100%;
                     }
                 }
+            }
+        }
 
-                .wrap-member-items{
+        .projects-mobile{
+
+        }
+
+        .project-item{
+            background: #e1e1e1;
+            margin-right: 20px;
+            color: #000000;
+            a{ text-decoration: none; color: #8f8f8f; }
+            .project-item-number{
+                color: #48e3e4;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .project-item-title{
+                color: #8f8f8f;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .project-item-intro{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .project-item-viewmore{
+                text-align: right;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            &:hover{
+                background: #8c8c8c;
+                transition: color .20s ease-in-out,background-color .20s ease-in-out;
+                .project-item-title{ color: #ffffff; }
+                .project-item-intro{ color: #ffffff; }
+                .project-item-viewmore{ color: #ffffff; }
+            }
+        }
+    }
+
+    // PEOPLE
+    .about-people{
+        .wrap-people{
+            .wrap-major{
+                display: flex;
+                flex-wrap: wrap;
+                .wrap-major-title{
+                    .major-border{ width: 27px; height: 2px; background: #000; }
+                    .major-title{ font-size: 24px; font-weight: 600; line-height: 1.25;}
+                }
+                .wrap-member{
                     display: flex;
                     flex-wrap: wrap;
                 }
             }
-        }
 
-        div{
-            .about-title{
-                font-size: 30px;
-                font-weight: 700;
-            }
-            .about-subtitle{
-                margin-top: 9px;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 1.67;
-            }
+            
         }
     }
-    
-    .about-temp{
-        width: 100%;
-        height: 400px;
-        background: #eee;
+
+    .about-content-sub{
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
     }
 }
 
-// Identity Item
-.identity-item{
-    width: 360px;
-    margin-bottom: 8%;
-    .identity-icon{
-        width: 30px;
-        height: 30px;
-        background-size: contain;
-        background-repeat: no-repeat;
+
+// PC버전에만 적용
+@media only screen {
+    .about{
+        .wrap-banner{
+            .banner-item{
+                padding: 80px 0 0 200px;
+                .banner-title{
+                    margin-top: 100px;
+                    font-size: 47px;
+                    font-weight: 300;
+                }
+            }
+
+            .banner-index{
+                bottom: 50px;
+                right: 200px;
+            }
+        }
+    
+        .about-content{
+            .company{
+                margin-top: 150px;
+                .company-intro{
+                    width: 65%;
+                    margin-top: 16px;
+                }
+            }
+    
+            .identity{
+                margin-top: 200px;
+                .identity-item{
+                    width: 30%;
+                }
+            }
+    
+        }
+    
+        .about-temp{
+    
+        }
+    
+        .about-projects{
+            margin-top: 150px;
+            .projects-desktop{
+                margin-top: 40px;
+                visibility: visible;
+                .wrap-project{
+                    &:last-child{
+                        .project-item{
+                            padding: 35px 29px 35px 38px; 
+                            .project-item-intro{ width: 40%; }
+                            .project-item-viewmore{ margin-top: 10px; }
+                        }
+                    }
+                }
+            }
+            .projects-mobile{
+                display: none;
+            }
+            
+            .project-item{
+                padding: 76px 30px 70px 38px;
+                .project-item-title{ margin-top: 16px; }
+                .project-item-intro{ margin-top: 23px; }
+                .project-item-viewmore{ margin-top: 60px; }
+            }
+        }
+    
+        .about-people{
+            margin-top: 168px;
+            .wrap-people{
+                margin: 80px 0 179px 0;
+                .wrap-major{
+                    justify-content: flex-end;
+                    .wrap-member{
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
     }
 
-    .icon-1{ background-image: url(../resource/img/identity-1.png); }
-    .icon-2{ background-image: url(../resource/img/identity-2.png); }
-    .icon-3{ background-image: url(../resource/img/identity-3.png); }
-    .identity-title{
-        margin-top: 8px;
+    .about-content-title{
         font-size: 30px;
         font-weight: 700;
-        line-height: 1.2;
-    }
-    .identity-intro{
-        margin-top: 20px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.6;
     }
 }
 
-// Member Item
-.member-item{
-    margin: 0 0 90px 40px;
-    .member-profile{
-        width: 180px;
-        height: 220px;
-        background: #eee;
+
+// MOBILE버전에만 적용
+@media only screen and (max-device-width: 813px) {
+    .about{
+        .wrap-banner{
+            .banner-item{
+                padding: 200px 30px 0 20px;
+                .banner-title{
+                    margin-top: 30px;
+                    font-size: 40px;
+                    font-weight: 300;
+                }
+            }
+
+            .banner-index{
+                bottom: 50px;
+                left: 20px;
+            }
+        }
+    
+        .about-content{
+            .company{
+                margin-top: 100px;
+                text-align: center;
+                .company-intro{
+                    width: 100%;
+                    margin-top: 70px;
+                }
+            }
+    
+            .identity{
+                margin-top: 300px;
+                .identity-item{
+                    width: 100%;
+                    margin-bottom: 150px;
+                    align-items: center;
+                    text-align: center;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+    
+        }
+    
+        .about-temp{
+    
+        }
+    
+        .about-projects{
+            margin-top: 90px;
+            .projects-desktop{
+                display: none;
+            }
+            .projects-mobile{
+                display: block;
+                visibility: visible;
+                margin-top: 35px;
+                .project-item{
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 28px 24px 24px 38px;
+                    .project-item-title{ margin-top: 7px; }
+                    .project-item-viewmore{ font-weight: 600; margin-top: 20px; }
+                }
+            }
+            
+        }
+    
+        .about-people{
+            margin-top: 96px;
+            .wrap-people{
+                margin: 4px 0 139px 0;
+                .wrap-major{
+                    justify-content: flex-start;
+                    .wrap-major-title{
+                        margin-top: 40px;
+                        margin-bottom: 30px;
+                    }
+                    .wrap-member{
+                        justify-content: space-between;
+                    }
+                }
+            }
+            
+        }
     }
-    .member-name{
-        margin-top: 15px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1.88;
+
+    .about-content-title{
+        font-size: 24px;
+        font-weight: 700;
     }
-    .member-position{
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 2.31;
+    .about-content-sub{
+        width: 80%;
     }
-}
+  }
