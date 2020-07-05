@@ -22,7 +22,6 @@ $main_color: #4abbbd;
 // Project Item & Image
 .project-item{
     width: 44%;
-    position: relative;
     .project-title{
         margin-top: 8px;
         font-size: 1.6em;
@@ -32,7 +31,6 @@ $main_color: #4abbbd;
         margin: 20px 0;
     }
     .project-detail{
-        bottom: 0;
         position: absolute;
         a{
             color: $main_color;
@@ -52,52 +50,40 @@ $main_color: #4abbbd;
         }
     }
 }
+.wrap-project{
+    position: relative;
+}
 .project-image{
     width: 54%;
     height: 280px;
     background: #ccc;
 }
 .fl-right{
-    background: #4abbbd;
+    margin-left: 46%;
+    position: absolute;
 }
 
-@media only screen and (max-width: 480px){    
+@media only screen and (max-width: 480px){
+    .content-title{
+        margin-top: 3.6em;
+    }
+
     // Project Item & Image
     .project-item{
         width: 100%;
-        position: relative;
-        .project-title{
-            margin-top: 8px;
-            font-size: 1.6em;
-            font-weight: 500;
-        }
-        .project-intro{
-            margin: 20px 0;
-        }
+        margin-bottom: 40px;
         .project-detail{
-            bottom: 0;
-            position: absolute;
-            a{
-                color: $main_color;
-                &:hover{
-                    text-decoration: none;
-                    &::after{
-                        transform: scaleX(1);
-                    }
-                }
-                &::after{
-                    display: block;
-                    content: '';
-                    border-bottom: solid 1px $main_color;
-                    transform: scaleX(0);
-                    transition: transform 250ms ease-in-out;
-                }
-            }
+            float: right;
         }
     }
     .project-image{
         width: 100%;
-        height: 280px;
-        background: #ccc;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+    .fl-right{
+        margin: 0;
+        position: relative;
+        width: 100%;
     }
 }
