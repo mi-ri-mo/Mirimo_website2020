@@ -20,8 +20,13 @@ $main_color: #4abbbd;
 }
 
 // Project Item & Image
+.wrap-project{
+    position: relative;
+    min-height: 280px;
+}
 .project-item{
     width: 44%;
+    padding: 0;
     .project-title{
         margin-top: 8px;
         font-size: 1.6em;
@@ -50,9 +55,6 @@ $main_color: #4abbbd;
         }
     }
 }
-.wrap-project{
-    position: relative;
-}
 .project-image{
     width: 54%;
     height: 280px;
@@ -69,6 +71,9 @@ $main_color: #4abbbd;
     }
 
     // Project Item & Image
+    .wrap-project{
+        min-height: 220px;
+    }
     .project-item{
         width: 100%;
         margin-bottom: 40px;

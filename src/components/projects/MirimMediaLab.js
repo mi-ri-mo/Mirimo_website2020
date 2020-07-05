@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../styles/projects/projects.scss';
+import '../../styles/projects/MirimMediaLab.scss';
 
 import Nav from '../Nav';
 import Footer from '../Footer';
@@ -14,138 +14,79 @@ class MirimMediaLab extends Component {
                     <div className="header">
                         <div className="banner">
                             <div className="container">
-                                Mirim Media Lab<br/>
-                                Responsive web<br/>
-                                <a href="http://www.mirimmedialab.co.kr/">http://www.mirimmedialab.co.kr/</a>
+                                <img src={process.env.PUBLIC_URL + './img/mirimo-logo2-w.png'} alt="mirimo logo"></img><br/>
+                                MIRIM MEDIA LAB<br/>
+                                <span>2020학년도 아세안 직업교육협력 콘텐츠 제작</span>
                             </div>
                         </div>
                         <div className="overview-wrap">
                             <div className="container">
                                 <div className="ov-title">Overview</div>
-                                <div className="ov-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                <img className="ov-img" src={process.env.PUBLIC_URL + './img/mirimo-logo-w.png'} alt="company logo" />
+                                <div className="ov-sub">미림미디어랩과 함께 코로나19 전염병 확산으로 인한 출장 지연 및 중단에 대한 대응, 그리고 직업교육 협력의 지속성 확보 및 성과 확대를 위한 2020학년도 아세한 직업교육협력 콘텐츠를 제작에 참여하였습니다.<br/> 또한 원격교육 운영에 대한 교원의 인식 제고를 목표로 전문적 역량을 함양한 인재들과 함께 코로나19 이후 아세안 직업교육 협력을 위한 원격 운영 기반을 조성해나가고자 합니다.</div>
+                                <img className="ov-img" src={process.env.PUBLIC_URL + './img/mml-logo.png'} alt="company logo" />
                             </div>
                         </div>
-                        <div className="info-wrap">
+                        <div className="goal-wrap">
                             <div className="container">
-                                <div className="content">
-                                    <span className="content-title">Target</span>
-                                    <div className="content-sub">주 타겟층은 글로벌 가구 기업 및 시장이다.</div>
-                                </div>
-                                <div className="content">
-                                    <span className="content-title">Goal</span>
-                                    <div className="content-sub">아마존, 알리바바 등의 해외 플랫폼에 미림미디어랩 제품을 판매한다.</div>
-                                </div>
-                                <div className="content">
-                                    <span className="content-title">Concept</span>
-                                    <div className="content-sub">자연 친환경적인 우드슬랩 식탁</div>
+                                <div className="goal-title">Project Goal</div>
+                                <div className="contents">
+                                    <div className="content"></div>
+                                    <div className="content"></div>
+                                    <div className="content"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="body">
-                        <div className="interview-wrap">
+                        <div className="process-wrap">
                             <div className="container">
-                                <div className="interview-title">Client Interview</div>
-                                <div className="intetview-sub">미림미디어랩 클라이언트와 만나 미림미디어랩이 추구하는 가치와 현 웹사이트의 문제점을 파악했습니다.</div>
-                            </div>
-                            <div className="interview-img"></div>
-                            <div className="interview-info">
-                                1. 현 웹사이트의 정보가 방대함<br/>
-                                2. 정리되어 있지 않은 네비게이션<br/>
-                                3. 반지카페의 아이덴티티와 부적합<br/>
-                                4. 통일성 없는 사진<br/>
-                                5. 현 웹사이트의 정보가 방대함<br/>
-                            </div>
-                        </div>
-                        <div className="keyword-wrap">
-                            <div className="container">
-                                <div className="keyword-title">Design Keyword</div>
-                                <div className="keyword-sub">미림미디어랩 클라이언트와의 인터뷰를 통해 단어 키워드를 도출하여 미림미디어랩이 전달하고자 하는 이미지 방향의 키워드를 친환경/합리적/고품질 3가지로 정의하였습니다.</div>
-                                <div className="circle-list">
-                                    <div className="circle-content">
-                                        <div className="circle">
-                                            영어
-                                            <div className="circle-sub">친환경적인</div>
-                                        </div>
+                                <div className="process-title">Project Process</div>
+                                <div className="process-details">
+                                    <div className="detail-wrap">
+                                        <div className="detail-num">1</div>
+                                        <span className="detail-txt">교육 컨텐츠 기획/섭외/촬영</span>
                                     </div>
-                                    <div className="circle-content">
-                                        <div className="circle">
-                                            영어
-                                            <div className="circle-sub">합리적인</div>
-                                        </div>
+                                    <div className="detail-wrap">
+                                        <div className="detail-num">2</div>
+                                        <span className="detail-txt">스토리보드 검토</span>
                                     </div>
-                                    <div className="circle-content">
-                                        <div className="circle">
-                                            영어
-                                            <div className="circle-sub">고품질의</div>
-                                        </div>
+                                    <div className="detail-wrap">
+                                        <div className="detail-num">3</div>
+                                        <span className="detail-txt">디자인 가이드 작성</span>
+                                    </div>
+                                    <div className="detail-wrap">
+                                        <div className="detail-num">4</div>
+                                        <span className="detail-txt">영상 그래픽 소스 작업</span>
+                                    </div>
+                                    <div className="detail-wrap">
+                                        <div className="detail-num">5</div>
+                                        <span className="detail-txt">소스 삽입 작업</span>
+                                    </div>
+                                    <div className="detail-wrap">
+                                        <div className="detail-num">6</div>
+                                        <span className="detail-txt">결과물 도출</span>
                                     </div>
                                 </div>
-                            </div>
-                            <hr className="circle-line"></hr>
-                            <div className="design-wrap">
-                                <div className="container">
-                                    <div className="design-title">Colors</div>
-                                    <div className="design-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                    <div className="design-colors">
-                                        <div className="color">
-                                            <span className="color-name">
-                                                Gray<br/>
-                                                <span className="color-code">#464646</span>
-                                            </span>
-                                        </div>
-                                        <div className="color">
-                                            <span className="color-name">
-                                                Gray<br/>
-                                                <span className="color-code">#464646</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="design-title">Font</div>
-                                    <div className="font-name">Noto Sans</div>
-                                    <div className="design-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
-                                    <div className="design-fonts">
-                                        <div className="font">
-                                            <span className="font-weight1">Gray</span>
-                                            <span className="font-weight2">Gray</span>
-                                            <span className="font-weight3">Gray</span>
-                                            <span className="font-weight4">Gray</span>
-                                        </div>
-                                    </div>
+                                <div className="process-imgs">
+                                    <div className="img"></div>
+                                    <div className="img"></div>
                                 </div>
                             </div>
                         </div>
-                        <div className="ui">
+                        <div className="contents-wrap">
                             <div className="container">
-                                <div className="top">
-                                    <div className="top-title">Mirim Media Lab UI</div>
-                                    <div className="top-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                </div>
-                                <div className="top-box"></div>
-                            </div>
-                            <div className="view">
-                                <div className="container">
-                                    <div className="view-img1"></div>
-                                    <div className="view-img2"></div>
-                                    <div className="view-img3"></div>
+                                <div className="content-title">Contents</div>
+                                <div className="content-sub">국가별 상황에 따라 학생의 특성에 맞는 원격수업 운영 계획을 세워<br/> 다양한 디지털 기술을 활용하여 상호작용의 효과를 높이며, 향후 지속적으로 활용할 수 있는 양질의 컨텐츠를 개발합니다.</div>
+                                <div className="content-imgs">
+                                    <div className="img"></div>
+                                    <div className="img"></div>
+                                    <div className="img"></div>
                                 </div>
                             </div>
                         </div>
-                        <div className="web">
-                            <div className="container">
-                                <div className="top">
-                                    <div className="top-title">Mirim Media Lab WEB</div>
-                                </div>
-                            </div>
-                            <div className="view">
-                                <div className="container">
-                                    <div className="view-title">Main Page</div>
-                                    <div className="view-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                    <div className="view-box"></div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    <div className="foo">
+                        <img src={process.env.PUBLIC_URL + './img/mirimo_mirimo_logo.png'} alt="mirimo logo"></img>
                     </div>
                 </div>
                 <Footer/>
