@@ -1,9 +1,55 @@
 .about{
-    .about-banner{
-        // 임시
-        width: 100%;
-        height: 500px;
-        background: #0a112d;
+    .wrap-banner{
+        position: relative;
+
+        @keyframes slidy {
+            0% { left: 0%; }
+            10% { left: 0%; }
+            50%{ left: -100%; }
+            60%{ left: -100%; }
+            90%{ left: -200%; }
+            100%{ left: -200%; }
+        }
+            
+        div#slider { overflow: hidden; }
+        div#slider figure .banner-item { 
+            width: 100vw; 
+            height: 560px; 
+            background: #0a112d;
+            margin-top: 60px;
+            float: left;
+            color: #ffffff;
+            .wrap-subtitle{
+                .subtitle-border{
+                    width: 46px;
+                    height: 2px;
+                    background: #ffffff;
+                }
+                .subtitle-text{
+                    margin-top: 9px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        div#slider figure { 
+            position: relative;
+            width: 300vw;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 15s slidy infinite; 
+        }
+
+        .banner-index{
+            position: absolute;
+            font-size: 20px;
+            font-weight: 300;
+            color: #ffffff;
+        }
     }
 
     .about-content{
@@ -99,6 +145,7 @@
             background: #e1e1e1;
             margin-right: 20px;
             color: #000000;
+            a{ text-decoration: none; color: #8f8f8f; }
             .project-item-number{
                 color: #48e3e4;
                 font-size: 18px;
@@ -121,6 +168,14 @@
 
             &:last-child{
                 margin-right: 0;
+            }
+
+            &:hover{
+                background: #8c8c8c;
+                transition: color .20s ease-in-out,background-color .20s ease-in-out;
+                .project-item-title{ color: #ffffff; }
+                .project-item-intro{ color: #ffffff; }
+                .project-item-viewmore{ color: #ffffff; }
             }
         }
     }
@@ -156,8 +211,20 @@
 // PC버전에만 적용
 @media only screen {
     .about{
-        .about-banner{
+        .wrap-banner{
+            .banner-item{
+                padding: 80px 0 0 200px;
+                .banner-title{
+                    margin-top: 100px;
+                    font-size: 47px;
+                    font-weight: 300;
+                }
+            }
 
+            .banner-index{
+                bottom: 50px;
+                right: 200px;
+            }
         }
     
         .about-content{
@@ -233,8 +300,20 @@
 // MOBILE버전에만 적용
 @media only screen and (max-device-width: 813px) {
     .about{
-        .about-banner{
+        .wrap-banner{
+            .banner-item{
+                padding: 200px 30px 0 20px;
+                .banner-title{
+                    margin-top: 30px;
+                    font-size: 40px;
+                    font-weight: 300;
+                }
+            }
 
+            .banner-index{
+                bottom: 50px;
+                left: 20px;
+            }
         }
     
         .about-content{

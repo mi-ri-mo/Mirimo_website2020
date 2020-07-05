@@ -102,12 +102,12 @@
       }
     }
     .logo {
-      background-size: cover;
       width: 130px;
       height: 35px;
       background-image: url(../resource/img/mirimo_mirimo_logo.png);
       background-size: contain;
       background-repeat: no-repeat;
+      border: none;
     }
 
     .policy {
