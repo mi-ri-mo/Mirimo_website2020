@@ -4,20 +4,41 @@
 
         @keyframes slidy {
             0% { left: 0%; }
-            10% { left: 0%; }
-            50%{ left: -100%; }
-            60%{ left: -100%; }
-            90%{ left: -200%; }
-            100%{ left: -200%; }
+            20% { left: 0%; }
+            25% { left: -100%; }
+            45% { left: -100%; }
+            50% { left: -200%; }
+            70% { left: -200%; }
+            75% { left: -300%; }
+            95% { left: -300%; }
+            100% { left: -400%; }
         }
             
         div#slider { overflow: hidden; }
         div#slider figure .banner-item { 
-            width: 100vw; 
-            height: 560px; 
-            background: #0a112d;
+            width: 20%; 
+            height: 560px;
+            // background: #0a112d;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             margin-top: 60px;
             float: left;
+            color: #ffffff;
+        }
+
+        div#slider figure { 
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 20s slidy infinite; 
+        }
+
+        .wrap-banner-content{
+            position: absolute;
             color: #ffffff;
             .wrap-subtitle{
                 .subtitle-border{
@@ -29,19 +50,8 @@
                     margin-top: 9px;
                     font-size: 16px;
                     font-weight: 300;
-                    color: #ffffff;
                 }
-            }
-        }
-
-        div#slider figure { 
-            position: relative;
-            width: 300vw;
-            margin: 0;
-            left: 0;
-            text-align: left;
-            font-size: 0;
-            animation: 15s slidy infinite; 
+            }    
         }
 
         .banner-index{
@@ -50,6 +60,7 @@
             font-weight: 300;
             color: #ffffff;
         }
+        
     }
 
     .about-content{
@@ -212,8 +223,10 @@
 @media only screen {
     .about{
         .wrap-banner{
-            .banner-item{
-                padding: 80px 0 0 200px;
+
+            .wrap-banner-content{
+                top: 130px;
+                left: 200px;
                 .banner-title{
                     margin-top: 100px;
                     font-size: 47px;
@@ -301,18 +314,18 @@
 @media only screen and (max-device-width: 813px) {
     .about{
         .wrap-banner{
-            .banner-item{
-                padding: 200px 30px 0 20px;
+
+            .banner-index{
+                bottom: 50px;
+                left: 20px;
+            }
+
+            .wrap-banner-content{
                 .banner-title{
                     margin-top: 30px;
                     font-size: 40px;
                     font-weight: 300;
                 }
-            }
-
-            .banner-index{
-                bottom: 50px;
-                left: 20px;
             }
         }
     
