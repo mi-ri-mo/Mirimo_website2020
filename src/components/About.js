@@ -6,6 +6,21 @@ import Nav from './NavMain';
 import Footer from './Footer';
 import MemberItem from './MemberItem';
 
+import Designer1 from '../resource/img/member/CEO.jpg'
+import Designer2 from '../resource/img/member/CSO.jpg'
+import Designer3 from '../resource/img/member/CCO.jpg'
+import Designer4 from '../resource/img/member/CDO.jpg'
+
+import Developer1 from '../resource/img/member/CFO.jpg'
+import Developer2 from '../resource/img/member/CIO.jpg'
+import Developer3 from '../resource/img/member/CRO.jpg'
+import Developer4 from '../resource/img/member/CMO.jpg'
+
+import Developer5 from '../resource/img/member/COO.jpg'
+import Developer6 from '../resource/img/member/CTO.jpg'
+import Developer7 from '../resource/img/member/CKO.jpg'
+import Developer8 from '../resource/img/member/CQO.jpg'
+
 class About extends Component {
 
     constructor(props){
@@ -17,22 +32,22 @@ class About extends Component {
                 {
                     name: 'Joohah Yoon',
                     position: 'Chief Executive Officer',
-                    profileImage: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    profileImage: Designer1,
                 },
                 {
                     name: 'Sunwoo Joo',
                     position: 'Chief Strategy Officer',
-                    profileImage: '',
+                    profileImage: Designer2,
                 },
                 {
                     name: 'Seokhee Kong',
                     position: 'Chief Creative Officer',
-                    profileImage: '',
+                    profileImage: Designer3,
                 },
                 {
                     name: 'Yejin So',
                     position: 'Chief Design Officer',
-                    profileImage: '',
+                    profileImage: Designer4,
                 },
             ],
 
@@ -40,22 +55,22 @@ class About extends Component {
                 {
                     name: 'Dayoung Hwang',
                     position: 'Chief Financial Officer',
-                    profileImage: '',
+                    profileImage: Developer1,
                 },
                 {
                     name: 'Minji Jung',
                     position: 'Chief Information Officer',
-                    profileImage: '',
+                    profileImage: Developer2,
                 },
                 {
                     name: 'Minji Kim',
                     position: 'Chief Risk Officer',
-                    profileImage: '',
+                    profileImage: Developer3,
                 },
                 {
                     name: 'Nayoung Yang',
                     position: 'Chief Marketing Officer',
-                    profileImage: '',
+                    profileImage: Developer4,
                 },
             ],
 
@@ -63,22 +78,22 @@ class About extends Component {
                 {
                     name: 'Yealyn Won',
                     position: 'Chief Operating Officer',
-                    profileImage: '',
+                    profileImage: Developer5,
                 },
                 {
                     name: 'Eunjung Jeon',
                     position: 'Chief Technology Officer',
-                    profileImage: '',
+                    profileImage: Developer6,
                 },
                 {
                     name: 'Eunseo Kang',
                     position: 'Chief Knowledge Officer',
-                    profileImage: '',
+                    profileImage: Developer7,
                 },
                 {
                     name: 'Jimin Kang',
                     position: 'Chief Quality Officer',
-                    profileImage: '',
+                    profileImage: Developer8,
                 },
             ]
         }
@@ -110,15 +125,15 @@ class About extends Component {
                     <div className="wrap-banner">
                         <div id="slider">
                             <figure>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
                             </figure>
                         </div>
