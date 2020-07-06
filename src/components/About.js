@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/About.scss';
 
-
 import Nav from './NavMain';
 import Footer from './Footer';
 import MemberItem from './MemberItem';
@@ -12,8 +11,8 @@ class About extends Component {
     constructor(props){
         super(props);
         this.state = {
-            slideNumber: 0,
-            bannerIndex: "1/3",
+            slideNumber: 1,
+            bannerIndex: "1/2",
             designerMemberData: [
                 {
                     name: 'Joohah Yoon',
@@ -94,15 +93,11 @@ class About extends Component {
         this.carouselInterval = setInterval(() => {
             if(this.state.slideNumber === 0){
               console.log(this.state.slideNumber)
-              this.setState({slideNumber: 1, bannerIndex: "2/3"})
+              this.setState({slideNumber: 1, bannerIndex: "1/2"})
             }
             else if(this.state.slideNumber === 1){
               console.log(this.state.slideNumber)
-              this.setState({slideNumber: 2, bannerIndex: "3/3"})
-            }
-            else{
-              console.log(this.state.slideNumber);
-              this.setState({slideNumber: 0, bannerIndex: "1/3"})
+              this.setState({slideNumber: 0, bannerIndex: "2/2"})
             }
         }, 5000);
     };
@@ -115,28 +110,24 @@ class About extends Component {
                     <div className="wrap-banner">
                         <div id="slider">
                             <figure>
-                                <div className="banner-item">
-                                    <div className="wrap-subtitle">
-                                        <div className="subtitle-border"></div>
-                                        <div className="subtitle-text">Hello</div>
-                                    </div>
-                                    <div className="banner-title">We are with your Dream1</div>
+                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
                                 </div>
-                                <div className="banner-item">
-                                    <div className="wrap-subtitle">
-                                        <div className="subtitle-border"></div>
-                                        <div className="subtitle-text">Hello</div>
-                                    </div>
-                                    <div className="banner-title">We are with your Dream2</div>
+                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
                                 </div>
-                                <div className="banner-item">
-                                    <div className="wrap-subtitle">
-                                        <div className="subtitle-border"></div>
-                                        <div className="subtitle-text">Hello</div>
-                                    </div>
-                                    <div className="banner-title">We are with your Dream3</div>
+                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                </div>
+                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                </div>
+                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
                                 </div>
                             </figure>
+                        </div>
+                        <div className="wrap-banner-content">
+                            <div className="wrap-subtitle">
+                                <div className="subtitle-border"></div>
+                                <div className="subtitle-text">Hello</div>
+                            </div>
+                            <div className="banner-title">We are with your Dream1</div>
                         </div>
                         <div className="banner-index">{this.state.bannerIndex}</div>
                     </div>
