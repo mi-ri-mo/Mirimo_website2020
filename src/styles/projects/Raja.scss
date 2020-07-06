@@ -1,0 +1,381 @@
+@mixin sub-title{
+    font-weight: 700;
+    font-size: 1.6em;
+    color: #228b22;
+}
+
+.raja-project{
+    .header{
+        .banner{
+            width: 100%;
+            height: 500px;
+            background: pink;
+            // background-image: url('');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+
+            .wrap-banner-text{
+                height: 500px;
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            
+            a{
+                margin-top: 20px;
+                font-size: 0.5em;
+                text-decoration: none;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+        .overview-wrap{
+            width: 100%;
+            padding: 6% 0;
+            // background-image: url('../../resource/img/mml-content-1.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            .ov-title{
+                color: #228b22;
+                @include sub-title;
+                line-height: 4em;
+            }
+            .ov-sub{
+                float: left;
+            }
+        }
+        .info-wrap{
+            width: 100%;
+            background: #efecea;
+            color: #000;
+            padding: 5% 0;
+            .wrap-content{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .content{
+                    width: 254px;
+                    .content-title{
+                        color: #228b22;
+                        @include sub-title;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .body{
+        .interview-wrap{
+            width: 100%;
+            color: #000;
+            padding: 4% 0;
+            .container{
+                padding-bottom: 3em;
+                .interview-title{
+                    @include sub-title;
+                    margin-bottom: 20px;
+                }
+                
+            }
+
+            .wrap-interview-content{
+                display: flex;
+                flex-wrap: wrap;
+                .interview-img{
+                    background: url(../../resource/img/interview_8gram.png) 0 0 no-repeat;
+                    background-size: 100%;
+                }
+                .interview-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }            
+        }
+        .keyword-wrap{
+            width: 100%;
+            color: #fff;
+            padding-top: 3%;
+            margin-bottom: 3%;
+            background: #666;
+            clear: both;
+            z-index: -2;
+            position: relative;
+            .keyword-title{
+                @include sub-title;
+                margin-bottom: 20px;
+                color: #228b22;
+
+            }
+
+            .wrap-keyword{
+                .circle-list{
+                    z-index: 1;
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    margin: 5% 0 3% 0;
+                    .circle{
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 200px;
+                        background: #aaa;
+                        padding-top: 40%;
+                        font-size: 1.6em;
+                        .circle-sub{
+                            font-size: 0.5em;
+                        }
+                    }
+                }
+            }
+            .circle-line{
+                position: relative;
+                top: -150px;
+                z-index: -1;
+                height: 0.1px;
+                border: solid rgb(110, 110, 110) 0.1px;
+            }
+        }
+        .design-wrap{
+            width: 100%;
+            color: #000;
+            padding: 3% 0;
+            background: #fff;
+            clear: both;
+            .container{
+                .design-title{
+                    @include sub-title;
+                    line-height: 3em;
+                }
+                .design-colors{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .color{
+                        margin: 6% 0;
+                        width: 49%;
+                        height: 200px;
+                        background: #efecea;
+                        color: #fff;
+                        display: table;
+                        padding: 1%;
+                        .color-name{
+                            font-size: 1.2em;
+                            display: table-cell;
+                            vertical-align: bottom;
+                            .color-code{
+                                font-size: 1em;
+                            }
+                        }
+                        &:nth-child(1){
+                            background: #228b22;
+                        }
+                    }
+                }
+                .font-name{
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 2.6em;
+                }
+                .design-fonts{
+                    .font{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 6% 0;
+                        @for $i from 1 to 5{
+                            .font-weight#{$i}{
+                                font-family: 'Noto Sans KR', sans-serif;
+                                font-size: 3em;
+                                font-weight: 1000 - ($i * 200);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ui{
+            width: 100%;
+            color: #000;
+            padding: 3% 0;
+            background: #eee;
+            clear: both;
+            .container{
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .top{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    width: 54%;
+                    .top-title{
+                        font-weight: 500;
+                        font-size: 1.6em;
+                        line-height: 3em;
+                    }
+                }
+                .top-box{
+                    margin-left: auto;
+                    width: 18%;
+                    height: 400px;
+                    background: #333;
+                }
+            }
+            .view{
+                .container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    clear: both;
+                    @for $i from 1 to 4{
+                        .view-img#{$i}{
+                            margin-right: auto;
+                            margin-top: $i * 140px;
+                            background: #666;
+                            width: 18%;
+                            height: 800px;
+                            @if $i == 1{
+                                margin-left: 4%;
+                            }
+                            @else if $i == 3{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .web{
+            width: 100%;
+            color: #000;
+            padding: 3% 0;
+            clear: both;
+            .container{
+                .top{
+                    .top-title{
+                        font-weight: 500;
+                        font-size: 1.6em;
+                        line-height: 3em;
+                    }
+                }
+            }
+            .view{
+                padding: 3% 0;
+                .container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    clear: both;
+                    padding-left: 4%;
+                    vertical-align: middle;
+                    .view-title{
+                        margin: auto 0;
+                        font-weight: 500;
+                        font-size: 1.2em;
+                    }
+                    .view-sub{
+                        margin: auto;
+                        margin-right: 0;
+                        width: 50%;
+                        margin-left: auto;
+                    }
+                    .view-box{
+                        margin: 3% 0;
+                        width: 100%;
+                        height: 800px;
+                        background: #333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen {
+    .ov-sub{
+        width: 54%;
+    }
+
+    .intetview-sub{
+        width: 38%;
+    }
+
+    .wrap-interview-content{
+        .interview-img{
+            width: 60%;
+            height: 430px;
+            background: blue;
+            margin-right: 50px;
+        }
+        .interview-info{
+        }
+    }
+    
+    .keyword-sub{
+        width: 34%;
+    }
+
+    .circle-list{
+        justify-content: space-between;
+    }
+
+    
+    .design-sub{
+        width: 50%;
+    }
+
+    .font{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-device-width: 813px) {
+    .ov-sub{
+        width: 97%;
+        text-align: center;
+    }
+
+    .intetview-sub{
+        width: 97%;
+        margin-bottom: 20px;
+    }
+
+    .wrap-interview-content{
+        .interview-img{
+            width: 100vw;
+            height: 200px;
+            margin-right: 0;
+        }
+        .interview-info{
+            width: 90%;
+            margin: 0 auto;
+            .interview-info-item{
+                margin-bottom: 20px;
+            }
+        }
+    }  
+
+    .keyword-sub{
+        width: 100%;
+    }
+    .circle-list{
+        justify-content: center;
+        .circle-content{
+            margin-bottom: 20px;
+        }
+    }
+
+    
+    .design-sub{
+        width: 97%;
+    }
+
+    .font{
+        justify-content: space-around;
+        span{
+            margin: 0 20px;
+        }
+    }
+}
