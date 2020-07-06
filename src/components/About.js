@@ -125,15 +125,15 @@ class About extends Component {
                     <div className="wrap-banner">
                         <div id="slider">
                             <figure>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
-                                <div className="banner-item" style={{backgroundImage: `url(${'https://images.unsplash.com/photo-1571149828506-c48f1610314b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'})`}}>
+                                <div className="banner-item" >
                                 </div>
                             </figure>
                         </div>
