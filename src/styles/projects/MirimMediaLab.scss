@@ -204,3 +204,73 @@
         }
     }
 }
+
+@media only screen and (max-width: 480px){
+    .mml{
+        .header{
+            .banner{
+                font-size: 2.6em;
+                padding: 74% 0;
+                background-position-x: center;
+            }
+            .goal-wrap{
+                .container{
+                    .contents{
+                        .content{
+                            margin: 10px auto;
+                            height: 21.37rem;
+                            width: 20rem;
+                        }
+                    }
+                }
+            }
+        }
+        .body{
+            .process-wrap{
+                .container{
+                    .process-details{
+                        .detail-wrap{
+                            width: 30%;
+                            .detail-num{
+                                width: 5rem;
+                                height: 5rem;
+                                line-height: 5rem;
+                                font-size: 1.4em;
+                            }
+                            .detail-txt{
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    .process-imgs{
+                        margin: 4% 0;
+                        .img{
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+            .contents-wrap{
+                width: 100%;
+                padding: 1% 0;
+                .container{
+                    .content-title{
+                        margin: 0;
+                    }
+                    .content-imgs{
+                        .img{
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+        .foo{
+            img{
+                width: 20%;
+            }
+        }
+    }
+}
