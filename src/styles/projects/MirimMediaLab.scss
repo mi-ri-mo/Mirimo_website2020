@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+}
+
+@mixin sub-title{
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+}
+
+@mixin bottom-box($width) {
+    position: relative;
+    z-index: 1;
+    &::after{
+        display: block;
+        content: '';
+        width: $width;
+        height: 10%;
+        background: #47bdef;
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.mml{
+    .header{
+        .banner{
+            width: 100%;
+            background: url(../../resource/img/mml-banner-bg.png) 0 0 no-repeat;
+            background-size: cover;
+            color: #fff;
+            font-weight: 600;
+            font-size: 3em;
+            padding: 22% 0;
+            line-height: 0.7em;
+            img{
+                height: 20px;
+                margin-bottom: 20px;
+            }
+            span{
+                font-weight: 500;
+                font-size: 0.34em;
+            }
+        }
+        .overview-wrap{
+            width: 100%;
+            background: #fff;
+            color: #000;
+            padding: 6% 0;
+            .ov-title{
+                position: relative;
+                font-weight: 700;
+                font-size: 1.6em;
+                line-height: 4em;
+                z-index: 1;
+                &::before{
+                    display: block;
+                    content: '';
+                    width: 10rem;
+                    height: 18%;
+                    background: #1c9ced;
+                    position: absolute;
+                    top: 36%;
+                    left: 3%;
+                    z-index: -1;
+                }
+            }
+            .ov-sub{
+                width: 60%;
+                float: left;
+                line-height: 2em;
+            }
+            .ov-img{
+                width: 34%;
+                margin-left: 4%;
+            }
+        }
+        .goal-wrap{
+            width: 100%;
+            background: url(../../resource/img/mml-goal-bg.png) 0 0 no-repeat;
+            background-size: cover;
+            padding: 3% 0;
+            .container{
+                .goal-title{
+                    @include sub-title();
+                    color: #fff;
+                    padding-bottom: 3%;
+                }
+                .contents{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    @for $i from 1 to 4{
+                        .content{
+                            height: 32.1rem;
+                            width: 30rem;
+                            &:nth-child(#{$i}){
+                                background: url(../../resource/img/mml-goal-#{$i}.png) 0 0 no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .body{
+        .process-wrap{
+            width: 100%;
+            color: #000;
+            padding: 3% 0;
+            background: #fff;
+            clear: both;
+            .container{
+                .process-title{
+                    @include sub-title;
+                    line-height: 3em;
+                    @include bottom-box(24rem);
+                }
+                .process-details{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .detail-wrap{
+                        width: 16%;
+                        margin: 3% 0;
+                        text-align: center;
+                        .detail-num{
+                            background: #47bdef;
+                            color: #fff;
+                            width: 7rem;
+                            height: 7rem;
+                            line-height: 7rem;
+                            border-radius: 10rem;
+                            margin: auto;
+                            font-weight: 700;
+                            font-size: 1.8em;
+                        }
+                        .detail-txt{
+                            line-height: 50px;
+                        }
+                    }
+                }
+                .process-imgs{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin: 4% 0;
+                    .img{
+                        width: 49%;
+                        height: 360px;
+                        @for $i from 1 to 3{
+                            &:nth-child(#{$i}){
+                                background: url(../../resource/img/mml-process-#{$i}.png);
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contents-wrap{
+            width: 100%;
+            padding: 3% 0;
+            background: #fafafa;
+            clear: both;
+            .container{
+                text-align: center;
+                .content-title{
+                    @include sub-title;
+                    line-height: 3em;
+                    @include bottom-box(15rem);
+                }
+                .content-imgs{
+                    .img{
+                        width: 66%;
+                        height: 420px;
+                        clear: both;
+                        margin: 10px 0;
+                        @for $i from 1 to 4{
+                            &:nth-child(#{$i}){
+                                background: url(../../resource/img/mml-content-#{$i}.png);
+                                background-size: cover;
+                            }
+                        }
+                        &:nth-child(odd){
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .foo{
+        padding: 4% 0;
+        img{
+            width: 5%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .mml{
+        .header{
+            .banner{
+                font-size: 2.6em;
+                padding: 74% 0;
+                background-position-x: center;
+            }
+            .goal-wrap{
+                .container{
+                    .contents{
+                        .content{
+                            margin: 10px auto;
+                            height: 21.37rem;
+                            width: 20rem;
+                        }
+                    }
+                }
+            }
+        }
+        .body{
+            .process-wrap{
+                .container{
+                    .process-details{
+                        .detail-wrap{
+                            width: 30%;
+                            .detail-num{
+                                width: 5rem;
+                                height: 5rem;
+                                line-height: 5rem;
+                                font-size: 1.4em;
+                            }
+                            .detail-txt{
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    .process-imgs{
+                        margin: 4% 0;
+                        .img{
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+            .contents-wrap{
+                width: 100%;
+                padding: 1% 0;
+                .container{
+                    .content-title{
+                        margin: 0;
+                    }
+                    .content-imgs{
+                        .img{
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+        .foo{
+            img{
+                width: 20%;
+            }
+        }
+    }
+}
