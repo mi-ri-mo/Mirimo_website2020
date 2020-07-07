@@ -143,16 +143,24 @@
     .info {
       height: 200px;
       margin-top: -30px;
+
+      .co_info {
+        width: 325px;
+      }
       .ceo {
         font-size: 14px;
         margin-top: 0px;
       }
 
       .address {
-        width: 450px;
+        width: 320px;
         height: 24px;
         font-size: 14px;
         display: block;
+      }
+
+      .number {
+        width: 320px;
       }
 
       .social {
