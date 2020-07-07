@@ -6,6 +6,18 @@ import Nav from './NavMain';
 import Footer from './Footer';
 import MemberItem from './MemberItem';
 
+// import Identity1 from '../resource/img/identity-1.png'
+// import Identity2 from '../resource/img/identity-2.png'
+// import Identity3 from '../resource/img/identity-3.png'
+
+import Banner1 from '../resource/img/main_1.png'
+import Banner2 from '../resource/img/main_2.png'
+
+import Project1 from '../resource/img/about/about-project-1.png'
+import Project2 from '../resource/img/about/about-project-2.png'
+import Project3 from '../resource/img/about/about-project-3.jpg'
+import Project4 from '../resource/img/about/about-project-4.png'
+
 import Designer1 from '../resource/img/member/CEO.jpg'
 import Designer2 from '../resource/img/member/CSO.jpg'
 import Designer3 from '../resource/img/member/CCO.jpg'
@@ -107,11 +119,9 @@ class About extends Component {
     startCarousel = () => {
         this.carouselInterval = setInterval(() => {
             if(this.state.slideNumber === 0){
-              console.log(this.state.slideNumber)
               this.setState({slideNumber: 1, bannerIndex: "1/2"})
             }
             else if(this.state.slideNumber === 1){
-              console.log(this.state.slideNumber)
               this.setState({slideNumber: 0, bannerIndex: "2/2"})
             }
         }, 5000);
@@ -122,221 +132,193 @@ class About extends Component {
             <div>
                 <Nav/>
                 <div className="about">
-                    <div className="wrap-banner">
-                        <div id="slider">
-                            <figure>
-                                <div className="banner-item" >
-                                </div>
-                                <div className="banner-item" >
-                                </div>
-                                <div className="banner-item" >
-                                </div>
-                                <div className="banner-item" >
-                                </div>
-                                <div className="banner-item" >
-                                </div>
-                            </figure>
-                        </div>
-                        <div className="wrap-banner-content">
-                            <div className="wrap-subtitle">
-                                <div className="subtitle-border"></div>
-                                <div className="subtitle-text">Hello</div>
+                    <div className="about-banner">
+                        <div className="wrap-banner">
+                            <div id="slider">
+                                <figure>
+                                    <div className="banner-item" style={{backgroundImage: `url(${Banner1})`}}>
+                                    </div>
+                                    <div className="banner-item" style={{backgroundImage: `url(${Banner2})`}}>
+                                    </div>
+                                    <div className="banner-item" style={{backgroundImage: `url(${Banner1})`}}>
+                                    </div>
+                                    <div className="banner-item" style={{backgroundImage: `url(${Banner2})`}}>
+                                    </div>
+                                    <div className="banner-item" style={{backgroundImage: `url(${Banner1})`}}>
+                                    </div>
+                                </figure>
                             </div>
-                            <div className="banner-title">We are with your Dream1</div>
+                            <div className="wrap-banner-content">
+                                <div className="wrap-subtitle">
+                                    <div className="subtitle-border"></div>
+                                    <div className="subtitle-text">Hello</div>
+                                </div>
+                                <div className="banner-title">We are with your Dream</div>
+                                <div className="banner-title-mobile">We are<br/>with your Dream</div>
+                            </div>
+                            <div className="banner-index">{this.state.bannerIndex}</div>
                         </div>
-                        <div className="banner-index">{this.state.bannerIndex}</div>
                     </div>
-
                     <div className="about-content">
-                        <div className="container">
-                            {/* 회사소개 */}
-                            <div className="company">
-                                <div className="company-title">MIRIMO</div>
-                                <div className="company-intro">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        <div className="cus-container">
+                            <div className="content-title">MIRIMO</div>
+                            <div className="content-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </div>
+                            <div className="content-background"></div>
+                        </div>
+                    </div>
+                    <div className="about-identity">
+                        <div className="wrap-identity">
+                            {/* IDENTITY ITEM 1 */}
+                            <div className="identity-item">
+                                {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity1})`}}></div> */}
+                                <div className="ident-title">Give back to<br/>Society</div>
+                                <div className="ident-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                                 </div>
                             </div>
 
-                            {/* 아이덴티티 */}
-                            <div className="identity">
-                                <div className="wrap-identity">
-                                    <div className="identity-item">
-                                        <div className="identity-icon icon1"></div>
-                                        <div className="identity-title">Give back to<br/>Society</div>
-                                        <div className="identity-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                        </div>
-                                    </div>
 
-                                    <div className="identity-item">
-                                        <div className="identity-icon icon2"></div>
-                                        <div className="identity-title">Give back to<br/>Society</div>
-                                        <div className="identity-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                        </div>
-                                    </div>
+                            {/* IDENTITY ITEM 2 */}
+                            <div className="identity-item">
+                                {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity2})`}}></div> */}
+                                <div className="ident-title">Give back to<br/>Society</div>
+                                <div className="ident-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                </div>
+                            </div>
 
-                                    <div className="identity-item">
-                                        <div className="identity-icon icon3"></div>
-                                        <div className="identity-title">Give back to<br/>Society</div>
-                                        <div className="identity-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                        </div>
-                                    </div>
+                            {/* IDENTITY ITEM 3 */}
+                            <div className="identity-item">
+                                {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity3})`}}></div> */}
+                                <div className="ident-title">Give back to<br/>Society</div>
+                                <div className="ident-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    {/* 사진 */}
                     <div className="about-temp">
 
                     </div>
-
-                    {/* 프로젝트 */}
-                    <div className="about-projects">
-                        <div className="container">
-                            <div className="about-content-title">PROJECTS</div>
-                            <div className="about-content-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-
-                            <div className="projects-desktop">
-                                <div className="wrap-project">
-                                    <div className="project-item">
-                                        <div className="project-item-number">01</div>
-                                        <div className="project-item-title">RAJA</div>
-                                        <div className="project-item-intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    <div className="about-project">
+                        <div className="about-project-title">PROJECTS</div>
+                        <div className="about-project-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                        <div className="wrap-project">
+                            {/* PROJECT ITEM 1 */}
+                            <NavLink to="/Raja">
+                                <div className="project-item" style={{backgroundImage: `url(${Project1})`}}>
+                                    
+                                    <div className="project-background">
+                                        <div className="project-number">01</div>
+                                        <div className="project-title">RAJA</div>
+                                        <div className="project-content">
+                                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                         </div>
-                                        <NavLink to="/Raja"><div className="project-item-viewmore">View more</div></NavLink>
-                                    </div>
-
-                                    <div className="project-item">
-                                        <div className="project-item-number">02</div>
-                                        <div className="project-item-title">JSsustain</div>
-                                        <div className="project-item-intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </div>
-                                        <NavLink to="/JHsustain"><div className="project-item-viewmore">View more</div></NavLink>
-                                    </div>
-
-                                    <div className="project-item">
-                                        <div className="project-item-number">03</div>
-                                        <div className="project-item-title">8gram</div>
-                                        <div className="project-item-intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </div>
-                                        <NavLink to="/8gram"><div className="project-item-viewmore">View more</div></NavLink>
+                                        <div className="project-viewmore">View more</div>
                                     </div>
                                 </div>
-                                <div className="wrap-project">
-                                    <div className="project-item">
-                                        <div className="project-item-number">04</div>
-                                            <div className="project-item-title">MirimMediaLab</div>
-                                            <div className="project-item-intro">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                            </div>
-                                            <NavLink to="/MirimMediaLab"><div className="project-item-viewmore">View more</div></NavLink>
+                            </NavLink>
+
+                            {/* PROJECT ITEM 2 */}
+                            <NavLink to="/">
+                                <div className="project-item" style={{backgroundImage: `url(${Project2})`}}>
+                                    
+                                    <div className="project-background">
+                                        <div className="project-number">02</div>
+                                        <div className="project-title">JSsustain</div>
+                                        <div className="project-content">
+                                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                         </div>
+                                        <div className="project-viewmore">View more</div>
                                     </div>
                                 </div>
+                            </NavLink>
 
-                                <div className="projects-mobile">
-                                    <div className="project-item">
-                                        <div className="project-item-number">01</div>
-                                        <div className="project-item-title">RAJA</div>
-                                        <div className="project-item-intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            {/* PROJECT ITEM 3 */}
+                            <NavLink to="/">
+                                <div className="project-item" style={{backgroundImage: `url(${Project3})`}}>
+                                    
+                                    <div className="project-background">
+                                        <div className="project-number">03</div>
+                                        <div className="project-title">8gram</div>
+                                        <div className="project-content">
+                                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                         </div>
-                                        <NavLink to="/Raja"><div className="project-item-viewmore">View more</div></NavLink>
-                                    </div>
-
-                                    <div className="project-item">
-                                        <div className="project-item-number">02</div>
-                                        <div className="project-item-title">JSsustain</div>
-                                        <div className="project-item-intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </div>
-                                        <NavLink to="/JHsustain"><div className="project-item-viewmore">View more</div></NavLink>
-                                    </div>
-
-                                    <div className="project-item">
-                                        <div className="project-item-number">03</div>
-                                        <div className="project-item-title">8gram</div>
-                                        <div className="project-item-intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </div>
-                                        <NavLink to="/8gram"><div className="project-item-viewmore">View more</div></NavLink>
-                                    </div>
-
-                                    <div className="project-item">
-                                        <div className="project-item-number">04</div>
-                                        <div className="project-item-title">MirimMediaLab</div>
-                                        <div className="project-item-intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </div>
-                                        <NavLink to="/MirimMediaLab"><div className="project-item-viewmore">View more</div></NavLink>
+                                        <div className="project-viewmore">View more</div>
                                     </div>
                                 </div>
-                           </div>
-                       </div>
-
-                       {/* 팀원 소개 */}
-                        <div className="about-people">
-                            <div className="container">
-                                <div className="about-content-title">OUR PEOPLE</div>
-                                <div className="wrap-people">
-                                    <div className="wrap-major">
-                                        <div className="wrap-major-title">
-                                            <div className="major-border"></div>
-                                            <div className="major-title">Designer</div>
+                            </NavLink>
+                            
+                            {/* PROJECT ITEM 4 */}
+                            <NavLink to="/mirimmedialab">
+                                <div className="project-item" style={{backgroundImage: `url(${Project4})`}}>
+                                    
+                                    <div className="project-background">
+                                        <div className="project-number">04</div>
+                                        <div className="project-title">MirimMediaLab</div>
+                                        <div className="project-content">
+                                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                         </div>
-                                        <div className="wrap-member">
-                                            {
-                                                this.state.designerMemberData.map((member, i) => {
-                                                    return (<MemberItem
-                                                                    name={member.name}
-                                                                    position={member.position}
-                                                                    profileImage={member.profileImage}
-                                                                    key={i} 
-                                                        />);
-                                                    })
-                                            }
-                                        </div>
-                                    </div>
-                                    <div className="wrap-major">
-                                        <div className="wrap-major-title">
-                                            <div className="major-border"></div>
-                                            <div className="major-title">Developer</div>
-                                        </div>
-                                        <div className="wrap-member">
-                                            {
-                                                this.state.softwareDeveloperMemberData.map((member, i) => {
-                                                    return (<MemberItem
-                                                                    name={member.name}
-                                                                    position={member.position}
-                                                                    profileImage={member.profileImage}
-                                                                    key={i} 
-                                                        />);
-                                                    })
-                                            }
-                                        </div>
-                                        <div className="wrap-member">
-                                            {
-                                                this.state.webSolutionDeveloperMemberData.map((member, i) => {
-                                                    return (<MemberItem
-                                                                    name={member.name}
-                                                                    position={member.position}
-                                                                    profileImage={member.profileImage}
-                                                                    key={i} 
-                                                        />);
-                                                    })
-                                            }
-                                        </div>
+                                        <div className="project-viewmore">View more</div>
                                     </div>
                                 </div>
+                            </NavLink>
+                        </div>
+                    </div>
+                    <div className="about-people">
+                        <div className="people-title">OUR PEOPLE</div>
+                        <div className="wrap-people">
+                            <div className="wrap-subtitle">
+                                <div className="subtitle-border"></div>
+                                <div className="subtitle-text">Designer</div>
+                            </div>
+                            <div className="wrap-member">
+                            {
+                                this.state.designerMemberData.map((member, i) => {
+                                    return (<MemberItem
+                                                name={member.name}
+                                                position={member.position}
+                                                profileImage={member.profileImage}
+                                                key={i} 
+                                        />);
+                                    })
+                            }
+                            </div>
+                        </div>
+                        <div className="wrap-people">
+                            <div className="wrap-subtitle">
+                                <div className="subtitle-border"></div>
+                                <div className="subtitle-text">Developer</div>
+                            </div>
+                            <div className="wrap-member">
+                            {
+                                this.state.softwareDeveloperMemberData.map((member, i) => {
+                                    return (<MemberItem
+                                                name={member.name}
+                                                position={member.position}
+                                                profileImage={member.profileImage}
+                                                key={i} 
+                                        />);
+                                    })
+                            }
+                            </div>
+                            <div className="wrap-member">
+                            {
+                                this.state.webSolutionDeveloperMemberData.map((member, i) => {
+                                    return (<MemberItem
+                                                name={member.name}
+                                                position={member.position}
+                                                profileImage={member.profileImage}
+                                                key={i} 
+                                        />);
+                                    })
+                            }
                             </div>
                         </div>
                     </div>
+                </div>
                 <Footer/>
             </div>
         )

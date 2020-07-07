@@ -1,407 +1,511 @@
+@import "./mixin.scss";
+
 .about{
-    .wrap-banner{
-        position: relative;
-
-        @keyframes slidy {
-            0% { left: 0%; }
-            20% { left: 0%; }
-            25% { left: -100%; }
-            45% { left: -100%; }
-            50% { left: -200%; }
-            70% { left: -200%; }
-            75% { left: -300%; }
-            95% { left: -300%; }
-            100% { left: -400%; }
-        }
-            
-        div#slider { overflow: hidden; }
-        div#slider figure .banner-item { 
-            width: 20%; 
-            height: 560px;
-            // background: #0a112d;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-top: 60px;
-            float: left;
-            color: #ffffff;
-        }
-
-        div#slider figure { 
+    .about-banner{
+        .wrap-banner{
             position: relative;
-            width: 500%;
-            margin: 0;
-            left: 0;
-            text-align: left;
-            font-size: 0;
-            animation: 20s slidy infinite; 
+    
+            @keyframes slidy {
+                0% { left: 0%; }
+                20% { left: 0%; }
+                25% { left: -100%; }
+                45% { left: -100%; }
+                50% { left: -200%; }
+                70% { left: -200%; }
+                75% { left: -300%; }
+                95% { left: -300%; }
+                100% { left: -400%; }
+            }
+                
+            div#slider { overflow: hidden; }
+            div#slider figure .banner-item { 
+                width: 20%; 
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                float: left;
+                color: #ffffff;
+            }
+    
+            div#slider figure { 
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 20s slidy infinite; 
+            }
+    
+            .wrap-banner-content{
+                position: absolute;
+                color: #ffffff;
+                .wrap-subtitle{
+                    .subtitle-border{
+                        width: 46px;
+                        height: 2px;
+                        background: #ffffff;
+                    }
+                    .subtitle-text{
+                        margin-top: 9px;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }    
+            }
+    
+            .banner-index{
+                position: absolute;
+                font-size: 20px;
+                font-weight: 300;
+                color: #ffffff;
+            }
+            
         }
-
-        .wrap-banner-content{
-            position: absolute;
-            color: #ffffff;
-            .wrap-subtitle{
-                .subtitle-border{
-                    width: 46px;
-                    height: 2px;
-                    background: #ffffff;
-                }
-                .subtitle-text{
-                    margin-top: 9px;
-                    font-size: 16px;
-                    font-weight: 300;
-                }
-            }    
-        }
-
-        .banner-index{
-            position: absolute;
-            font-size: 20px;
-            font-weight: 300;
-            color: #ffffff;
-        }
-        
     }
 
     .about-content{
-        // TODO: MIRIMO background-image
-
-        // COMPANY
-        .company{
-            .company-title{
+        .cus-container{
+            margin: 0;
+            padding: 0 340px;
+            position: relative;
+            
+            .content-title{
                 font-size: 60px;
                 font-weight: 700;
-                line-height: 1.61;
             }
-            .company-intro{
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 1.67;
-            }
-        }
-
-        // IDENTITY
-        .identity{
-            .wrap-identity{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                .identity-item{
-                    display: flex;
-                    flex-direction: column;
-                    .identity-icon{
-                        width: 52px;
-                        height: 52px;
-                    }
-                    .identity-title{
-                        margin-top: 20px;
-                        font-size: 30px;
-                        font-weight: 700;
-                    }
-                    .identity-content{
-                        margin-top: 20px;
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
-
-                    // IDENTITY-ICON 이미지 설정
-                    .icon1{
-                        background-image: url(../resource/img/identity-1.png);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                    .icon2{
-                        background-image: url(../resource/img/identity-2.png);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                    .icon3{
-                        background-image: url(../resource/img/identity-3.png);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                }
-            }
-        }
-
-    }
-
-    // TEMP
-    .about-temp{
-        width: 100%;
-        height: 810px;
-        margin-top: 70px;
-        background: #e1e1e1;
-    }
-
-    // PROJECTS
-    .about-projects{
-        .projects-desktop{
-            .wrap-project{
-                display: flex;
-                &:last-child{
-                    .project-item{
-                        margin-top: 20px;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
-        .projects-mobile{
-
-        }
-
-        .project-item{
-            background: #e1e1e1;
-            margin-right: 20px;
-            color: #000000;
-            a{ text-decoration: none; color: #8f8f8f; }
-            .project-item-number{
-                color: #48e3e4;
+            .content-content{
                 font-size: 18px;
                 font-weight: 400;
             }
-            .project-item-title{
-                color: #8f8f8f;
-                font-size: 24px;
-                font-weight: 700;
-            }
-            .project-item-intro{
-                font-size: 16px;
-                font-weight: 400;
-            }
-            .project-item-viewmore{
-                text-align: right;
-                font-size: 16px;
-                font-weight: 400;
-            }
-
-            &:last-child{
-                margin-right: 0;
-            }
-
-            &:hover{
-                background: #8c8c8c;
-                transition: color .20s ease-in-out,background-color .20s ease-in-out;
-                .project-item-title{ color: #ffffff; }
-                .project-item-intro{ color: #ffffff; }
-                .project-item-viewmore{ color: #ffffff; }
+            .content-background{
+                background: url('../resource/img/main_2-2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
             }
         }
     }
 
-    // PEOPLE
-    .about-people{
-        .wrap-people{
-            .wrap-major{
-                display: flex;
-                flex-wrap: wrap;
-                .wrap-major-title{
-                    .major-border{ width: 27px; height: 2px; background: #000; }
-                    .major-title{ font-size: 24px; font-weight: 600; line-height: 1.25;}
+    .about-identity{
+        .wrap-identity{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .identity-item{
+                .ident-icon{
+                    width: 52px;
+                    height: 52px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
                 }
-                .wrap-member{
-                    display: flex;
-                    flex-wrap: wrap;
+                .ident-title{
+                    margin-top: 19px;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+                .ident-content{
+                    margin-top: 20px;
+                    font-size: 16px;
+                    font-weight: 400;
                 }
             }
-
             
         }
     }
 
-    .about-content-sub{
-        margin-top: 10px;
-        font-size: 18px;
-        font-weight: 400;
+    .about-temp{
+        width: 100%;
+        background-image: url('../resource/img/about/about-temp.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about-project{
+        .about-project-subtitle{
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    .about-people{
+        .wrap-people{
+            display: flex;
+            flex-wrap: wrap;
+            .wrap-subtitle{
+                .subtitle-border{
+                    width: 27px;
+                    height: 2px;
+                    background: #000000;
+                }
+                .subtitle-text{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+            }
+
+            .wrap-member{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
     }
 }
 
-
-// PC버전에만 적용
-@media only screen {
+@include desktop {
     .about{
-        .wrap-banner{
+        margin-top: 100px;
+        .about-banner{
+            div#slider figure .banner-item { 
+                height: 500px;
+            }
 
             .wrap-banner-content{
-                top: 130px;
-                left: 200px;
+                top: 20%;
+                left: 340px;
+                .subtitle-text{
+                    font-size: 16px;
+                    font-weight: 300;
+                }
                 .banner-title{
                     margin-top: 100px;
                     font-size: 47px;
                     font-weight: 300;
                 }
+
+                .banner-title-mobile{
+                    display: none;
+                }
             }
 
             .banner-index{
+                right: 340px;
                 bottom: 50px;
-                right: 200px;
+                font-size: 20px;
+                font-weight: 400;
             }
         }
-    
+
         .about-content{
-            .company{
-                margin-top: 150px;
-                .company-intro{
-                    width: 65%;
-                    margin-top: 16px;
+            .cus-container{
+                margin: 0;
+                padding: 0 0 0 340px;
+                .content-title{
+                    padding-top: 150px;
+                }
+                .content-content{
+                    width: 50%;
+                    padding: 16px 0 150px 0;
+                }
+                .content-background{
+                    width: 100%;
+                    height: 400px;
+                    position: absolute;
+                    top: 90px;
+                    right: 0px;
+                    background-position: right;
+                    
                 }
             }
-    
-            .identity{
-                margin-top: 200px;
+        }
+
+        .about-identity{
+            margin-top: 76px;
+            .wrap-identity{
+                margin: 0;
+                padding: 0 340px;
                 .identity-item{
-                    width: 30%;
+                    width: 32%;
                 }
             }
-    
         }
-    
+
         .about-temp{
-    
+            height: 800px;
+            margin-top: 80px;
         }
-    
-        .about-projects{
-            margin-top: 150px;
-            .projects-desktop{
+
+        .about-project{
+            margin-top: 140px;
+            padding: 0 340px;
+            .about-project-title{
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .wrap-project{
                 margin-top: 40px;
-                visibility: visible;
-                .wrap-project{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                a{
+                    width: 32%;
+                    text-decoration: none;
+                    margin-bottom: 2%;
                     &:last-child{
-                        .project-item{
-                            padding: 35px 29px 35px 38px; 
-                            .project-item-intro{ width: 40%; }
-                            .project-item-viewmore{ margin-top: 10px; }
+                        width: 100%;
+                    }
+                }
+
+                .project-item{
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    &:last-child{
+                        width: 100%;
+                    }
+
+                    .project-background{
+                        width: 100%;
+                        padding: 76px 40px 70px;
+                        background: #43bcbc4d;
+                        .project-number{
+                            color: #48e3e4;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        .project-title{
+                            margin-top: 16px;
+                            color: #8f8f8f;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                        .project-content{
+                            margin-top: 23px;
+                            color: #000000;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .project-viewmore{
+                            margin-top: 34px;
+                            color: #000000;
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-align: right;
+                        }
+                    }
+
+                    &:hover{
+                        .project-background{
+                            transition: background-color .30s ease-in-out;
+                            background: #43bcbcbf;
+                            .project-title{
+                                color: #fff;
+                                transition: color .25s ease-in-out;
+                            }
+                            .project-content{
+                                color: #fff;
+                                transition: color .25s ease-in-out;
+                            }
+                            .project-viewmore{
+                                color: #fff;
+                                transition: color .25s ease-in-out;
+                            }
+                            
                         }
                     }
                 }
             }
-            .projects-mobile{
-                display: none;
-            }
-            
-            .project-item{
-                padding: 76px 30px 70px 38px;
-                .project-item-title{ margin-top: 16px; }
-                .project-item-intro{ margin-top: 23px; }
-                .project-item-viewmore{ margin-top: 60px; }
-            }
-        }
-    
-        .about-people{
-            margin-top: 168px;
-            .wrap-people{
-                margin: 80px 0 179px 0;
-                .wrap-major{
-                    justify-content: flex-end;
-                    .wrap-member{
-                        justify-content: flex-end;
-                    }
-                }
-            }
-        }
-    }
 
-    .about-content-title{
-        font-size: 30px;
-        font-weight: 700;
+        }
+
+        .about-people{
+            margin-top: 170px;
+            padding: 0 340px;
+            .people-title{
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .wrap-people{
+                margin-top: 40px;
+                justify-content: flex-end;
+                
+            }
+        }
     }
 }
 
 
-// MOBILE버전에만 적용
-@media only screen and (max-device-width: 813px) {
+@include mobile{
     .about{
-        .wrap-banner{
-
-            .banner-index{
-                bottom: 50px;
-                left: 20px;
+        margin-top: 60px;
+        .about-banner{
+            div#slider figure .banner-item { 
+                height: 800px;
             }
 
             .wrap-banner-content{
+                top: 60%;
+                left: 20px;
                 .banner-title{
+                    display: none;
+                }
+                .banner-title-mobile{
                     margin-top: 30px;
                     font-size: 40px;
                     font-weight: 300;
                 }
             }
+
+            .banner-index{
+                left: 20px;
+                bottom: 50px;
+            }
         }
     
         .about-content{
-            .company{
-                margin-top: 100px;
-                text-align: center;
-                .company-intro{
-                    width: 100%;
+            .cus-container{
+                margin: 0;
+                padding: 0;
+                .content-title{
+                    margin: 100px 0 0 0;
+                    padding: 0 20px;
+                    text-align: center;
+                }
+                .content-content{
                     margin-top: 70px;
+                    padding: 0 20px;
+                    text-align: center;
+                }
+                .content-background{
+                    position: absolute;
+                    width: 120%;
+                    height: 160px;
+                    left: -10%;
+                    bottom: -200px;
+                    background-position: center;
                 }
             }
+        }
     
-            .identity{
-                margin-top: 300px;
+        .about-identity{
+            margin-top: 200px;
+            .wrap-identity{
+                margin: 0;
+                padding: 0 20px;
                 .identity-item{
                     width: 100%;
-                    margin-bottom: 150px;
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
                     align-items: center;
-                    text-align: center;
-                    &:last-child{
-                        margin-bottom: 0;
+                    .ident-title{
+                        text-align: center;
+                    }
+                    .ident-content{
+                        text-align: center;
                     }
                 }
             }
-    
         }
     
         .about-temp{
-    
+            height: 350px;
+            margin-top: 70px;
         }
     
-        .about-projects{
-            margin-top: 90px;
-            .projects-desktop{
-                display: none;
+        .about-project{
+            margin-top: 80px;
+            .about-project-title{
+                padding: 0 20px;
+                font-size: 30px;
+                font-weight: 700;
             }
-            .projects-mobile{
-                display: block;
-                visibility: visible;
+            .about-project-subtitle{
+                padding: 0 20px;
+            }
+
+            .wrap-project{
                 margin-top: 35px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                a{
+                    text-decoration: none;
+                }
+
                 .project-item{
                     width: 100%;
-                    margin-top: 20px;
-                    padding: 28px 24px 24px 38px;
-                    .project-item-title{ margin-top: 7px; }
-                    .project-item-viewmore{ font-weight: 600; margin-top: 20px; }
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-bottom: 20px;
+
+                    .project-background{
+                        width: 100%;
+                        padding: 28px 20px 23px 38px;
+                        background: #43bcbc4d;
+                        .project-number{
+                            color: #48e3e4;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        .project-title{
+                            margin-top: 16px;
+                            color: #000000;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                        .project-content{
+                            margin-top: 23px;
+                            color: #000000;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .project-viewmore{
+                            margin-top: 34px;
+                            color: #000000;
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-align: right;
+                        }
+                    }
+
+                    &:hover{
+                        .project-background{
+                            transition: background-color .30s ease-in-out;
+                            background: #43bcbcbf;
+                            .project-title{
+                                color: #fff;
+                                transition: color .25s ease-in-out;
+                            }
+                            .project-content{
+                                color: #fff;
+                                transition: color .25s ease-in-out;
+                            }
+                            .project-viewmore{
+                                color: #fff;
+                                transition: color .25s ease-in-out;
+                            }
+                            
+                        }
+                    }
                 }
             }
-            
+
         }
     
         .about-people{
             margin-top: 96px;
+            margin-bottom: 150px;
+            padding: 0 20px;
+            .people-title{
+                font-size: 24px;
+                font-weight: 700;
+            }
+
             .wrap-people{
-                margin: 4px 0 139px 0;
-                .wrap-major{
-                    justify-content: flex-start;
-                    .wrap-major-title{
-                        margin-top: 40px;
-                        margin-bottom: 30px;
-                    }
-                    .wrap-member{
-                        justify-content: space-between;
-                    }
+                .wrap-subtitle{
+                    margin-top: 45px;
+                    margin-bottom: 30px;
+                }
+                .wrap-member{
+                    justify-content: space-between;
                 }
             }
-            
         }
     }
-
-    .about-content-title{
-        font-size: 24px;
-        font-weight: 700;
-    }
-    .about-content-sub{
-        width: 80%;
-    }
-  }
+}
