@@ -1,38 +1,32 @@
+@import "./mixin.scss";
+
 .nav-main {
   width: 100vw;
-  height: 60px;
   background: #0a112d;
   position: fixed;
-  z-index: 1;
-
-  .wrap-nav {
+  top: 0;
+  z-index: 20;
+  .wrap-nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
     .nav-logo{
-      width: 80px;
-      height: 60px;
       background-image: url('../resource/img/mirimo_mirimo_logo.png');
-      background-size: contain;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
-  }
-}
 
-
-@media only screen {
-  .nav-main{
     .nav-menu{
+      display: flex;
+      align-items: center;
       a{
-        margin-left: 40px;
-        font-size: 12px;
-        font-weight: 400;
         color: #ffffff;
+        font-weight: 400;
         text-decoration: none;
+
         &:hover{
-          color: #3bbbbc;
+          color: #48e3e4;
+          transition: color .10s ease-in-out;
         }
       }
     }
@@ -40,10 +34,53 @@
 }
 
 
-@media only screen and (max-device-width: 813px) {
+@include desktop {
   .nav-main{
-    .nav-menu{
-      
+    height: 100px;
+    
+    .cus-container{
+      margin: 0;
+      padding: 0 340px;
+      background: #0a112d;
+      .wrap-nav{
+        .nav-logo{
+          width: 110px;
+          height: 100px;
+        }
+
+        .nav-menu{
+          height: 100px;
+          a{
+            font-size: 18px;
+            margin-left: 20px;
+          }
+        }
+      }
     }
   }
 }
+
+
+@include mobile{
+  .nav-main{
+    height: 60px;
+    .cus-container{
+      margin: 0;
+      padding: 0 20px;
+    }
+    .wrap-nav{
+      .nav-logo{
+        width: 80px;
+        height: 60px;
+      }
+      .nav-menu{
+        height: 60px;
+        a{
+          font-size: 13px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+

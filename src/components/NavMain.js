@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div>
       <div className="nav-main">
-        <div className="container">
+        <div className="cus-container">
           <div className="wrap-nav">
             <div>
               <NavLink exact={true} to="/">
@@ -14,13 +14,13 @@ const Nav = () => {
               </NavLink>
             </div>
             <div className="nav-menu">
-              <NavLink exact to="/" activeClassName="active">
+              <NavLink exact to="/" activeStyle={{color: `#48e3e4`}}>
                 About
               </NavLink>
-              <NavLink to="/contact" activeClassName="active">
+              <NavLink to="/contact" activeStyle={{color: `#48e3e4`}}>
                 Contact
               </NavLink>
-              <NavLink to="/project" activeClassName="active">
+              <NavLink to="/project" activeStyle={{color: `#48e3e4`}}>
                 Project
               </NavLink>
             </div>
