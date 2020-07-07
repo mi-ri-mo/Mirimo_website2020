@@ -1,7 +1,7 @@
 $main_color: #4abbbd;
 
 .project{
-    .container{
+    .container{        
         .about-content{
             .content-title{
                 margin-top: 5em;
@@ -72,6 +72,10 @@ $main_color: #4abbbd;
 }
 
 @media only screen and (max-width: 480px){
+    .container{
+        margin: 0; padding: 0 20px;  
+    }
+
     .content-title{
         margin-top: 3.6em;
     }
@@ -96,5 +100,25 @@ $main_color: #4abbbd;
         margin: 0;
         position: relative;
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 2304px){
+    .project{
+        .container{        
+            margin: 0;
+            padding: 0 340px;
+            width: 100%;
+            font-size: 24px;
+        }
+
+        // Project Item & Image
+        .wrap-project{
+            margin: 0;
+            min-height: 460px;
+        }
+        .project-image{
+            height: 460px;
+        }
     }
 }

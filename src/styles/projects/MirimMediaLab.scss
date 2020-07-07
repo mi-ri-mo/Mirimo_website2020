@@ -206,6 +206,10 @@
 }
 
 @media only screen and (max-width: 480px){
+    .container{
+        margin: 0; padding: 0 20px;  
+    }
+
     .mml{
         .header{
             .banner{
@@ -270,6 +274,88 @@
         .foo{
             img{
                 width: 20%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2304px){
+    .mml{
+        .container{        
+            margin: 0;
+            padding: 0 340px;
+            width: 100%;
+            font-size: 24px;
+        }
+
+        .header{
+            .banner{
+                padding: 21% 0;
+                img{
+                    height: 40px;
+                    margin-bottom: 60px;
+                }
+                .title{
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 70px;
+                    line-height: 0.7em;
+                }
+                span{
+                    font-size: 1em;
+                }
+            }
+            .goal-wrap{
+                .container{
+                    .contents{
+                        .content{
+                            height: 20em;
+                            width: 18.7em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .body{
+            .process-wrap{
+                .container{
+                    .process-title{
+                        @include bottom-box(40rem);
+                    }
+                    .process-details{
+                        .detail-wrap{
+                            .detail-num{
+                                width: 10rem;
+                                height: 10rem;
+                                line-height: 10rem;
+                                border-radius: 10rem;
+                                margin: 10px auto;
+                            }
+                            .detail-txt{
+                                line-height: 50px;
+                            }
+                        }
+                    }
+                    .process-imgs{
+                        margin: 4% 0;
+                        .img{
+                            height: 540px;
+                        }
+                    }
+                }
+            }
+            .contents-wrap{
+                .container{
+                    .content-title{
+                        @include bottom-box(25rem);
+                    }
+                    .content-imgs{
+                        .img{
+                            height: 630px;
+                        }
+                    }
+                }
             }
         }
     }

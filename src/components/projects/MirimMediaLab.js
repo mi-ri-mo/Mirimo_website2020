@@ -15,7 +15,7 @@ class MirimMediaLab extends Component {
                         <div className="banner">
                             <div className="container">
                                 <img src={process.env.PUBLIC_URL + './img/mirimo-logo2-w.png'} alt="mirimo logo"></img><br/>
-                                MIRIM MEDIA LAB<br/>
+                                <div className="title">MIRIM MEDIA LAB</div><br/>
                                 <span>2020학년도 아세안 직업교육협력 콘텐츠 제작</span>
                             </div>
                         </div>
