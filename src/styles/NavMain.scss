@@ -1,5 +1,5 @@
 .nav-main {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background: #0a112d;
   position: fixed;
@@ -10,28 +10,40 @@
     justify-content: space-between;
     align-items: center;
 
-    .nav-logo {
+    .nav-logo{
       width: 80px;
       height: 60px;
-      background-image: url('../resource/img/mirimo-logo.jpg');
-      background-size: cover;
-      background-position: center;
+      background-image: url('../resource/img/mirimo_mirimo_logo.png');
+      background-size: contain;
       background-repeat: no-repeat;
+      background-position: center;
     }
+  }
+}
 
-    .nav-menu {
-      a {
-        color: #ffffff;
+
+@media only screen {
+  .nav-main{
+    .nav-menu{
+      a{
         margin-left: 40px;
         font-size: 12px;
         font-weight: 400;
+        color: #ffffff;
         text-decoration: none;
+        &:hover{
+          color: #3bbbbc;
+        }
       }
-      a:hover,
-      a:active,
-      .active {
-        color: #4abbbd;
-      }
+    }
+  }
+}
+
+
+@media only screen and (max-device-width: 813px) {
+  .nav-main{
+    .nav-menu{
+      
     }
   }
 }
