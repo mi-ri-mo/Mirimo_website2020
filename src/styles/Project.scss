@@ -22,7 +22,7 @@ $main_color: #4abbbd;
 // Project Item & Image
 .wrap-project{
     position: relative;
-    min-height: 280px;
+    min-height: 340px;
 }
 .project-item{
     width: 44%;
@@ -57,8 +57,14 @@ $main_color: #4abbbd;
 }
 .project-image{
     width: 54%;
-    height: 280px;
-    background: #ccc;
+    height: 340px;
+}
+@for $i from 1 to 5{
+    .a#{$i}{
+        background: url(../resource/img/project/#{$i}.png);
+        background-size: cover;
+        background-position: center;
+    }
 }
 .fl-right{
     margin-left: 46%;

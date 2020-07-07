@@ -30,7 +30,7 @@
     .header{
         .banner{
             width: 100%;
-            background: url(../../resource/img/mml-banner-bg.png) 0 0 no-repeat;
+            background: url(../../resource/img/mml/banner-bg.png) 0 0 no-repeat;
             background-size: cover;
             color: #fff;
             font-weight: 600;
@@ -81,7 +81,7 @@
         }
         .goal-wrap{
             width: 100%;
-            background: url(../../resource/img/mml-goal-bg.png) 0 0 no-repeat;
+            background: url(../../resource/img/mml/goal-bg.png) 0 0 no-repeat;
             background-size: cover;
             padding: 3% 0;
             .container{
@@ -99,7 +99,7 @@
                             height: 32.1rem;
                             width: 30rem;
                             &:nth-child(#{$i}){
-                                background: url(../../resource/img/mml-goal-#{$i}.png) 0 0 no-repeat;
+                                background: url(../../resource/img/mml/goal-#{$i}.png) 0 0 no-repeat;
                                 background-size: cover;
                             }
                         }
@@ -155,7 +155,7 @@
                         height: 360px;
                         @for $i from 1 to 3{
                             &:nth-child(#{$i}){
-                                background: url(../../resource/img/mml-process-#{$i}.png);
+                                background: url(../../resource/img/mml/process-#{$i}.png);
                                 background-size: cover;
                             }
                         }
@@ -183,7 +183,7 @@
                         margin: 10px 0;
                         @for $i from 1 to 4{
                             &:nth-child(#{$i}){
-                                background: url(../../resource/img/mml-content-#{$i}.png);
+                                background: url(../../resource/img/mml/content-#{$i}.png);
                                 background-size: cover;
                             }
                         }

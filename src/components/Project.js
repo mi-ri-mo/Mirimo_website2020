@@ -17,7 +17,7 @@ const Project = () => {
                         <div className="content-title">WORK</div>
                         {/* PROJECT LIST */}
                         <div className="wrap-project">
-                            <div className="project-image fl-right"></div>
+                            <div className="project-image fl-right a1"></div>
                             <div className="project-item">
                                 <div className="project-title">RAJA</div>
                                 <div className="project-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
@@ -27,7 +27,7 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="wrap-project">
-                            <div className="project-image"></div>
+                            <div className="project-image a2"></div>
                             <div className="project-item">
                                 <div className="project-title">JHsustain</div>
                                 <div className="project-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
@@ -37,7 +37,7 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="wrap-project">
-                            <div className="project-image fl-right"></div>
+                            <div className="project-image fl-right a3"></div>
                             <div className="project-item">
                                 <div className="project-title">8gram</div>
                                 <div className="project-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
@@ -47,7 +47,7 @@ const Project = () => {
                             </div>
                         </div>
                         <div className="wrap-project">
-                            <div className="project-image"></div>
+                            <div className="project-image a4"></div>
                             <div className="project-item">
                                 <div className="project-title">MirimMediaLab</div>
                                 <div className="project-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
