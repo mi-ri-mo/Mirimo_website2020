@@ -22,9 +22,7 @@ class Contact extends Component {
   };
 
   callAPI() {
-    fetch('http://localhost:3002/contact').then((res) =>
-      this.setState({ email: '', subject: '', message: '' })
-    );
+    fetch('http://localhost:3002/contact');
   }
 
   componentWillMount() {
