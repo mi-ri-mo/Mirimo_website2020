@@ -1,49 +1,86 @@
-@media only screen {
-  .nav {
-    width: 100vw;
-    height: 60px;
-    background: #ffffff;
-    position: fixed;
-    z-index: 1;
-    .wrap-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+@import "./mixin.scss";
 
-      .nav-logo {
+.nav {
+  width: 100vw;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  .wrap-nav{
+    display: flex;
+    justify-content: space-between;
+    .nav-logo{
+      background-image: url('../resource/img/mirimo_mirimo_logo.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .nav-menu{
+      display: flex;
+      align-items: center;
+      a{
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+
+        &:hover{
+          color: #48e3e4;
+          transition: color .10s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+
+@include desktop {
+  .nav{
+    height: 100px;
+    
+    .cus-container{
+      margin: 0;
+      padding: 0 340px;
+      background: #ffffff;
+      .wrap-nav{
+        .nav-logo{
+          width: 110px;
+          height: 100px;
+        }
+
+        .nav-menu{
+          height: 100px;
+          a{
+            font-size: 18px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include mobile{
+  .nav{
+    height: 60px;
+    .cus-container{
+      margin: 0;
+      padding: 0 20px;
+    }
+    .wrap-nav{
+      .nav-logo{
         width: 80px;
         height: 60px;
-        background-image: url('../resource/img/mirimo-logo-w.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
       }
-
-      .nav-menu {
-        a {
-          color: #000000;
-          margin-left: 40px;
-          text-decoration: none;
-          font-size: 12px;
-          font-weight: 400;
-        }
-
-        a:hover,
-        a:active,
-        .active {
-          color: #3bbbbc;
+      .nav-menu{
+        height: 60px;
+        a{
+          font-size: 13px;
+          margin-left: 10px;
         }
       }
     }
   }
 }
 
-@media only screen and (max-device-width: 813px) {
-  .nav {
-    .wrap-nav {
-      .nav-menu {
-        // display: none;
-      }
-    }
-  }
-}

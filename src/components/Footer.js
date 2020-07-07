@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="logo"></div>
         <div className="info">
           <div className="social">
-            <div className="fb"></div>
-            <div className="insta"></div>
+            <a href="https://www.facebook.com/mirimo2020/" target="_blank"><div className="fb"></div></a>
+            <a href="https://www.instagram.com/mirimo01212/" target="_blank"><div className="insta"></div></a>
           </div>
           <div className="co_info">
             <div className="ceo">CEO Joohah Yoon</div>
