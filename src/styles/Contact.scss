@@ -1,10 +1,20 @@
 @media only screen {
+  .container {
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding: 0 340px;
+  }
+
   .info {
     .content {
       margin-top: 5%;
       margin-right: 12%;
-      font-size: 1em;
+      font-size: 20px;
       display: inline-block;
+
+      div {
+        margin: 10px 0 0 0;
+      }
     }
 
     margin-top: 100px;
@@ -15,7 +25,7 @@
       margin-top: 2.5%;
       margin-right: 12%;
       margin-bottom: 2.5%;
-      font-size: 1em;
+      font-size: 20px;
       display: inline-block;
     }
 
@@ -28,11 +38,16 @@
 
   .contact {
     .content {
+      form {
+        font-size: 20px;
+      }
       input {
         width: 85%;
         border: none;
         font-weight: 400;
         float: right;
+        outline: none;
+        padding: 5px;
       }
 
       input::placeholder {
@@ -41,6 +56,7 @@
 
       hr {
         border: 0.1px solid #c7c7c7;
+        margin: 40px 0 40px 0;
       }
 
       textarea {
@@ -50,20 +66,21 @@
         float: right;
         resize: none;
         font-weight: 400;
+        outline: none;
       }
 
       textarea::placeholder {
         color: #c4c4c4;
       }
       .send {
-        padding: 17px;
-        margin-top: 20px;
+        padding: 15px;
+        margin-top: 100px;
         margin-bottom: 300px;
-        width: 160px;
+        width: 140px;
         text-align: center;
         background-color: #3bbbbc;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 16px;
       }
 
       .send:hover {
@@ -75,15 +92,16 @@
       }
 
       font-weight: 700;
-      width: 60%;
+      width: 78%;
+      height: 100%;
       margin: auto;
-      margin-top: 100px;
+      margin-top: 150px;
     }
   }
 
   .title {
     margin-top: 8%;
-    font-size: 1.4em;
+    font-size: 30px;
     font-weight: 700;
   }
 }
