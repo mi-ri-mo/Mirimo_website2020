@@ -30,7 +30,7 @@
     .header{
         .banner{
             width: 100%;
-            background: url(../../resource/img/mml-banner-bg.png) 0 0 no-repeat;
+            background: url(../../resource/img/mml/banner-bg.png) 0 0 no-repeat;
             background-size: cover;
             color: #fff;
             font-weight: 600;
@@ -81,7 +81,7 @@
         }
         .goal-wrap{
             width: 100%;
-            background: url(../../resource/img/mml-goal-bg.png) 0 0 no-repeat;
+            background: url(../../resource/img/mml/goal-bg.png) 0 0 no-repeat;
             background-size: cover;
             padding: 3% 0;
             .container{
@@ -99,7 +99,7 @@
                             height: 32.1rem;
                             width: 30rem;
                             &:nth-child(#{$i}){
-                                background: url(../../resource/img/mml-goal-#{$i}.png) 0 0 no-repeat;
+                                background: url(../../resource/img/mml/goal-#{$i}.png) 0 0 no-repeat;
                                 background-size: cover;
                             }
                         }
@@ -155,7 +155,7 @@
                         height: 360px;
                         @for $i from 1 to 3{
                             &:nth-child(#{$i}){
-                                background: url(../../resource/img/mml-process-#{$i}.png);
+                                background: url(../../resource/img/mml/process-#{$i}.png);
                                 background-size: cover;
                             }
                         }
@@ -183,7 +183,7 @@
                         margin: 10px 0;
                         @for $i from 1 to 4{
                             &:nth-child(#{$i}){
-                                background: url(../../resource/img/mml-content-#{$i}.png);
+                                background: url(../../resource/img/mml/content-#{$i}.png);
                                 background-size: cover;
                             }
                         }
@@ -206,12 +206,25 @@
 }
 
 @media only screen and (max-width: 480px){
+    .container{
+        margin: 0; padding: 0 20px;  
+    }
+
     .mml{
         .header{
             .banner{
                 font-size: 2.6em;
-                padding: 74% 0;
+                padding: 98% 0;
                 background-position-x: center;
+                line-height: 0.3em;
+                .title{
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+                span{
+                    font-size: 0.4em;
+                }
             }
             .goal-wrap{
                 .container{
@@ -270,6 +283,88 @@
         .foo{
             img{
                 width: 20%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2304px){
+    .mml{
+        .container{        
+            margin: 0;
+            padding: 0 340px;
+            width: 100%;
+            font-size: 24px;
+        }
+
+        .header{
+            .banner{
+                padding: 21% 0;
+                img{
+                    height: 40px;
+                    margin-bottom: 60px;
+                }
+                .title{
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 70px;
+                    line-height: 0.7em;
+                }
+                span{
+                    font-size: 1em;
+                }
+            }
+            .goal-wrap{
+                .container{
+                    .contents{
+                        .content{
+                            height: 20em;
+                            width: 18.7em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .body{
+            .process-wrap{
+                .container{
+                    .process-title{
+                        @include bottom-box(40rem);
+                    }
+                    .process-details{
+                        .detail-wrap{
+                            .detail-num{
+                                width: 10rem;
+                                height: 10rem;
+                                line-height: 10rem;
+                                border-radius: 10rem;
+                                margin: 10px auto;
+                            }
+                            .detail-txt{
+                                line-height: 50px;
+                            }
+                        }
+                    }
+                    .process-imgs{
+                        margin: 4% 0;
+                        .img{
+                            height: 540px;
+                        }
+                    }
+                }
+            }
+            .contents-wrap{
+                .container{
+                    .content-title{
+                        @include bottom-box(25rem);
+                    }
+                    .content-imgs{
+                        .img{
+                            height: 630px;
+                        }
+                    }
+                }
             }
         }
     }

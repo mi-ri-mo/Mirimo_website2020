@@ -18,14 +18,14 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route exact={true} path="/" component={About}/>
-            <Route path="/Contact" component={Contact}/>
-            <Route path="/Project" component={Project}/>
-            <Route path="/Raja" component={Raja}/>
-            <Route path="/JHsustain" component={JHsustain}/>
-            <Route path="/8gram" component={eightGram}/>
-            <Route path="/MirimMediaLab" component={MirimMediaLab}/>
-            <Route component={NoMatch}/>
+            <Route exact={true} path="/" component={About} />
+            <Route path="/Contact" component={Contact} />
+            <Route path="/Project" component={Project} />
+            <Route path="/Raja" component={Raja} />
+            <Route path="/JHsustain" component={JHsustain} />
+            <Route path="/8gram" component={eightGram} />
+            <Route path="/MirimMediaLab" component={MirimMediaLab} />
+            <Route component={NoMatch} />
           </Switch>
         </Router>
       </div>
