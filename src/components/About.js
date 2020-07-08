@@ -207,7 +207,7 @@ class About extends Component {
                         <div className="about-project-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
                         <div className="wrap-project">
                             {/* PROJECT ITEM 1 */}
-                            <NavLink to="/Raja">
+                            <NavLink to="/">
                                 <div className="project-item" style={{backgroundImage: `url(${Project1})`}}>
                                     
                                     <div className="project-background">
@@ -252,7 +252,7 @@ class About extends Component {
                             </NavLink>
                             
                             {/* PROJECT ITEM 4 */}
-                            <NavLink to="/mirimmedialab">
+                            <NavLink to="/">
                                 <div className="project-item" style={{backgroundImage: `url(${Project4})`}}>
                                     
                                     <div className="project-background">
