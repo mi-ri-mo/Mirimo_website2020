@@ -10,8 +10,8 @@ import MemberItem from './MemberItem';
 // import Identity2 from '../resource/img/identity-2.png'
 // import Identity3 from '../resource/img/identity-3.png'
 
-import Banner1 from '../resource/img/main_1.png';
-import Banner2 from '../resource/img/main_2.png';
+import Banner1 from '../resource/img/main_1.png'
+import Banner2 from '../resource/img/main_2.jpg'
 
 import Project1 from '../resource/img/about/about-project-1.png';
 import Project2 from '../resource/img/about/about-project-2.png';
