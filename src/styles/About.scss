@@ -157,7 +157,7 @@
         margin-top: 100px;
         .about-banner{
             div#slider figure .banner-item { 
-                height: 700px;
+                height: 720px;
             }
 
             .wrap-banner-content{
@@ -504,6 +504,7 @@
                     margin-bottom: 30px;
                 }
                 .wrap-member{
+                    flex-wrap: wrap;
                     justify-content: space-between;
                 }
             }
