@@ -23,7 +23,7 @@ class Contact extends Component {
 
   callAPI() {
     fetch('http://localhost:3002/contact', {
-      method: 'GET',
+      method: 'POST',
       headers: {
         'access-control-allow-origin': '*',
         'Content-type': 'application/json; charset=UTF-8',
