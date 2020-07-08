@@ -21,18 +21,17 @@ class Contact extends Component {
     });
   };
 
-  callAPI() {
+  componentWillMount() {
     fetch('http://mirimo.emirim.kr:3002/contact', {
       method: 'POST',
+      mode: 'cors',
       headers: {
         'access-control-allow-origin': '*',
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }).then((results) => results.json());
-  }
-
-  componentWillMount() {
-    this.callAPI();
+    })
+      .then((results) => results.json())
+      .catch((err) => console.log(err));
   }
 
   render() {
