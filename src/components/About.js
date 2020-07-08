@@ -11,7 +11,7 @@ import MemberItem from './MemberItem';
 // import Identity3 from '../resource/img/identity-3.png'
 
 import Banner1 from '../resource/img/main_1.png'
-import Banner2 from '../resource/img/main_2.png'
+import Banner2 from '../resource/img/main_2.jpg'
 
 import Project1 from '../resource/img/about/about-project-1.png'
 import Project2 from '../resource/img/about/about-project-2.png'
@@ -258,7 +258,7 @@ class About extends Component {
                                     <div className="project-background">
                                         <div className="project-number">04</div>
                                         <div className="project-title">MirimMediaLab</div>
-                                        <div className="project-content">
+                                        <div className="project-content width-30">
                                             consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                         </div>
                                         <div className="project-viewmore">View more</div>
