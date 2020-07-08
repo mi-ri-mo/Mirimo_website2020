@@ -110,13 +110,13 @@ class About extends Component {
     };
   }
 
-  onClickProject = () => {
-    alert('7월 9일 공개될 예정입니다');
-  };
-
   componentDidMount() {
     this.startCarousel();
   }
+
+  onClickProject = () => {
+    alert('7월 9일 공개될 예정입니다');
+  };
 
   startCarousel = () => {
     this.carouselInterval = setInterval(() => {
@@ -206,9 +206,8 @@ class About extends Component {
               <div className="identity-item">
                 {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity2})`}}></div> */}
                 <div className="ident-title">
-                  Give back to
-                  <br />
-                  Society
+                  Growth <br />
+                  Potential{' '}
                 </div>
                 <div className="ident-content">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
@@ -220,9 +219,9 @@ class About extends Component {
               <div className="identity-item">
                 {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity3})`}}></div> */}
                 <div className="ident-title">
-                  Give back to
+                  Cooperative
                   <br />
-                  Society
+                  Development
                 </div>
                 <div className="ident-content">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
