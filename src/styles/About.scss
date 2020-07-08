@@ -139,6 +139,7 @@
                     background: #000000;
                 }
                 .subtitle-text{
+                    width: 110px;
                     font-size: 24px;
                     font-weight: 600;
                 }
@@ -157,7 +158,7 @@
         margin-top: 100px;
         .about-banner{
             div#slider figure .banner-item { 
-                height: 700px;
+                height: 720px;
             }
 
             .wrap-banner-content{
@@ -256,10 +257,14 @@
                         width: 100%;
                     }
 
+                    .width-30{
+                        width: 30%;
+                    }
+
                     .project-background{
                         width: 100%;
                         padding: 76px 40px 70px;
-                        background: #43bcbc4d;
+                        background: #00000080;
                         .project-number{
                             color: #48e3e4;
                             font-size: 18px;
@@ -267,19 +272,21 @@
                         }
                         .project-title{
                             margin-top: 16px;
-                            color: #8f8f8f;
+                            color: #ffffff;
+                            text-shadow: 0px 0px 5px #00000080;
                             font-size: 24px;
                             font-weight: 700;
                         }
                         .project-content{
                             margin-top: 23px;
-                            color: #000000;
+                            color: #ffffff;
+                            text-shadow: 0px 0px 5px #00000080;
                             font-size: 16px;
                             font-weight: 400;
                         }
                         .project-viewmore{
                             margin-top: 34px;
-                            color: #000000;
+                            color: #ffffff;
                             font-size: 16px;
                             font-weight: 400;
                             text-align: right;
@@ -438,7 +445,7 @@
                     .project-background{
                         width: 100%;
                         padding: 28px 20px 23px 38px;
-                        background: #43bcbc4d;
+                        // background: #43bcbc4d;
                         .project-number{
                             color: #48e3e4;
                             font-size: 18px;
@@ -504,6 +511,7 @@
                     margin-bottom: 30px;
                 }
                 .wrap-member{
+                    flex-wrap: wrap;
                     justify-content: space-between;
                 }
             }
