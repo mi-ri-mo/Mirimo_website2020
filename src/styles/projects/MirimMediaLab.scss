@@ -214,8 +214,17 @@
         .header{
             .banner{
                 font-size: 2.6em;
-                padding: 74% 0;
+                padding: 98% 0;
                 background-position-x: center;
+                line-height: 0.3em;
+                .title{
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+                span{
+                    font-size: 0.4em;
+                }
             }
             .goal-wrap{
                 .container{
