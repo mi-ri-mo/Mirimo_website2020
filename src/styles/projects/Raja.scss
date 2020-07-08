@@ -1,415 +1,437 @@
-@mixin sub-title{
+@import "../mixin.scss";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+}
+
+@mixin title{
+    font-family: 'Open Sans';
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 30px;
     color: #228b22;
 }
 
-.raja-project{
-    .header{
-        .banner{
-            width: 100%;
-            height: 500px;
-            background-image: url('../../resource/img/raja/raja-desktop.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            // background-position: center;
-            color: #ffffff;
+@mixin content{
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 43px;
+    color: #000;
+}
 
-            .wrap-banner-text{
-                height: 500px;
-                margin-top: 60px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                font-size: 30px;
+.raja-project{
+    font-family: 'Noto Sans KR';
+    .raja-header{
+        width: 100%;
+        padding: 0 15%;
+        background-image: url(../../resource/img/raja/raja-ui.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .wrap-header-text{
+            padding: 20% 0;
+            .header-title{
+                margin-bottom: 0.2%;
+                font-size: 2em;
                 font-weight: 700;
+                color: #fff;
             }
-            
-            a{
-                margin-top: 20px;
-                font-size: 0.5em;
-                text-decoration: none;
-                font-weight: 500;
-                color: #ffffff;
-            }
-        }
-        .overview-wrap{
-            width: 100%;
-            padding: 6% 0;
-            // background-image: url('../../resource/img/mml-content-1.png');
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
-            .ov-title{
-                color: #228b22;
-                @include sub-title;
-                line-height: 4em;
-            }
-            .ov-sub{
-                float: left;
-            }
-        }
-        .info-wrap{
-            width: 100%;
-            background: #efecea;
-            color: #000;
-            padding: 5% 0;
-            .wrap-content{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                .content{
-                    width: 254px;
-                    .content-title{
-                        color: #228b22;
-                        @include sub-title;
-                        margin-bottom: 20px;
-                    }
-                }
+            .header-link{
+                margin-top: 3%;
+                font-size: 1em;
+                font-weight: 400;
+                color: #fff;
             }
         }
     }
-    .body{
-        .interview-wrap{
-            width: 100%;
-            color: #000;
-            padding: 4% 0;
-            .container{
-                padding-bottom: 3em;
-                .interview-title{
-                    @include sub-title;
-                    margin-bottom: 20px;
-                }
-                
-            }
 
-            .wrap-interview-content{
+    .raja-overview{
+        
+        background-image: url(../../resource/img/main_2-2.png); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        .overview-title{@include title();}
+        .overview-content{@include content();}
+    }
+
+    .raja-content{
+        background: #f0eceb;
+        display: flex;
+        .content-item{
+            .item-title{@include title(); }
+            .item-content{@include content();}
+        }
+    }
+
+    .raja-client-interview{
+        .ci-title{@include title();}
+        .ci-content{@include content();}
+        .wrap-ci{
+            display: flex;
+            .ci-web-before{
+                background-image: url(../../resource/img/raja/raja-interview.png);
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .ci-list{
                 display: flex;
-                flex-wrap: wrap;
-                .interview-img{
-                    background: url(../../resource/img/raja/raja-interview.png) 0 0 no-repeat;
-                    background-size: 100%;
-                }
-                .interview-info{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                }
-            }            
-        }
-        .keyword-wrap{
-            width: 100%;
-            color: #000;
-            padding-top: 3%;
-            margin-bottom: 3%;
-            background: #eeede9;
-            clear: both;
-            z-index: -2;
-            position: relative;
-            .keyword-title{
-                @include sub-title;
-                margin-bottom: 20px;
-                color: #228b22;
-
-            }
-
-            .wrap-keyword{
-                .circle-list{
-                    z-index: 1;
-                    display: flex;
-                    flex-wrap: wrap;
-                    text-align: center;
-                    margin: 5% 0 3% 0;
-                    .circle{
-                        height: 200px;
-                        width: 200px;
-                        border-radius: 200px;
-                        background: #333;
-                        color: #fff;
-                        padding-top: 40%;
-                        font-size: 1.6em;
-                        .circle-sub{
-                            font-size: 0.5em;
-                        }
-                    }
-                }
-            }
-            .circle-line{
-                position: relative;
-                top: -150px;
-                z-index: -1;
-                height: 0.1px;
-                border: solid #333 0.1px;
-            }
-        }
-        .design-wrap{
-            width: 100%;
-            color: #000;
-            padding: 3% 0;
-            background: #fff;
-            clear: both;
-            .container{
-                .design-title{
-                    @include sub-title;
-                    line-height: 3em;
-                }
-                .design-colors{
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    .color{
-                        margin: 6% 0;
-                        width: 49%;
-                        height: 200px;
-                        background: #efecea;
-                        color: #fff;
-                        display: table;
-                        padding: 1%;
-                        .color-name{
-                            font-size: 1.2em;
-                            display: table-cell;
-                            vertical-align: bottom;
-                            .color-code{
-                                font-size: 1em;
-                            }
-                        }
-                        &:nth-child(1){
-                            background: #228b22;
-                        }
-                    }
-                }
-                .font-name{
-                    font-family: 'Noto Sans KR', sans-serif;
-                    font-size: 2.6em;
-                }
-                .design-fonts{
-                    .font{
-                        display: flex;
-                        flex-wrap: wrap;
-                        margin: 6% 0;
-                        @for $i from 1 to 5{
-                            .font-weight#{$i}{
-                                font-family: 'Noto Sans KR', sans-serif;
-                                font-size: 3em;
-                                font-weight: 1000 - ($i * 200);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .ui{
-            width: 100%;
-            color: #000;
-            padding: 3% 0;
-            background: #eee;
-            clear: both;
-            .wrap-ui-top{
-                display: flex;
+                flex-direction: column;
                 justify-content: space-between;
-                flex-wrap: wrap;
-                .top{
-                    margin-top: auto;
-                    margin-bottom: auto;
-                    width: 54%;
-                    .top-title{
-                        font-weight: 500;
-                        font-size: 1.6em;
-                        line-height: 3em;
-                        color: #228b22;
-                    }
-                }
-                .top-box{
-                    width: 300px;
-                    height: 600px;
-                    background-image: url(../../resource/img/raja/raja-ui.png);              
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                }
-
-            }
-            .view{
-                .wrap-ui{
-                    display: flex;
-                    width: 100%;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    @for $i from 1 to 4{
-                        .view-img#{$i}{
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                        }
-                    }
-
-                    .view-img1{ background-image: url(../../resource/img/raja/raja-ui-1.png);}
-                    .view-img2{ background-image: url(../../resource/img/raja/raja-ui-2.png);}
-                    .view-img3{ background-image: url(../../resource/img/raja/raja-ui-3.png);}
-
-                }
             }
         }
-        .web{
-            width: 100%;
-            color: #000;
-            padding: 3% 0;
-            clear: both;
-            .container{
-                .top{
-                    .top-title{
-                        font-weight: 500;
-                        font-size: 1.6em;
-                        line-height: 3em;
-                    }
-                }
+    }
+
+    .raja-design-key{
+        background: #f0eceb;
+        .dk-title{@include title(); }
+        .dk-content{@include content();}
+        .wrap-dk{
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            .dk-border{
+                width: 100vw;
+                height: 2px;
+                top: 50%;
+                left: 0;
+                background: #333;
+                position: absolute;
             }
-            .view{
-                padding: 3% 0;
-                .container{
-                    display: flex;
-                    flex-wrap: wrap;
-                    clear: both;
-                    padding-left: 4%;
-                    vertical-align: middle;
-                    .view-title{
-                        margin: auto 0;
-                        font-weight: 500;
-                        font-size: 1.2em;
-                    }
-                    .view-sub{
-                        margin: auto;
-                        margin-right: 0;
-                        width: 50%;
-                        margin-left: auto;
-                    }
-                    .view-box{
-                        margin: 3% 0;
-                        width: 100vw;
-                        background-image: url('../../resource/img/raja/raja-desktop.png');
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }
-                }
+            .dk-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: #333;
+                border-radius: 50%;
+                color: #fff;
+                z-index: 5;
+                .item-eng{font-size: 30px; font-weight: 700; font-family: 'Open Sans';}
+                .item-kor{font-size: 18px; font-weight: 400; margin-top: 4px;}
             }
+        }
+    }
+
+    .raja-color{
+        .color-title{@include title();}
+        .color-content{@include content();}
+        .wrap-color{
+            display: flex;
+            margin-top: 80px;
+            .color-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                height: 300px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .forest-green{background: #228b22; color: #fff;}
+            .beige{background: #efecea; color: #000;}
+        }
+    }
+
+    .raja-font{
+        .font-title{@include title();}
+        .font-name{font-size: 50px; font-weight: 400; margin-top: 32px;}
+        .font-ipsum{@include content(); margin-top: 10px;}
+        .wrap-font{
+            display: flex;
+            .font-item{
+                height: 100px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .raja-ui-top{
+        background: #f0eceb;
+        .wrap-ui{
+            display: flex;
+            align-items: center;
+            .wrap-text{
+                .ui-title{@include title();}
+                .ui-content{@include content();}
+            }
+            .ui-mobile{
+                width: 345px;
+                height: 730px;
+                background-image: url(../../resource/img/raja/raja-ui.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .raja-ui-bottom{
+        display: flex;
+        background: #f0eceb;
+    }
+    
+    .raja-web{
+        .web-title{@include title();}
+        .web-ui{
+            margin: 0 auto;
+            background-image: url('../../resource/img/raja/raja-desktop.png');
+            background-position: top center;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }
 
 @media only screen {
-    .ov-sub{
-        width: 54%;
-    }
-
-    .intetview-sub{
-        width: 38%;
-    }
-
-    .wrap-interview-content{
-        .interview-img{
-            width: 60%;
-            height: 320px;
-            background: blue;
-            margin-right: 50px;
-        }
-        .interview-info{
+    .raja-project{
+        .raja-header{
+            margin-top: 100px;
         }
     }
-    
-    .keyword-sub{
-        width: 34%;
+
+    .raja-overview{
+        margin: 8% 0 8% 15%;
+        padding: 2% 0;
+        background-position: right;
+        .overview-content{
+            width: 67%;
+        }
     }
 
-    .circle-list{
+    .raja-content{
+        padding: 8% 15%;
         justify-content: space-between;
-    }
-
-    @for $i from 1 to 4{
-        .view-img#{$i}{
-            margin-top: $i * 200px;
-            width: 32%;
-            height: 1800px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
+        .content-item{
+            width: 28%;
         }
     }
 
-    
-    .design-sub{
-        width: 50%;
+    .raja-client-interview{
+        padding: 8% 0;
+        .ci-title{padding: 0 15%;}
+        .ci-content{padding: 0 15%; width: 65%;}
+        .wrap-ci{
+            margin-top: 20px;
+            .ci-web-before{
+                width: 60%;
+                height: 500px;
+            }
+            .ci-list{
+                margin-left: 100px;
+                padding: 60px 0;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
     }
 
-    .font{
+    .raja-design-key{
+        padding: 8% 0;
+        .dk-title{padding: 0 15%;}
+        .dk-content{padding: 0 15%; width: 60%;}
+        .wrap-dk{
+            margin-top: 80px;
+            padding: 0 15%;
+            justify-content: space-between;
+            .dk-item{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    .raja-color{
+        padding: 8% 15%;
+        .color-content{width: 45%;}
+        .wrap-color{
+            justify-content: space-between;
+            .color-item{
+                width: 49%;
+                padding: 1.2%;
+            }
+        }
+    }
+
+    .raja-font{
+        padding: 8% 15%;
+        .font-ipsum{width: 55%;}
+        .wrap-font{
+            margin-top: 40px;
+            justify-content: space-between;
+            .font-item{
+                width: 220px;
+            }
+        }
+    }
+
+    .raja-ui-top{
+        padding: 8% 15% 0;
+        .wrap-ui{
+            .wrap-text{
+                padding: 0 130px 0 0;
+                width: 60%;
+            }
+        }
+    }
+
+    .raja-ui-bottom{
+        padding: 8% 15%;
         justify-content: space-between;
+        .ui-item{
+            width: 300px;
+            height: 1900px;
+            &:nth-child(2){margin-top: 200px;}
+            &:nth-child(3){margin-top: 400px;}
+        }
     }
 
-    .view-box{
-        height: 4460px;
+    .raja-web{
+        padding: 8% 15%;
+        .web-ui{
+            width: 1021px;
+            height: 2750px;
+            margin-top: 100px;
+        }
     }
 }
 
 @media only screen and (max-device-width: 813px) {
-    .ov-sub{
-        width: 97%;
-        text-align: center;
-    }
-
-    .intetview-sub{
-        width: 97%;
-        margin-bottom: 20px;
-    }
-
-    .wrap-interview-content{
-        .interview-img{
-            width: 100vw;
-            height: 200px;
-            margin-right: 0;
+    .raja-project{
+        .raja-header{
+            padding: 0 20px;
+            margin-top: 60px;
         }
-        .interview-info{
+    }
+    
+    .raja-overview{
+        margin: 40px 0 40px 0;
+        padding: 0 20px 160px;
+        background-position: bottom;
+        .overview-content{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .raja-content{
+        padding: 16% 20px 6%;
+        flex-wrap: wrap;
+        justify-content: center;
+        .content-item{
             width: 90%;
-            margin: 0 auto;
-            .interview-info-item{
-                margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+    }
+
+    .raja-client-interview{
+        padding: 8% 0;
+        .ci-title{padding: 0 20px;}
+        .ci-content{padding: 0 20px; width: 100%; text-align: center;}
+        .wrap-ci{
+            flex-wrap: wrap;
+            margin-top: 40px;
+            .ci-web-before{
+                width: 100%;
+                height: 22vh;
+            }
+            .ci-list{
+                padding: 8% 20px;
+                font-size: 16px;
+                font-weight: 500;
+                .ci-li{
+                    margin-bottom: 2%;
+                }
             }
         }
-    }  
-
-    .keyword-sub{
-        width: 100%;
     }
-    .circle-list{
+
+    .raja-design-key{
+        padding: 8% 0;
+        .dk-title{padding: 0 20px;}
+        .dk-content{padding: 0 20px; width: 100%; text-align: center;}
+        .wrap-dk{
+            margin-top: 60px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .dk-item{
+                width: 220px;
+                height: 220px;
+                margin-bottom: 10%;
+            }
+        }
+    }
+
+    .raja-color{
+        padding: 8% 20px 4%;
+        .color-content{width: 100%; text-align: center;}
+        .wrap-color{
+            flex-wrap: wrap;
+            .color-item{
+                width: 100%;
+                padding: 4%;
+                margin-bottom: 4%;
+            }
+        }
+    }
+
+    .raja-font{
+        padding: 8% 20px;
+        .font-name{text-align: center;}
+        .font-ipsum{width: 100%; text-align: center;}
+        .wrap-font{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .font-item{
+                width: 48%;
+                margin-bottom: 4%;
+            }
+        }
+    }
+
+    .raja-ui-top{
+        padding: 8% 20px;
+        .wrap-ui{
+            flex-wrap: wrap;
+            justify-content: center;
+            .wrap-text{
+                width: 100%;
+                padding: 0;
+                .ui-content{ margin-bottom: 40px; text-align: center;}
+            }
+            .ui-mobile{
+                width: 345px;
+                height: 730px;
+                background-image: url(../../resource/img/raja/raja-ui.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .raja-ui-bottom{
+        padding: 10% 20px 8%;
+        flex-wrap: wrap;
         justify-content: center;
-        .circle-content{
-            margin-bottom: 20px;
-        }
-    }
-
-    .view-img1, .view-img2, .view-img3{
-        
-    }
-
-    @for $i from 1 to 4{
-        .view-img#{$i}{
-            margin-bottom: 40px;
-            width: 100vw;
+        .ui-item{
+            width: 100%;
             height: 2000px;
-            margin-top: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
-    
-    .design-sub{
-        width: 97%;
-    }
-
-    .font{
-        justify-content: space-around;
-        span{
-            margin: 0 20px;
+    .raja-web{
+        padding: 8% 20px;
+        .web-ui{
+            width: 100%;
+            height: 1200px;
+            margin-top: 40px;
         }
-    }
-
-    .view-box{
-        height: 1400px;
     }
 }
