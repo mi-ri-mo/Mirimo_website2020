@@ -22,7 +22,7 @@ class Contact extends Component {
   };
 
   callAPI() {
-    fetch('http://localhost:3002/contact', {
+    fetch('http://mirimo.emirim.kr:3002/contact', {
       method: 'POST',
       headers: {
         'access-control-allow-origin': '*',
