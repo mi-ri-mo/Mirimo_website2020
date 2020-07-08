@@ -73,14 +73,15 @@
         color: #c4c4c4;
       }
       .send {
-        padding: 15px;
+        padding: 20px 15px;
+        margin-left: 10px;
         margin-top: 100px;
         margin-bottom: 300px;
-        width: 140px;
+        width: 180px;
         text-align: center;
         background-color: #3bbbbc;
         color: #ffffff;
-        font-size: 16px;
+        font-size: 20px;
       }
 
       .send:hover {
@@ -145,6 +146,10 @@
       margin: 50px 0 0 0;
       width: 100%;
       font-size: 16px;
+
+      form {
+        font-size: 16px;
+      }
 
       input {
         width: 100%;
