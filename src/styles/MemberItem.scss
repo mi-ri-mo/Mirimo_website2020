@@ -36,13 +36,15 @@
 
 @media only screen and (max-device-width: 813px) {
     .member-item{
-        margin: 0 0 13px 0;
+        margin: 0 0px 13px 0px;
         .member-profile{
             width: 159px;
             height: 194px;
         }
         .member-name{}
-        .member-position{}
+        .member-position{
+            font-size: 13px;
+        }
 
         &:first-child{
             margin-left: 0;

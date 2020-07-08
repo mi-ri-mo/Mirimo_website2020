@@ -183,7 +183,7 @@ class About extends Component {
                             {/* IDENTITY ITEM 2 */}
                             <div className="identity-item">
                                 {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity2})`}}></div> */}
-                                <div className="ident-title">Give back to<br/>Society</div>
+                                <div className="ident-title">Growth <br/>Potential </div>
                                 <div className="ident-content">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                                 </div>
@@ -192,7 +192,7 @@ class About extends Component {
                             {/* IDENTITY ITEM 3 */}
                             <div className="identity-item">
                                 {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity3})`}}></div> */}
-                                <div className="ident-title">Give back to<br/>Society</div>
+                                <div className="ident-title">Cooperative<br/>Development</div>
                                 <div className="ident-content">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                                 </div>
