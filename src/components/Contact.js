@@ -22,7 +22,13 @@ class Contact extends Component {
   };
 
   callAPI() {
-    fetch('http://localhost:3002/contact');
+    fetch('http://localhost:3002/contact', {
+      method: 'GET',
+      headers: {
+        'access-control-allow-origin': '*',
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    }).then((results) => results.json());
   }
 
   componentWillMount() {
