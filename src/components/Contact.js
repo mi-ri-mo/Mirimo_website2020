@@ -22,9 +22,9 @@ class Contact extends Component {
   };
 
   componentWillMount() {
-    fetch('https://mirimo.emirim.kr/contact')
-      .then((res) => res.text())
-      .then((res) => this.setState({ email: '', subject: '', message: '' }));
+    fetch('http://localhost:3002/contact').then((res) =>
+      this.setState({ email: '', subject: '', message: '' })
+    );
   }
 
   render() {

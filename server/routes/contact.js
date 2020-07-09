@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/send', (req, res, next) => {
-  let email = req.query.email || req.body.email;
+  let email = req.body.email || req.query.email;
   let subject = req.body.subject || req.query.subject;
   let message = req.body.message || req.query.message;
 
@@ -36,15 +36,13 @@ router.post('/send', (req, res, next) => {
     if (err) {
       console.error('Send Mail error : ', err);
       res.send(
-        '<script>alert("Contact Email Send Failed"); location.href="/contact"; </script>'
+        '<script>alert("Contact Email Send Failed"); location.href="/"; </script>'
       );
-      next();
     } else {
       console.log('Message sent : ', info);
       res.send(
-        '<script>alert("Contact Email Send Success"); location.href="/contact"; </script>'
+        '<script>alert("Contact Email Send Success"); location.href="/"; </script>'
       );
-      next();
     }
   });
 });
