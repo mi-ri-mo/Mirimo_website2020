@@ -4,13 +4,14 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   console.log('contact : get');
-  res.send({ connect: true });
+  res.send();
 });
 
-router.post('/send', (req, res, next) => {
-  let email = req.body.email || req.query.email;
-  let subject = req.body.subject || req.query.subject;
-  let message = req.body.message || req.query.message;
+router.post('/', (req, res) => {
+  console.log('post');
+  let email = req.query.email || req.body.email;
+  let subject = req.query.subject || req.body.subject;
+  let message = req.query.message || req.body.message;
 
   console.log(email, subject, message);
 
@@ -26,7 +27,7 @@ router.post('/send', (req, res, next) => {
   });
 
   var mailOption = {
-    from: 'mirimo01212@gmail.com',
+    from: email,
     to: 'mirimo01212@gmail.com',
     subject: 'mirimo contact "' + subject + '"',
     text: 'From ' + email + '\n\n' + message,
@@ -36,12 +37,12 @@ router.post('/send', (req, res, next) => {
     if (err) {
       console.error('Send Mail error : ', err);
       res.send(
-        '<script>alert("Contact Email Send Failed"); location.href="/"; </script>'
+        '<script>alert("Contact Email Send Failed"); location.href="/contact"; </script>'
       );
     } else {
       console.log('Message sent : ', info);
       res.send(
-        '<script>alert("Contact Email Send Success"); location.href="/"; </script>'
+        '<script>alert("Contact Email Send Success"); location.href="/contact"; </script>'
       );
     }
   });

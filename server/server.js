@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('/contact', contactRouter); 
+app.use('/contact', contactRouter);
 
 app.use(function (req, res, next) {
   next(createError(404));

@@ -22,9 +22,7 @@ class Contact extends Component {
   };
 
   componentWillMount() {
-    fetch('http://localhost:3002/contact').then((res) =>
-      this.setState({ email: '', subject: '', message: '' })
-    );
+    fetch('http://localhost:3002/contact').catch((err) => console.log(err));
   }
 
   render() {
@@ -66,7 +64,7 @@ class Contact extends Component {
           <div className="contact">
             <div className="title">CONTACT US</div>
             <div className="content">
-              <form method="post" action="/contact/send">
+              <form method="post" action="/">
                 <div className="email">
                   Email
                   <input
