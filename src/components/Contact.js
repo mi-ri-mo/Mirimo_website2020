@@ -15,8 +15,6 @@ class Contact extends Component {
     };
   }
 
-  
-
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,
@@ -45,29 +43,33 @@ class Contact extends Component {
             <div className="title">GET IN TOUCH</div>
             <div className="content">
               Office
-              <div>+82-2-888-8350</div>
+              <br />
+              +82-2-888-8350
             </div>
             <div className="content">
               Fax
-              <div>+82-2-888-8350</div>
+              <br />
+              +82-2-888-8350
             </div>
             <div className="content"></div>
             <div className="content">
               Email
-              <div>mirimo01212@gmail.com</div>
+              <br />
+              mirimo01212@gmail.com
             </div>
           </div>
+        </div>
 
-          <div className="direction">
-            <div className="title">DIRECTION</div>
-            <div className="content">
-              546, Hoam-ro, Gwanak-gu, Seoul, Republic of Korea
-            </div>
-            <div class="map">
-              <MapContainer />
-            </div>
+        <div className="direction">
+          <div className="title">DIRECTION</div>
+          <div className="content">
+            546, Hoam-ro, Gwanak-gu, Seoul, Republic of Korea
           </div>
-
+          <div class="map">
+            <MapContainer />
+          </div>
+        </div>
+        <div className="container">
           <div className="contact">
             <div className="title">CONTACT US</div>
             <div className="content">
