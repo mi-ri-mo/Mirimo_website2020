@@ -264,20 +264,23 @@
           margin-bottom: 2%;
           &:last-child {
             width: 100%;
-            .project-background {
-            }
             .project-content {
               width: 60%;
+              height: 0px;
             }
           }
+
+          &:nth-child(1){.project-content{height: 120px;}}
+          &:nth-child(2){.project-content{height: 120px;}}
+          &:nth-child(3){.project-content{height: 120px;}}
         }
 
+        
         .project-item {
-          height: 410px;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-
+          
           &:last-child {
             width: 100%;
           }

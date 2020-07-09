@@ -4,10 +4,10 @@ import '../../styles/projects/Raja.scss';
 import Nav from '../Nav';
 import Footer from '../Footer';
 
-import Font1 from '../../resource/img/raja/raja-ui.png';
-import Font2 from '../../resource/img/raja/raja-ui.png';
-import Font3 from '../../resource/img/raja/raja-ui.png';
-import Font4 from '../../resource/img/raja/raja-ui.png';
+import Font1 from '../../resource/img/raja/font-1.png';
+import Font2 from '../../resource/img/raja/font-2.png';
+import Font3 from '../../resource/img/raja/font-3.png';
+import Font4 from '../../resource/img/raja/font-4.png';
 
 import UI1 from '../../resource/img/raja/raja-ui-1.png';
 import UI2 from '../../resource/img/raja/raja-ui-2.png';
@@ -140,9 +140,9 @@ class Raja extends Component {
                         </div>
                     </div>
                     <div className="raja-ui-bottom">
-                        <div className="ui-item" style={{backgroundImage: `url(${UI1})`}}></div>
-                        <div className="ui-item" style={{backgroundImage: `url(${UI2})`}}></div>
-                        <div className="ui-item" style={{backgroundImage: `url(${UI3})`}}></div>
+                        <img className="ui-item" src={UI1}></img>
+                        <img className="ui-item" src={UI2}></img>
+                        <img className="ui-item" src={UI3}></img>
                     </div>
                     <div className="raja-web">
                         <div className="web-title">RAJA WEB</div>
