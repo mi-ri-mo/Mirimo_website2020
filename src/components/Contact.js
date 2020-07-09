@@ -22,7 +22,7 @@ class Contact extends Component {
   };
 
   componentWillMount() {
-    fetch('http://mirimo.emirim.kr:3005/contact', {
+    fetch('http://mirimo.emirim.kr:3002/contact', {
       method: 'POST',
       mode: 'cors',
       headers: {
