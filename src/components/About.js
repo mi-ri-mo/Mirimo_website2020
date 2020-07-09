@@ -264,7 +264,7 @@ class About extends Component {
                 >
                   <div className="project-background">
                     <div className="project-number">02</div>
-                    <div className="project-title">JSsustain</div>
+                    <div className="project-title">JHsustain</div>
                     <div className="project-content">
                       consectetur, adipisci velit, sed quia non numquam eius
                       modi tempora incidunt ut labore et dolore magnam aliquam
