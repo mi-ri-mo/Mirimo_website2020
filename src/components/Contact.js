@@ -22,16 +22,9 @@ class Contact extends Component {
   };
 
   componentWillMount() {
-    fetch('https://mirimo.emirim.kr/contact', {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'access-control-allow-origin': '*',
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-      .then((results) => results.json())
-      .catch((err) => console.log(err));
+    fetch('https://mirimo.emirim.kr/contact')
+      .then((res) => res.text())
+      .then((res) => this.setState({ email: '', subject: '', message: '' }));
   }
 
   render() {
