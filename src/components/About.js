@@ -178,10 +178,7 @@ class About extends Component {
             <div className="cus-container">
               <div className="content-title">MIRIMO</div>
               <div className="content-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              Mirimo is a company that helps small and medium-sized companies create online marketing consulting services and English-reactive websites. From 2020, 12 people gathered and contacted various companies.
               </div>
               <div className="content-background"></div>
             </div>
@@ -197,8 +194,7 @@ class About extends Component {
                   Society
                 </div>
                 <div className="ident-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
+                  As a student at Mirim Meister High School, we were able to grow because we received a lot of help and benefits from society. Now we want to give back to society our capabilities.
                 </div>
               </div>
 
@@ -207,11 +203,10 @@ class About extends Component {
                 {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity2})`}}></div> */}
                 <div className="ident-title">
                   Growth <br />
-                  Potential{' '}
+                  Potential
                 </div>
                 <div className="ident-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
+                  We want to be a company that dreams of developing a community and strive to take our society to the next level.
                 </div>
               </div>
 
@@ -224,8 +219,7 @@ class About extends Component {
                   Development
                 </div>
                 <div className="ident-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
+                  As a first-time entrepreneur, we may be immature and lacking, but we can be confident that we will grow further in the future.
                 </div>
               </div>
             </div>
@@ -234,7 +228,7 @@ class About extends Component {
           <div className="about-project">
             <div className="about-project-title">PROJECTS</div>
             <div className="about-project-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              You can check the details of our project here.
             </div>
             <div className="wrap-project">
               {/* PROJECT ITEM 1 */}
@@ -247,9 +241,7 @@ class About extends Component {
                     <div className="project-number">01</div>
                     <div className="project-title">RAJA</div>
                     <div className="project-content">
-                      consectetur, adipisci velit, sed quia non numquam eius
-                      modi tempora incidunt ut labore et dolore magnam aliquam
-                      quaerat voluptatem.
+                      Overseas e-commerce platform marketing consulting service data aimed at selling wood-slab products of Raja Furniture, an eco-friendly general furniture company.
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>
@@ -266,9 +258,7 @@ class About extends Component {
                     <div className="project-number">02</div>
                     <div className="project-title">JHsustain</div>
                     <div className="project-content">
-                      consectetur, adipisci velit, sed quia non numquam eius
-                      modi tempora incidunt ut labore et dolore magnam aliquam
-                      quaerat voluptatem.
+                      Produce JHsustain's English website, focusing on program proposals that address climate change, water management, etc. for developing countries.
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>
@@ -285,9 +275,7 @@ class About extends Component {
                     <div className="project-number">03</div>
                     <div className="project-title">8gram</div>
                     <div className="project-content">
-                      consectetur, adipisci velit, sed quia non numquam eius
-                      modi tempora incidunt ut labore et dolore magnam aliquam
-                      quaerat voluptatem.
+                      Create responsive websites that provide consumers with the benefits of only 8gram and the information they want
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>
@@ -304,9 +292,7 @@ class About extends Component {
                     <div className="project-number">04</div>
                     <div className="project-title">MirimMediaLab</div>
                     <div className="project-content">
-                      consectetur, adipisci velit, sed quia non numquam eius
-                      modi tempora incidunt ut labore et dolore magnam aliquam
-                      quaerat voluptatem.
+                      Collaborate with Mirim Media Lab to produce content for 2020 ASEAN vocational education cooperation
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>
