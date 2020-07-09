@@ -15,8 +15,6 @@ class Contact extends Component {
     };
   }
 
-  
-
   handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,
@@ -24,50 +22,47 @@ class Contact extends Component {
   };
 
   componentWillMount() {
-    fetch('http://mirimo.emirim.kr:3002/contact', {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'access-control-allow-origin': '*',
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-      .then((results) => results.json())
-      .catch((err) => console.log(err));
+    fetch('http://localhost:3002/contact').then((res) =>
+      this.setState({ email: '', subject: '', message: '' })
+    );
   }
 
   render() {
     return (
       <div>
         <Nav className="contact_nav" />
-        <div className="container">
+        <div className="cus-container">
           <div className="info">
             <div className="title">GET IN TOUCH</div>
             <div className="content">
               Office
-              <div>+82-2-888-8350</div>
+              <br />
+              +82-2-888-8350
             </div>
             <div className="content">
               Fax
-              <div>+82-2-888-8350</div>
+              <br />
+              +82-2-888-8350
             </div>
             <div className="content"></div>
             <div className="content">
               Email
-              <div>mirimo01212@gmail.com</div>
+              <br />
+              mirimo01212@gmail.com
             </div>
           </div>
+        </div>
 
-          <div className="direction">
-            <div className="title">DIRECTION</div>
-            <div className="content">
-              546, Hoam-ro, Gwanak-gu, Seoul, Republic of Korea
-            </div>
-            <div class="map">
-              <MapContainer />
-            </div>
+        <div className="direction">
+          <div className="title">DIRECTION</div>
+          <div className="content">
+            546, Hoam-ro, Gwanak-gu, Seoul, Republic of Korea
           </div>
-
+          <div className="map">
+            <MapContainer />
+          </div>
+        </div>
+        <div className="cus-container">
           <div className="contact">
             <div className="title">CONTACT US</div>
             <div className="content">

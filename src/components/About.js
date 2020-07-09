@@ -10,8 +10,8 @@ import MemberItem from './MemberItem';
 // import Identity2 from '../resource/img/identity-2.png'
 // import Identity3 from '../resource/img/identity-3.png'
 
-import Banner1 from '../resource/img/main_1.png'
-import Banner2 from '../resource/img/main_2.jpg'
+import Banner1 from '../resource/img/main_1.png';
+import Banner2 from '../resource/img/main_2.jpg';
 
 import Project1 from '../resource/img/about/about-project-1.png';
 import Project2 from '../resource/img/about/about-project-2.png';
@@ -178,7 +178,10 @@ class About extends Component {
             <div className="cus-container">
               <div className="content-title">MIRIMO</div>
               <div className="content-content">
-              Mirimo is a company that helps small and medium-sized companies create online marketing consulting services and English-reactive websites. From 2020, 12 people gathered and contacted various companies.
+                Mirimo is a company that helps small and medium-sized companies
+                create online marketing consulting services and English-reactive
+                websites. From 2020, 12 people gathered and contacted various
+                companies.
               </div>
               <div className="content-background"></div>
             </div>
@@ -194,7 +197,9 @@ class About extends Component {
                   Society
                 </div>
                 <div className="ident-content">
-                  As a student at Mirim Meister High School, we were able to grow because we received a lot of help and benefits from society. Now we want to give back to society our capabilities.
+                  As a student at Mirim Meister High School, we were able to
+                  grow because we received a lot of help and benefits from
+                  society. Now we want to give back to society our capabilities.
                 </div>
               </div>
 
@@ -203,10 +208,11 @@ class About extends Component {
                 {/* <div className="ident-icon" style={{backgroundImage: `url(${Identity2})`}}></div> */}
                 <div className="ident-title">
                   Growth <br />
-                  Potential
+                  Potential{' '}
                 </div>
                 <div className="ident-content">
-                  We want to be a company that dreams of developing a community and strive to take our society to the next level.
+                  We want to be a company that dreams of developing a community
+                  and strive to take our society to the next level.
                 </div>
               </div>
 
@@ -219,7 +225,9 @@ class About extends Component {
                   Development
                 </div>
                 <div className="ident-content">
-                  As a first-time entrepreneur, we may be immature and lacking, but we can be confident that we will grow further in the future.
+                  As a first-time entrepreneur, we may be immature and lacking,
+                  but we can be confident that we will grow further in the
+                  future.
                 </div>
               </div>
             </div>
@@ -228,7 +236,7 @@ class About extends Component {
           <div className="about-project">
             <div className="about-project-title">PROJECTS</div>
             <div className="about-project-subtitle">
-              You can check the details of our project here.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit
             </div>
             <div className="wrap-project">
               {/* PROJECT ITEM 1 */}
@@ -241,7 +249,9 @@ class About extends Component {
                     <div className="project-number">01</div>
                     <div className="project-title">RAJA</div>
                     <div className="project-content">
-                      Overseas e-commerce platform marketing consulting service data aimed at selling wood-slab products of Raja Furniture, an eco-friendly general furniture company.
+                      Overseas e-commerce platform marketing consulting service
+                      data aimed at selling wood-slab products of Raja
+                      Furniture, an eco-friendly general furniture company.
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>
@@ -256,9 +266,11 @@ class About extends Component {
                 >
                   <div className="project-background">
                     <div className="project-number">02</div>
-                    <div className="project-title">JHsustain</div>
+                    <div className="project-title">JH SUSTAIN</div>
                     <div className="project-content">
-                      Produce JHsustain's English website, focusing on program proposals that address climate change, water management, etc. for developing countries.
+                      Produce JHsustain's English website, focusing on program
+                      proposals that address climate change, water management,
+                      etc. for developing countries.
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>
@@ -275,7 +287,8 @@ class About extends Component {
                     <div className="project-number">03</div>
                     <div className="project-title">8gram</div>
                     <div className="project-content">
-                      Create responsive websites that provide consumers with the benefits of only 8gram and the information they want
+                      Create responsive websites that provide consumers with the
+                      benefits of only 8gram and the information they want.
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>
@@ -283,16 +296,17 @@ class About extends Component {
               </NavLink>
 
               {/* PROJECT ITEM 4 */}
-              <NavLink to="/" onClick={this.onClickProject}>
+              <NavLink to="/MirimMediaLab">
                 <div
-                  className="project-item"
+                  className="project-item height-200"
                   style={{ backgroundImage: `url(${Project4})` }}
                 >
                   <div className="project-background">
                     <div className="project-number">04</div>
                     <div className="project-title">MirimMediaLab</div>
                     <div className="project-content">
-                      Collaborate with Mirim Media Lab to produce content for 2020 ASEAN vocational education cooperation
+                      Collaborate with Mirim Media Lab to produce content for
+                      2020 ASEAN vocational education cooperation.
                     </div>
                     <div className="project-viewmore">View more</div>
                   </div>

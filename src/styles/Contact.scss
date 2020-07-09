@@ -1,16 +1,21 @@
+html {
+  font-size: 10px;
+}
+
 @media only screen {
-  .container {
-    width: 100%;
+  .cus-container {
+    width: 100vw;
     margin: 50px 0 0 0;
-    padding: 0 340px;
+    padding: 40px 15%;
   }
 
   .info {
     .content {
       margin-top: 5%;
-      margin-right: 12%;
-      font-size: 20px;
+      margin-right: 11.4%;
+      font-size: 2rem;
       display: inline-block;
+      line-height: 1.8;
 
       div {
         margin: 10px 0 0 0;
@@ -21,11 +26,12 @@
   }
 
   .direction {
+    padding: 0 15%;
     .content {
       margin-top: 2.5%;
       margin-right: 12%;
       margin-bottom: 2.5%;
-      font-size: 20px;
+      font-size: 1.8rem;
       display: inline-block;
     }
 
@@ -39,7 +45,7 @@
   .contact {
     .content {
       form {
-        font-size: 20px;
+        font-size: 2rem;
       }
       input {
         width: 85%;
@@ -47,7 +53,6 @@
         font-weight: 400;
         float: right;
         outline: none;
-        padding: 5px;
       }
 
       input::placeholder {
@@ -56,7 +61,7 @@
 
       hr {
         border: 0.1px solid #c7c7c7;
-        margin: 40px 0 40px 0;
+        margin: 40px 0 20px 0;
       }
 
       textarea {
@@ -81,7 +86,7 @@
         text-align: center;
         background-color: #3bbbbc;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 2rem;
       }
 
       .send:hover {
@@ -102,13 +107,31 @@
 
   .title {
     margin-top: 8%;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
   }
 }
 
+@media only screen and (max-width: 1050px) {
+  .cus-container {
+    padding: 0 20px 0 20px;
+  }
+
+  .info {
+    div:ntn-child(4) {
+      display: none;
+    }
+  }
+
+  #email,
+  #subject,
+  #message {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-device-width: 813px) {
-  .container {
+  .cus-container {
     padding: 0 20px 0 20px;
   }
 
@@ -118,7 +141,7 @@
     .content {
       margin-top: 7%;
       margin-right: 12%;
-      font-size: 1.2em;
+      font-size: 2rem;
       display: block;
 
       div {
@@ -129,26 +152,32 @@
 
   .direction {
     .content {
+      padding: 0 20px;
       margin-top: 9%;
       margin-right: 12%;
       margin-bottom: 8%;
-      font-size: 1.2em;
+      font-size: 1.8rem;
       display: inline-block;
     }
     .map {
-      height: 70vh;
+      height: 505px;
       width: 100%;
     }
+
+    .title {
+      padding: 0 20px;
+    }
+    padding: 0;
   }
 
   .contact {
     .content {
       margin: 50px 0 0 0;
       width: 100%;
-      font-size: 16px;
+      font-size: 1.6rem;
 
       form {
-        font-size: 16px;
+        font-size: 1.6rem;
       }
 
       input {
@@ -177,7 +206,7 @@
         margin: 30px 28% 150px 28%;
         float: none;
         width: 138px;
-        font-size: 16px;
+        font-size: 1.6rem;
       }
     }
   }

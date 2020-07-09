@@ -14,7 +14,7 @@ const Project = () => {
     <div>
       <Nav />
       <div className="project">
-        <div className="container">
+        <div className="cus-container">
           {/* WORK */}
           <div className="about-content">
             <div className="content-title">WORK</div>
@@ -24,20 +24,16 @@ const Project = () => {
               <div className="project-item">
                 <div className="project-title">RAJA</div>
                 <div className="project-intro">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Overseas e-commerce platform marketing consulting service data
+                  aimed at selling wood-slab products of Raja Furniture, an
+                  eco-friendly general furniture company. It aims to break away
+                  from the furniture industry, which has long been called the
+                  leading domestic industry, and sell RAJA’s Woodslab products
+                  to Europe through e-commerce platforms Amazon and Alibaba.
                 </div>
                 <div className="project-detail">
                   {/* <Link to='./RAJA'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to="./project" onClick={onClickProject}>View more</Link>
                 </div>
               </div>
             </div>
@@ -46,20 +42,18 @@ const Project = () => {
               <div className="project-item">
                 <div className="project-title">JHsustain</div>
                 <div className="project-intro">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  JH SUSTAIN is a social enterprise that plans and implements
+                  international development programs and helps developing
+                  countries and public institutions by establishing a global
+                  network related to the environment. Through the website
+                  renewal, we will make it easier for more public institutions
+                  to contact companies, creating opportunities for more
+                  projects, and allowing Korean institutions to pay more
+                  attention to them.
                 </div>
                 <div className="project-detail">
                   {/* <Link to='./JHsustain'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to="./project" onClick={onClickProject}>View more</Link>
                 </div>
               </div>
             </div>
@@ -68,20 +62,16 @@ const Project = () => {
               <div className="project-item">
                 <div className="project-title">8gram</div>
                 <div className="project-intro">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  8gram is a theme cafe that combines a workshop where you can
+                  make your own rings, bracelets, and necklaces, and a drink
+                  cafe. For smooth marketing, the goal is to establish a system
+                  that can inform both Koreans and foreigners of the dispute and
+                  apply for reservations by enhancing website renewal and SNS
+                  utilization.
                 </div>
                 <div className="project-detail">
                   {/* <Link to='./8gram'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to="./project" onClick={onClickProject}>View more</Link>
                 </div>
               </div>
             </div>
@@ -90,20 +80,16 @@ const Project = () => {
               <div className="project-item">
                 <div className="project-title">MirimMediaLab</div>
                 <div className="project-intro">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Along with Mirim Media Lab, I participated in the production
+                  of ASEAN vocational education cooperation contents for 2020 to
+                  cope with delays and suspensions caused by the spread of the
+                  COVID-19, and to secure the sustainability of vocational
+                  education cooperation and expand performance. We hope to
+                  create a remote operation foundation for ASEAN vocational
+                  education cooperation after COVID-19.
                 </div>
                 <div className="project-detail">
-                  {/* <Link to='./MirimMediaLab'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to='./MirimMediaLab'>View more</Link>
                 </div>
               </div>
             </div>

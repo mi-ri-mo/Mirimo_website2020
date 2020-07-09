@@ -1,0 +1,11 @@
+Map {
+  height: 40vh;
+  width: 100%;
+}
+
+@media only screen and (max-device-width: 813px) {
+  Map {
+    height: 505px;
+    width: 100%;
+  }
+}
