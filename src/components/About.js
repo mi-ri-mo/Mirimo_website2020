@@ -298,7 +298,7 @@ class About extends Component {
               {/* PROJECT ITEM 4 */}
               <NavLink to="/" onClick={this.onClickProject}>
                 <div
-                  className="project-item"
+                  className="project-item height-200"
                   style={{ backgroundImage: `url(${Project4})` }}
                 >
                   <div className="project-background">
