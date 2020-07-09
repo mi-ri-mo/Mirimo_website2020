@@ -33,9 +33,7 @@ const Project = () => {
                 </div>
                 <div className="project-detail">
                   {/* <Link to='./RAJA'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to="./project" onClick={onClickProject}>View more</Link>
                 </div>
               </div>
             </div>
@@ -51,13 +49,11 @@ const Project = () => {
                   renewal, we will make it easier for more public institutions
                   to contact companies, creating opportunities for more
                   projects, and allowing Korean institutions to pay more
-                  attention to them with Korean and English websites.
+                  attention to them.
                 </div>
                 <div className="project-detail">
                   {/* <Link to='./JHsustain'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to="./project" onClick={onClickProject}>View more</Link>
                 </div>
               </div>
             </div>
@@ -75,9 +71,7 @@ const Project = () => {
                 </div>
                 <div className="project-detail">
                   {/* <Link to='./8gram'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to="./project" onClick={onClickProject}>View more</Link>
                 </div>
               </div>
             </div>
@@ -95,10 +89,7 @@ const Project = () => {
                   education cooperation after COVID-19.
                 </div>
                 <div className="project-detail">
-                  {/* <Link to='./MirimMediaLab'>View more</Link> */}
-                  <Link to="./project" onClick={onClickProject}>
-                    View more
-                  </Link>
+                  <Link to='./MirimMediaLab'>View more</Link>
                 </div>
               </div>
             </div>

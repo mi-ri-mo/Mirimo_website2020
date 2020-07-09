@@ -1,8 +1,4 @@
-@import "../mixin.scss";
-@font-face {
-    font-family: 'Noto Sans KR';
-    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-}
+@import "../_mixin.scss";
 
 @mixin sub-title{
     font-weight: 700;
@@ -27,24 +23,29 @@
     }
 }
 
-
+html{
+    font-family: 'Apple SD Gothic Neo', 'Open Sans';
+}
 .mml{
     .header{
         .banner{
-            width: 100%;
-            background: url(../../resource/img/mml/banner-bg.png) 0 0 no-repeat;
+            font-size: 3em;
+            line-height: 0.2em;
+            background: linear-gradient(rgba(35, 95, 172, 0.7), rgba(72, 195, 241, 0.5)),
+                        url(../../resource/img/mml/banner-bg.png) no-repeat;
+            background-position: center;
             background-size: cover;
             color: #fff;
-            font-weight: 600;
-            font-size: 3em;
-            padding: 22% 0;
-            line-height: 0.7em;
+            .title{
+                margin: 0;
+                font-weight: normal;
+            }
             img{
                 height: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
             }
             span{
-                font-weight: 500;
+                font-weight: normal;
                 font-size: 0.34em;
             }
         }
@@ -55,7 +56,7 @@
             padding: 6% 0;
             .ov-title{
                 position: relative;
-                font-weight: 700;
+                font-weight: bold;
                 font-size: 1.6em;
                 line-height: 4em;
                 z-index: 1;
@@ -83,8 +84,7 @@
         }
         .goal-wrap{
             width: 100%;
-            background: url(../../resource/img/mml/goal-bg.png) 0 0 no-repeat;
-            background-size: cover;
+            background: linear-gradient(#388be0, #48c3f1);
             padding: 3% 0;
             .container{
                 .goal-title{
@@ -207,13 +207,324 @@
     }
 }
 
-@include desktop{
-    .container{
-        margin: 0; padding: 15%;
+@media only screen and (min-width: 1920px) {
+    div.container{
+        padding: 0 370px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .mml{
+        .header{
+            .banner{
+                height: 1080px;
+                padding: 470px 370px;
+                .container{
+                    padding: 0;
+                }
+                .title{
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+                img{
+                    width: 80px;
+                }
+                span{
+                    font-size: 21px;
+                }
+            }
+            .overview-wrap{
+                padding: 150px 0;
+                .ov-title{
+                    font-size: 21px;
+                }
+                .ov-sub{
+                    width: 671px;
+                    float: left;
+                    line-height: 29px;
+                    font-size: 16px;
+                }
+                .ov-img{
+                    width: 210px;
+                    height: 210px;
+                    margin-left: 229px;
+                    transform: translateY(-40px);
+                }
+            }
+            .goal-wrap{
+                padding: 60px 0;
+                .container{
+                    .goal-title{
+                        font-size: 36px;
+                        padding-bottom: 40px;
+                    }
+                    .contents{
+                        .content{
+                            height: 406px;
+                            width: 380px;
+                        }
+                    }
+                }
+            }
+        }
+        .body{
+            .process-wrap{
+                padding: 100px 0;
+                .container{
+                    .process-title{
+                        font-size: 36px;
+                        line-height: 3em;
+                        @include bottom-box(30rem);
+                    }
+                    .process-details{
+                        .detail-wrap{
+                            width: 16%;
+                            margin-top: 84px;
+                            text-align: center;
+                            .detail-num{
+                                width: 80px;
+                                height: 80px;
+                                line-height: 80px;
+                                border-radius: 80px;
+                                margin: auto;
+                                font-size: 30px;
+                            }
+                            .detail-txt{
+                                line-height: 50px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .process-imgs{
+                        margin: 120px 0;
+                        .img{
+                            width: 580px;
+                            height: 387px;
+                        }
+                    }
+                }
+            }
+            .contents-wrap{
+                padding: 70px 0;
+                .container{
+                    font-size: 15px;
+                    .content-title{
+                        font-size: 36px;
+                        line-height: 3em;
+                        @include bottom-box(19rem);
+                    }
+                    .content-imgs{
+                        margin: 35px 0;
+                        .img{
+                            width: 880px;
+                            height: 495px;
+                            clear: both;
+                            margin: 35px 0;
+                            &:nth-child(odd){
+                                float: right;
+                            }
+                            &:nth-child(even){
+                                float: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .foo{
+            img{
+                width: 94px;
+            }
+        }
     }
 }
 
-@include mobile{
+@media only screen and (min-width: 481px) and (max-width: 1919px) {
+    .mml{
+        .header{
+            .banner{
+                font-size: 3em;
+                padding: 22% 0;
+                line-height: 0.2em;
+                width: 100%;
+                background: linear-gradient(rgba(35, 95, 172, 0.7), rgba(72, 195, 241, 0.5)),
+                            url(../../resource/img/mml/banner-bg.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+                color: #fff;
+                .title{
+                    margin: 0;
+                    font-weight: normal;
+                }
+                img{
+                    height: 20px;
+                    margin-bottom: 30px;
+                }
+                span{
+                    font-weight: normal;
+                    font-size: 0.34em;
+                }
+            }
+            .overview-wrap{
+                width: 100%;
+                background: #fff;
+                color: #000;
+                padding: 6% 0;
+                .ov-title{
+                    position: relative;
+                    font-size: 1.6em;
+                    line-height: 4em;
+                    z-index: 1;
+                    &::before{
+                        display: block;
+                        content: '';
+                        width: 10rem;
+                        height: 18%;
+                        background: #1c9ced;
+                        position: absolute;
+                        top: 36%;
+                        left: 3%;
+                        z-index: -1;
+                    }
+                }
+                .ov-sub{
+                    width: 60%;
+                    float: left;
+                    line-height: 2em;
+                }
+                .ov-img{
+                    width: 34%;
+                    margin-left: 4%;
+                }
+            }
+            .goal-wrap{
+                width: 100%;
+                background: url(../../resource/img/mml/goal-bg.png) 0 0 no-repeat;
+                background-size: cover;
+                padding: 3% 0;
+                .container{
+                    .goal-title{
+                        @include sub-title();
+                        color: #fff;
+                        padding-bottom: 3%;
+                    }
+                    .contents{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        @for $i from 1 to 4{
+                            .content{
+                                height: 32.1rem;
+                                width: 30rem;
+                                &:nth-child(#{$i}){
+                                    background: url(../../resource/img/mml/goal-#{$i}.png) 0 0 no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .body{
+            .process-wrap{
+                width: 100%;
+                color: #000;
+                padding: 3% 0;
+                background: #fff;
+                clear: both;
+                .container{
+                    .process-title{
+                        @include sub-title;
+                        line-height: 3em;
+                        @include bottom-box(24rem);
+                    }
+                    .process-details{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .detail-wrap{
+                            width: 16%;
+                            margin: 3% 0;
+                            text-align: center;
+                            .detail-num{
+                                background: #47bdef;
+                                color: #fff;
+                                width: 7rem;
+                                height: 7rem;
+                                line-height: 7rem;
+                                border-radius: 10rem;
+                                margin: auto;
+                                font-weight: 700;
+                                font-size: 1.8em;
+                            }
+                            .detail-txt{
+                                line-height: 50px;
+                            }
+                        }
+                    }
+                    .process-imgs{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        margin: 4% 0;
+                        .img{
+                            width: 49%;
+                            height: 360px;
+                            @for $i from 1 to 3{
+                                &:nth-child(#{$i}){
+                                    background: url(../../resource/img/mml/process-#{$i}.png);
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contents-wrap{
+                width: 100%;
+                padding: 3% 0;
+                background: #fafafa;
+                clear: both;
+                .container{
+                    text-align: center;
+                    .content-title{
+                        @include sub-title;
+                        line-height: 3em;
+                        @include bottom-box(15rem);
+                    }
+                    .content-imgs{
+                        .img{
+                            width: 66%;
+                            height: 420px;
+                            clear: both;
+                            margin: 10px 0;
+                            @for $i from 1 to 4{
+                                &:nth-child(#{$i}){
+                                    background: url(../../resource/img/mml/content-#{$i}.png);
+                                    background-size: cover;
+                                }
+                            }
+                            &:nth-child(odd){
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .foo{
+            padding: 4% 0;
+            img{
+                width: 5%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     .container{
         margin: 0; padding: 0 20px;  
     }
@@ -226,8 +537,6 @@
                 background-position-x: center;
                 line-height: 0.3em;
                 .title{
-                    margin: 0;
-                    font-weight: 600;
                     font-size: 30px;
                 }
                 span{
@@ -291,88 +600,6 @@
         .foo{
             img{
                 width: 20%;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 2304px){
-    .mml{
-        .container{        
-            margin: 0;
-            padding: 0 340px;
-            width: 100%;
-            font-size: 24px;
-        }
-
-        .header{
-            .banner{
-                padding: 21% 0;
-                img{
-                    height: 40px;
-                    margin-bottom: 60px;
-                }
-                .title{
-                    margin: 0;
-                    font-weight: 600;
-                    font-size: 70px;
-                    line-height: 0.7em;
-                }
-                span{
-                    font-size: 1em;
-                }
-            }
-            .goal-wrap{
-                .container{
-                    .contents{
-                        .content{
-                            height: 20em;
-                            width: 18.7em;
-                        }
-                    }
-                }
-            }
-        }
-
-        .body{
-            .process-wrap{
-                .container{
-                    .process-title{
-                        @include bottom-box(40rem);
-                    }
-                    .process-details{
-                        .detail-wrap{
-                            .detail-num{
-                                width: 10rem;
-                                height: 10rem;
-                                line-height: 10rem;
-                                border-radius: 10rem;
-                                margin: 10px auto;
-                            }
-                            .detail-txt{
-                                line-height: 50px;
-                            }
-                        }
-                    }
-                    .process-imgs{
-                        margin: 4% 0;
-                        .img{
-                            height: 540px;
-                        }
-                    }
-                }
-            }
-            .contents-wrap{
-                .container{
-                    .content-title{
-                        @include bottom-box(25rem);
-                    }
-                    .content-imgs{
-                        .img{
-                            height: 630px;
-                        }
-                    }
-                }
             }
         }
     }
