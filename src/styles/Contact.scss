@@ -2,11 +2,11 @@ html {
   font-size: 10px;
 }
 
-@media only screen and (max-width: 1920px) {
-  .container {
+@media only screen {
+  .cus-container {
     width: 100vw;
     margin: 50px 0 0 0;
-    padding: 0 15%;
+    padding: 40px 15%;
   }
 
   .info {
@@ -26,6 +26,7 @@ html {
   }
 
   .direction {
+    padding: 0 15%;
     .content {
       margin-top: 2.5%;
       margin-right: 12%;
@@ -60,7 +61,7 @@ html {
 
       hr {
         border: 0.1px solid #c7c7c7;
-        margin: 40px 0 40px 0;
+        margin: 40px 0 20px 0;
       }
 
       textarea {
@@ -112,6 +113,10 @@ html {
 }
 
 @media only screen and (max-width: 1050px) {
+  .cus-container {
+    padding: 0 20px 0 20px;
+  }
+
   .info {
     div:ntn-child(4) {
       display: none;
@@ -126,7 +131,7 @@ html {
 }
 
 @media only screen and (max-device-width: 813px) {
-  .container {
+  .cus-container {
     padding: 0 20px 0 20px;
   }
 

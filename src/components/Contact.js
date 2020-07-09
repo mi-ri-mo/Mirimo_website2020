@@ -38,7 +38,7 @@ class Contact extends Component {
     return (
       <div>
         <Nav className="contact_nav" />
-        <div className="container">
+        <div className="cus-container">
           <div className="info">
             <div className="title">GET IN TOUCH</div>
             <div className="content">
@@ -65,11 +65,11 @@ class Contact extends Component {
           <div className="content">
             546, Hoam-ro, Gwanak-gu, Seoul, Republic of Korea
           </div>
-          <div class="map">
+          <div className="map">
             <MapContainer />
           </div>
         </div>
-        <div className="container">
+        <div className="cus-container">
           <div className="contact">
             <div className="title">CONTACT US</div>
             <div className="content">
