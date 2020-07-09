@@ -79,9 +79,11 @@
                 font-weight: 400;
             }
             .content-background{
+                position: relative;
                 background: url('../resource/img/main_2-2.png');
                 background-repeat: no-repeat;
                 background-size: contain;
+                z-index: -1;
             }
         }
     }
@@ -116,7 +118,7 @@
 
     .about-temp{
         width: 100%;
-        background-image: url('../resource/img/about/about-temp.jpg');
+        background-image: url('../resource/img/about/about-temp.png');
         background-size: cover;
         background-position: center;
     }
