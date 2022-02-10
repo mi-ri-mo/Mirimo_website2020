@@ -13,7 +13,7 @@
     "http-errors": "^1.7.3",
     "http-proxy-middleware": "^1.0.4",
     "morgan": "^1.10.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodemailer": "^6.4.10",
     "nodemon": "^2.0.4",
     "path": "^0.12.7",
